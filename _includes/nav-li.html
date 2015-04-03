@@ -1,0 +1,10 @@
+<li>
+    {% if page.url == include.url %}
+        <b>{{ include.title }}</b>
+    {% else %}
+        {% comment %}
+            Omit "index.html" from URLs as a matter of style.
+        {% endcomment %}
+        <a href="{{ site.baseurl }}{{ include.url | replace: "index.html" }}">{{ include.title }}</a>
+    {% endif %}
+</li>
