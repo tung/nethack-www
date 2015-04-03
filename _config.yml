@@ -1,0 +1,13 @@
+# Location of the website relative to the domain name, used for absolute links.
+baseurl: /nethack-www
+
+# URL back to the web server, used by RSS feeds to link back to the website.
+url: http://www.nethack.org
+
+# TODO: Set timezone to UTC.
+
+exclude: [Gemfile, Gemfile.lock]
+
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  smart_quotes: apos,apos,quot,quot # Disable smart quotes.
