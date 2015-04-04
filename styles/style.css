@@ -79,6 +79,13 @@ main {
     line-height: 1.5em;
 }
 
+code {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
 footer {
     border-top: 1px solid #888;
     clear: both;
