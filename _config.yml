@@ -4,7 +4,8 @@ baseurl: /nethack-www
 # URL back to the web server, used by RSS feeds to link back to the website.
 url: http://www.nethack.org
 
-# TODO: Set timezone to UTC.
+# Generate the site from a fixed timezone.
+timezone: UTC
 
 exclude: [Gemfile, Gemfile.lock]
 
