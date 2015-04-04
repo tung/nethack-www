@@ -114,3 +114,7 @@ footer p {
 #hosted-by {
     float: right;
 }
+
+ol#copying-policies li {
+    margin-top: 1.5em;
+}
