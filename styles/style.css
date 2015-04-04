@@ -13,6 +13,14 @@ body {
     max-width: 1000px;
 }
 
+/*
+    Temporary coloring for placeholder links.
+    Remove this rule once the website is complete.
+*/
+a[href="#"], a[href="#TODO"] {
+    color: #c00;
+}
+
 header {
     border-bottom: 1px solid #888;
     padding: 1em;
