@@ -20,6 +20,13 @@ You *cannot* use save or bones files from any previous version with 3.4.x.
 
 Maybe.  If you are using the same version of ***NetHack***, compiled with the same options, on the same kind of operating system, with the same compiler, it will probably work; if any of these differ, it definitely won't.
 
+{::comment}
+TODO:
+
+* This should probably mention Hearse, an online service that could share bones
+  amongst players across the Internet if they ran its client program.
+{:/}
+
 ### My game crashed and I've got all these files ending in a number lying around.  Can I get my game back?
 
 Maybe.  See the documentation for your version and look for either a `recover` program or a recover option to ***NetHack***.
