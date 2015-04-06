@@ -126,18 +126,7 @@ TODO:
 
 ### Why is it called NetHack if it's a single player game that doesn't use the net?
 
-The "Net" in ***NetHack*** refers to the way the developers, many of whom have never met in person, organize the work on the program.
-
-{::comment}
-TODO:
-
-* What, no mention of USENET?  Seems like it would shed light here.
-
-* Is USENET even still used to coordinate NetHack development?  Seems like
-  email and mailing lists are the primary means of coordination, in which case
-  it'd be more accurate to say that USENET *used* to be used to organize work
-  on NetHack.
-{:/}
+The "Net" in ***NetHack*** refers to USENET, which was the way the developers, many of whom have never met in person, originally used to organize the work on the program.  (Learn more at [USENET on Wikipedia](#TODO).)
 
 ### How about a multi-player version?
 
