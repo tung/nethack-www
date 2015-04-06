@@ -56,7 +56,7 @@ If you're still starving, you can try `#pray`ing to your deity for help while we
 
 ### How do I use doors?
 
-Doors can be `o`pened and `c`losed.  If a door is locked, you may need to kick it down using `Ctrl-D`.
+Doors can be `o`pened and `c`losed.  If a door is locked, you may need to kick it down using `Ctrl+D`.
 
 ### How do I use stairs?
 
