@@ -33,7 +33,8 @@ This combination of permanent death, random level generation and emphasis on gam
 2. **Dungeon branches** -- The Mazes of Menace descend ever-downward, but occasionally they branch off into different areas.  An early example is the Gnomish Mines: a dark, organic system of caverns, and the home the many gnomes and dwarves that toil within it.
 3. **Blessings and curses** -- Some roguelikes allow objects to be cursed, which often means that their quality is degraded.  ***NetHack*** also allows objects to be blessed, improving their functionality.
 4. **Multiple uses for objects** -- For example, a cream pie can be `e`aten.  It could also be `w`ielded against or `t`hrown at creatures to blind them,  It can even be `a`pplied to your own face to blind yourself!  Many other objects in ***NetHack*** work this way; get creative!
-5. **Conducts** -- Winning is recognized in almost all roguelikes, but for the truly hardcore players, ***NetHack*** recognizes victory while abstaining from praying for help, reading, eating meat, fighting with a wielded weapon and even eating food altogether!  Winning with many conducts puts you amongst the best of the best of ***NetHack*** players.
+5. **Non-player characters** -- You can `#chat` to most denizens of the dungeon.  Most will simply grunt in reply, but some can be paid, bribed, conversed, consulted or consorted with.  You can even gain pets and allies to fight on your behalf!
+6. **Conducts** -- Winning is recognized in almost all roguelikes, but for the truly hardcore players, ***NetHack*** recognizes victory while abstaining from praying for help, reading, eating meat, fighting with a wielded weapon and even eating food altogether!  Winning with many conducts puts you amongst the best of the best of ***NetHack*** players.
 
 There exist many roguelikes, but only ***NetHack*** is ***NetHack***.
 
