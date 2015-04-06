@@ -5,6 +5,91 @@ title: Frequently Asked Questions
 * table of contents
 {:toc}
 
+---
+
+## Basic Gameplay
+
+### How do I move my character?
+
+Your character can move in eight directions, using one of the following two control schemes:
+
+```
+y   k   u       7   8   9
+  \ | /           \ | /
+h - . - l       4 - . - 6
+  / | \           / | \
+b   j   n       1   2   3
+
+numpad:0        numpad:1
+```
+
+As hinted above, you'll want the `numpad` option set to `0` for the letter-based (or "vi-keys") control scheme, or `1` for the number pad control scheme.  You can test these settings in-game by pressing `O` (capital letter "O") to bring up the options screen (you may need to scroll it with `Space` or the `<` and `>` keys depending on your interface), and keep the one you want by editing your configuration file, which will either be found at `defaults.nh` in the game folder, or searched for at `~/.nethackrc` on non-Windows operating systems (create it with a text editor if it does not exist).
+
+```
+# In your configuration file...
+OPTIONS=numpad:1
+```
+
+Finally, if you're trying to use the number pad control scheme (`numpad:1` above) and the keys don't seem to work, try toggling the `Num Lock` key on your keyboard.
+
+### What do all these weird symbols on the map mean?
+
+If you're playing the TTY version (sometimes called "ASCII mode") of ***NetHack*** rather than a graphical tiles version, the dungeon, creatures and objects lying on the ground will be shown as letters and symbols.
+
+Your character is represented by the `@` (at sign) with the cursor over it.
+
+To discover what everything else is, press `;` (semicolon) to enter far-look mode, use the movement keys to position the cursor on what you want described, then press `.` (period) to get a brief description of the thing under the cursor.
+
+For a more detailed list of what letters and symbols mean, consult the [Guidebook](#TODO), and the in-game help that can be viewed by pressing `?` (question mark).
+
+### My character keeps picking up junk and getting burdened!
+
+You have the autopickup option enabled.  You can toggle it off by pressing the `@` (at) key, or via the options screen.  You can then use the `d` (drop) or `D` (multi-drop) commands to drop the heavy objects from your inventory.
+
+### I keep starving to death!
+
+You should eat the corpses of slain foes by pressing `e` while standing over them.  Make sure they're fresh, otherwise you'll gain fatal food poisoning, shown as "FoodPois" in your status line.  Some corpses will keep indefinitely, such as those of lichens and lizards.  Beware the corpses of poisonous creatures, since their poison (not to be confused with food poisoning) will hurt you unless your character is poison-resistant.
+
+If you're still starving, you can try `#pray`ing to your deity for help while weak or fainting from hunger.
+
+### How do I use doors?
+
+Doors can be `o`pened and `c`losed.  If a door is locked, you may need to kick it down using `Ctrl-D`.
+
+### How do I use stairs?
+
+Press `<` to go upstairs, and `>` to go downstairs.
+
+### I can't find any stairs down!  Am I stuck?
+
+There may be hidden doors or passages on the level; press `s` to search next to walls and at the ends of dead-end corridors to find them.  You may need to search a location multiple times before any secrets are revealed.
+
+### My options were reset when I started the game again!
+
+The in-game options screen can only be used to view and test options.  To *preserve* your options you must save them into your configuration file.
+
+Here is an example of the contents of a configuration file.
+
+```
+#
+# Sample NetHack configuration.
+#
+# Lines starting with # are ignored by NetHack.
+#
+
+# Numpad movement instead of hjklyubn.
+OPTIONS=numpad:1
+
+# Disable autopickup (the "!" in front means disable the option).
+OPTIONS=!autopickup
+
+# Set the character used for boulders to "0" instead of "`".
+OPTIONS=boulder:0
+```
+
+Windows users should edit the `defaults.nh` file in their ***NetHack*** folder using a text editor.  Users of other operating systems will want to edit `~/.nethackrc` in their home directory; create it if it does not exist.
+
+---
 
 ## Common Questions
 
