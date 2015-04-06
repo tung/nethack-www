@@ -199,22 +199,11 @@ TODO:
   mainline NetHack could be quite fruitful.
 {:/}
 
-### Why don't you add this new role?  I've come up with ideas for a leader, nemesis, and artifact, so it should be trivial for you to name all their experience levels and implement the new abilities and design appropriate quest levels for them and write pages of new quest text to cover every situation and then manage to differentiate the new role from the existing ones when outside the quest levels.
+### Why don't you add this new role?  I've come up with ideas for a leader, nemesis, and artifact...
 
-We're still trying to get the existing roles differentiated.
+We're still trying to get the existing roles differentiated, so adding more wouldn't make much sense.
 
-{::comment}
-TODO:
-
-* The same case for not shutting down eager contributors made above applies
-  here.
-
-* Has the dev team made any progress on getting existing roles differentiated
-  in the last ten years?  This is another area where variants have made a fair
-  bit of progress.
-
-* The question here is *way* too long; it should probably be trimmed down.
-{:/}
+If you still want to bring your idea for a role to life, you should write a patch for it and submit it to the community, where it might get some attention.
 
 ### Could you include an "easy" option?
 
