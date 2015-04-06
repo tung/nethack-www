@@ -1,8 +1,10 @@
 # Location of the website relative to the domain name, used for absolute links.
+# Omit this if hosting directly on the domain.
 baseurl: /nethack-www
 
 # URL back to the web server, used by RSS feeds to link back to the website.
-url: http://www.nethack.org
+#url: http://www.nethack.org
+url: https://tung.github.io
 
 # Generate the site from a fixed timezone.
 timezone: UTC
