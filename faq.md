@@ -30,7 +30,9 @@ As hinted above, you'll want the `numpad` option set to `0` for the letter-based
 OPTIONS=numpad:1
 ```
 
-Finally, if you're trying to use the number pad control scheme (`numpad:1` above) and the keys don't seem to work, try toggling the `Num Lock` key on your keyboard.
+If you're trying to use the number pad control scheme (`numpad:1` above) and the keys don't seem to work, try toggling the `Num Lock` key on your keyboard.
+
+Finally, you may be able to just click or touch the map to move your character there, depending on the interface you're using.
 
 ### What do all these weird symbols on the map mean?
 
