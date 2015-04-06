@@ -215,12 +215,6 @@ TODO:
 
 It isn't feasible to track everything that could possibly be tracked in the game.  You are quite free to engage in the conduct you desire, but we are not planning on rolling too many more conducts into the official sources.
 
-{::comment}
-TODO:
-
-* Maybe redirect these people to share their ideas with the community.
-{:/}
-
 ### Hey, how about a first-person shooter version (like Doom)?
 
 Sorry, that would be a very different game, and we like working on this one.
