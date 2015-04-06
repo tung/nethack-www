@@ -162,22 +162,6 @@ TODO:
 
 ## Things we are NOT doing
 
-### Are you porting NetHack to Android?
-
-No.  Someone apparently has, but we have nothing to do with it.
-
-{::comment}
-TODO:
-
-* Why would people ask this if there's an Android port that can easily be found
-  on the Google Play store (I believe it's free)?  Perhaps this question should
-  be removed.
-
-* Aside: The dev team could use someone that could put out Android packages,
-  given that Android as a platform is more relevant than 90% of the platforms
-  that NetHack has been released to in the past.
-{:/}
-
 ### Has anyone ever thought that multiplayer NetHack would be a neat idea?
 
 (Sigh.)  Yes, at least a couple hundred people.  We think you can't do that in a playable way without compromising the basic idea of being able to think as long as you want about what you're doing, but many people have made many different suggestions as to the one obvious way to handle things.  If you still like the idea, you can try ***Crossfire***, a multiplayer roguelike for UNIX/X11.  Other games to check out are ***MAngband*** and ***Diablo***.
