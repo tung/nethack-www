@@ -186,19 +186,6 @@ TODO:
 
 Yes, but the new names would be just like the old ones, and wouldn't add anything new to the game.  We try to make new things add new choices instead of adding absolutely everything we can find.  (Believe it or not. :-)
 
-{::comment}
-TODO:
-
-* Instead of just shutting down ideas like this, maybe we should redirect them
-  to the community, or encourage them to write a patch and present them to
-  NetHack variant developers or something.
-
-* Aside: I think dNetHack might have these artifacts already, and if they're
-  anything like most of dNetHack's artifacts, they likely have unique and
-  interesting effects.  In fact, porting some dNetHack artifacts back to
-  mainline NetHack could be quite fruitful.
-{:/}
-
 ### Why don't you add this new role?  I've come up with ideas for a leader, nemesis, and artifact...
 
 We're still trying to get the existing roles differentiated, so adding more wouldn't make much sense.
