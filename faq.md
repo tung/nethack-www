@@ -143,16 +143,6 @@ TODO:
 
 See [Things we are NOT doing](#has-anyone-ever-thought-that-multiplayer-nethack-would-be-a-neat-idea).
 
-### I kicked a chest, and "heard a muffled shatter" but didn't find any broken glass.  What happened?
-
-We don't keep track of dungeon rubbish.
-
-{::comment}
-TODO:
-
-* I doubt this question is asked frequently.  Perhaps it should be removed.
-{:/}
-
 ### How do I get a "-" in a player name?
 
 Sorry, you can't.
@@ -197,28 +187,6 @@ TODO:
 * Aside: The dev team could use someone that could put out Android packages,
   given that Android as a platform is more relevant than 90% of the platforms
   that NetHack has been released to in the past.
-{:/}
-
-### Are you porting NetHack to Java?
-
-No.  "Porting" to Java would actually be a complete rewrite, and we have no interest in that.  There is no Java applet window port either.
-
-{::comment}
-TODO:
-
-* I sincerely doubt anybody has asked for this in many years.  Perhaps this
-  question should be removed.
-{:/}
-
-### Are you porting NetHack to Palms?
-
-No.  Other people who've written in with information about them lead us to believe that it won't work on most models, but the largest ones *might* be able to run it, if someone wrote bridge code adapting some major ***NetHack*** assumptions.  The UI would actually be the easy part -- that's split off from the rest of the code anyway.  The hard part is that Palms have only memory (no disk) and a very limited heap, while ***NetHack*** is designed to run in low memory conditions by writing everything not used to disk and likes to keep those varying, but often large numbers of monsters and objects in the heap.  A couple people have gone off to look at the exact constraints, but we haven't heard anything to suggest that actual porting has started, let alone successfully finished.  Aside from advising such people on ***NetHack*** internals, and merging their port code back in should such ever appear, we have no plans in that area.  [Some people](http://nethack-palm.sourceforge.net/) may be making progress.
-
-{::comment}
-TODO:
-
-* This is a *gargantuan* answer to a question I'm not sure anybody cares about
-  in 2015.  Perhaps this question should be removed.
 {:/}
 
 ### Has anyone ever thought that multiplayer NetHack would be a neat idea?
@@ -317,34 +285,4 @@ TODO:
   The other would be to run the TTY version of NetHack through a roguelike
   front-end program called NotEye, which requires some configuration and
   doesn't look very nice anyway.
-{:/}
-
-### Why don't you use self-extracting files to distribute NetHack?
-
-Generally, our porting teams don't use self-extracting archives for several reasons.  First, they add to the size of the binary; considering the number of platforms we support times the number of old versions that we try to keep, the extra size adds up.  Second, practically every platform today comes with de-archiving tools (or good tools can be obtained for free), so there is no need to make distributions self-extracting.  Third, relying on self-extracting archives is a bad habit for users; it is very easy to fool a user into running a "trojan horse" program.  It is much better to distribute software in a well-recognized archival format, where the contents can be inspected before expanding.
-
-{::comment}
-TODO:
-
-* I don't think anybody has asked for a self-extracting archive for well over a
-  decade, so I'd recommend simply dropping this question altogether.
-{:/}
-
----
-
-## Y2K Statement
-
-### Is NetHack version 3.4 Y2K compliant?
-
-Yes, all since 3.2.3 have been Y2K compliant.
-
-### What about earlier versions?
-
-***NetHack*** 3.2.2 and earlier versions are not Y2K compliant (the score file used 2 digit years and will be corrupted if added to after the year 1999).
-
-{::comment}
-TODO:
-
-* Y2K hasn't been relevant since, well, the year 2000.  I would recommend
-  dropping this whole section altogether.
 {:/}
