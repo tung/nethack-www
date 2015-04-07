@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 body {
     background-image: url("{{ site.baseurl }}/assets/images/papyrus.jpg");

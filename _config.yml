@@ -14,3 +14,10 @@ exclude: [Gemfile, Gemfile.lock]
 kramdown:
   input: GFM # GitHub Flavored Markdown
   smart_quotes: apos,apos,quot,quot # Disable smart quotes.
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
