@@ -1,4 +1,4 @@
-{% if page.isblogpost %}
+{% if page.is_blog_post %}
     {% assign post-title = page.title %}
     {% assign post-url = page.url %}
     {% assign post-author = page.author %}
@@ -12,7 +12,7 @@
     {% assign post-tags = post.tags %}
 {% endif %}
 <article class="post">
-    <h2 class="post-title">{% if page.isblogpost %}{{ post-title }}{% else %}<a href="{{ site.baseurl }}{{ post-url }}">{{ post-title }}</a>{% endif %}</h2>
+    <h2 class="post-title">{% if page.is_blog_post %}{{ post-title }}{% else %}<a href="{{ site.baseurl }}{{ post-url }}">{{ post-title }}</a>{% endif %}</h2>
     <div class="post-meta">
         Posted by <a class="post-author" href="{{ site.baseurl }}/blog/authors/{{ post-author }}.html">{{ post-author }}</a>
         on <a class="post-date" href="{{ site.baseurl }}{{ post-url }}">{{ post-date | date: "%B %-d, %Y" }}</a>
@@ -25,7 +25,7 @@
     </div>
     {% if include.content %}
         <div class="post-content">
-            {% if page.isblogpost %}
+            {% if page.is_blog_post %}
                 {{ content }}
             {% else %}
                 {{ post.content }}

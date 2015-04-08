@@ -25,7 +25,7 @@ defaults:
     scope:
       path: "blog"
     values:
-      isblogpage: true
+      is_blog_page: true
   -
     scope:
       path: ""
@@ -33,5 +33,5 @@ defaults:
     values:
       category: "blog"
       layout: "blog-post"
-      isblogpage: true
-      isblogpost: true
+      is_blog_page: true
+      is_blog_post: true
