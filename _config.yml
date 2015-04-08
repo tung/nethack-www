@@ -9,6 +9,10 @@ url: https://tung.github.io
 # Generate the site from a fixed timezone.
 timezone: UTC
 
+# Pagination.
+paginate: 10
+paginate_path: "/blog/page:num.html"
+
 exclude: [Gemfile, Gemfile.lock]
 
 kramdown:

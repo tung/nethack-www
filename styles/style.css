@@ -148,3 +148,17 @@ ol#copying-policies li {
 .post-meta {
     font-size: small;
 }
+
+.pagination {
+    margin: 2em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.pagination-page {
+    margin: 0 2em;
+}
+
+span.pagination-older, span.pagination-newer {
+    color: #444;
+}
