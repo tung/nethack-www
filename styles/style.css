@@ -154,6 +154,7 @@ ol#copying-policies li {
     color: #444;
     border-left: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 
 #blog-nav li:nth-child(2) {
