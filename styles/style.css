@@ -85,6 +85,10 @@ main {
     padding-top: 1px;
 }
 
+main h1 {
+    margin-bottom: 0.8em;
+}
+
 pre {
     background-color: #000;
     line-height: 1.5em;
