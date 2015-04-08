@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign author_posts = site.posts | where: "author", page.name %}
+<p>
+    {% if author_posts.size == 1 %}
+        There is <strong>1 post</strong> from this author.
+    {% else %}
+        There are <strong>{{ author_posts | size }} posts</strong> from this author.
+    {% endif %}
+</p>
+
+<p><a href="{{ site.baseurl }}/blog/authors.html">&laquo; Return to Posts by Author</a></p>
+
+{% for post in author_posts %}
+    {% include blog-post.html %}
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+title: Posts by Author
+---
+<ul>
+    {% for author in site.collections.authors.docs %}
+        {% assign author_posts = site.posts | where: "author", author.name %}
+        <li>
+            <a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
+            ({{ author_posts | size }} {% if author_posts.size == 1 %}post{% else %}posts{% endif %})
+        </li>
+    {% endfor %}
+</ul>

@@ -15,6 +15,11 @@ paginate_path: "/blog/page:num.html"
 
 exclude: [Gemfile, Gemfile.lock]
 
+collections:
+  authors:
+    output: true
+    permalink: "/blog/authors/:path.html"
+
 kramdown:
   input: GFM # GitHub Flavored Markdown
   smart_quotes: apos,apos,quot,quot # Disable smart quotes.
@@ -39,3 +44,8 @@ defaults:
       layout: "blog-post"
       is_blog_page: true
       is_blog_post: true
+  -
+    scope:
+      path: "blog/authors"
+    values:
+      layout: "author"
