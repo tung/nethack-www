@@ -77,15 +77,12 @@ nav li {
 
 main {
     border-right: 1px solid #888;
+    line-height: 1.5em;
     margin-right: 25%;
     padding-bottom: 1px;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1px;
-}
-
-#main-content {
-    line-height: 1.5em;
 }
 
 pre {
