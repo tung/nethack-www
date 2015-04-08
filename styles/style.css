@@ -137,6 +137,29 @@ ol#copying-policies li {
     margin-top: 1.5em;
 }
 
+#blog-nav {
+    padding-left: 0;
+    overflow: auto;
+    zoom: 1;
+}
+
+#blog-nav li {
+    border-left: 1px solid #888;
+    display: block;
+    float: left;
+    padding: 0.2em 0.8em 0.3em;
+}
+
+#blog-nav li:nth-child(1) {
+    color: #444;
+    border-left: 0;
+    padding-left: 0;
+}
+
+#blog-nav li:nth-child(2) {
+    border-left: 0;
+}
+
 .post {
     margin-bottom: 2em;
 }
