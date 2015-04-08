@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign tag_posts = site.tags[page.name] %}
+<p>
+    {% if tag_posts.size == 1 %}
+        There is <strong>1 post</strong> with this tag.
+    {% else %}
+        There are <strong>{{ tag_posts | size }} posts</strong> with this tag.
+    {% endif %}
+</p>
+
+<p><a href="{{ site.baseurl }}/blog/tags.html">&laquo; Return to Tags</a></p>
+
+{% for post in tag_posts %}
+    {% include blog-post.html %}
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+title: Posts by Tag
+---
+<ul>
+    {% for tag in site.collections.tags.docs %}
+        {% assign tag_posts = site.tags[tag.name] %}
+        <li>
+            <a href="{{ site.baseurl }}{{ tag.url }}">{{ tag.name }}</a>
+            ({{ tag_posts | size }} {% if tag_posts.size == 1 %}post{% else %}posts{% endif %})
+        </li>
+    {% endfor %}
+</ul>
