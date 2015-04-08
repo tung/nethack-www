@@ -20,7 +20,7 @@
             {% if forloop.first %}
                 under
             {% endif %}
-            <a class="post-tag" href="{{ site.baseurl }}/blog/tags/{{ tag }}.html">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+            <a class="post-tag" href="{{ site.baseurl }}/blog/tags/{{ tag }}.html">{{ tag }}</a>{% if forloop.last %}.{% else %}, {% endif %}
         {% endfor %}
     </div>
     {% if include.content %}
