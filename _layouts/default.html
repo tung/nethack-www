@@ -10,6 +10,10 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Blog - Feed" href="{{ site.baseurl }}/blog/feed.xml">
 <link rel="stylesheet" href="{{ site.baseurl }}/styles/style.css">
 <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+{% assign canonical = page.url | remove: "index.html" %}
+{% unless canonical == page.url %}
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ canonical }}">
+{% endunless %}
 
 </head>
 <body>
