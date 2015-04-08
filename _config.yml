@@ -23,7 +23,15 @@ defaults:
       layout: "default"
   -
     scope:
+      path: "blog"
+    values:
+      isblogpage: true
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       category: "blog"
+      layout: "blog-post"
+      isblogpage: true
+      isblogpost: true
