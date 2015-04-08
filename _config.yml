@@ -1,3 +1,8 @@
+title: NetHack
+description: >
+  The classic roguelike adventure: Descend the Mazes of Menace and retrieve the
+  Amulet of Yendor!
+
 # Location of the website relative to the domain name, used for absolute links.
 # Omit this if hosting directly on the domain.
 baseurl: /nethack-www
