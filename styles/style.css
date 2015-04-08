@@ -135,3 +135,15 @@ footer p {
 ol#copying-policies li {
     margin-top: 1.5em;
 }
+
+.post {
+    margin-bottom: 2em;
+}
+
+.post-title {
+    margin-bottom: 0.5em;
+}
+
+.post-meta {
+    font-size: small;
+}
