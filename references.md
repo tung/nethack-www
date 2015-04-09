@@ -21,6 +21,8 @@ title: NetHack References
 
 ## NetHack on the Web
 
+[*Dudley's (New, Improved) Dungeon*](http://alt.org/nethack/dudley/), a web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
+
 2012: [***NetHack***](http://techland.time.com/2012/11/15/all-time-100-video-games/slide/nethack-1987/) in ***Time***'s list of [*All-TIME 100 Video Games*](http://techland.time.com/2012/11/15/all-time-100-video-games/slide/all/).
 
 2011: [***NetHack***](http://ign.com/articles/2011/11/21/fifteen-really-really-really-hard-games) in ***IGN***'s *"Fifteen Really, Really, Really Hard Games"*.
@@ -31,17 +33,21 @@ title: NetHack References
 
 2007: [***NetHack*** meets ***EverQuest II***.](https://www.everquest2.com/news/imported-eq2-enus-1114) (At least on April Fool's Day.)
 
-[***NetHack***](http://www.partiallyclips.com/filk/nethack/) (a song parody), by [Rob Balder](http://www.partiallyclips.com/robbalder/).
-
-2004: [***The Hitchhiker's Guide to the Galaxy: Earth Edition***](http://h2g2.com/) discovers [*NetHack - the Computer Game*](http://h2g2.com/edited_entry/A2266805).
+2006: [***NetHack***](http://www.partiallyclips.com/filk/nethack/) (a song parody), by [Rob Balder](http://www.partiallyclips.com/robbalder/).
 
 2005: [*Top 11 Signs You've Got an Old Computer*](http://www.bbspot.com/News/2005/09/top_11_signs_old_computer.html).
 
+2004: [***The Hitchhiker's Guide to the Galaxy: Earth Edition***](http://h2g2.com/) discovers [*NetHack - the Computer Game*](http://h2g2.com/edited_entry/A2266805).
+
 2004: [*Play NetHack*](http://www.bbspot.com/News/2004/10/play_nethack.html), a theme song for ***NetHack***.
 
-2004: Our pet dog is one of the [*Top Ten Videogame Sidekicks*](https://web.archive.org/web/20040616111033/http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
+2004: ***NetHack*** mentioned in ***Gamespy.com***'s Developer Week: [*"The History of Computer Games - Part I"*](https://web.archive.org/web/20040906110027/http://archive.gamespy.com/legacy/articles/devweek_l.shtm).
 
-[*Dudley's (New, Improved) Dungeon*](http://alt.org/nethack/dudley/), a web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
+2004: ***Gamespy.com***'s *"The History of Computer Games"* continues with [*Worlds in Boxes* (2004)](https://web.archive.org/web/20040725052332/http://archive.gamespy.com/devcorner/january01/carlson/indexd.shtm) - and ***NetHack*** gets another [mention (2011)](https://web.archive.org/web/20110925062243/http://archive.gamespy.com/devcorner/january01/carlson/index2d.shtm).
+
+2004: ***Gamespy.com***: [***NetHack*** is simply an anomaly...](https://web.archive.org/web/20040701101647/http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm)
+
+2004: Our pet dog is one of the [*Top Ten Videogame Sidekicks*](https://web.archive.org/web/20040616111033/http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
 
 2003: [***BBspot***](http://www.bbspot.com/) on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://www.bbspot.com/News/2003/02/ati_ascii.html).
 
@@ -51,15 +57,9 @@ title: NetHack References
 
 > Ten bucks buys you an awful lot of dungeon-hacking -- it sure ain't NetHack but it ain't bad.
 
-***Gamespy.com***'s *"The History of Computer Games"* continues with [*Worlds in Boxes* (2004)](https://web.archive.org/web/20040725052332/http://archive.gamespy.com/devcorner/january01/carlson/indexd.shtm) - and ***NetHack*** gets another [mention (2011)](https://web.archive.org/web/20110925062243/http://archive.gamespy.com/devcorner/january01/carlson/index2d.shtm).
-
 2001: [***Gamespot.com***](http://www.gamespot.com/): [*Unsung Heroes - NetHack*](https://web.archive.org/web/20010501050608/http://gamespot.com/gamespot/features/pc/unsung_heroes/sec2_04.html).
 
-2004: ***Gamespy.com***: [***NetHack*** is simply an anomaly...](https://web.archive.org/web/20040701101647/http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm)
-
 2000: [***Salon*** Technology](http://www.salon.com/writer/technology/): [*"The Best Game Ever"*](http://www.salon.com/2000/01/27/nethack/).
-
-2004: ***NetHack*** mentioned in ***Gamespy.com***'s Developer Week: [*"The History of Computer Games - Part I"*](https://web.archive.org/web/20040906110027/http://archive.gamespy.com/legacy/articles/devweek_l.shtm).
 
 
 ### The Internet Oracle
