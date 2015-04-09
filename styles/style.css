@@ -92,6 +92,7 @@ main h1 {
 pre {
     background-color: #000;
     line-height: 1.5em;
+    overflow: auto;
     padding: 0.5em 1em;
 }
 
@@ -110,6 +111,22 @@ pre code {
 hr {
     border: 0;
     border-top: 1px solid #888;
+}
+
+blockquote {
+    border-left: 4px solid #888;
+    color: #444;
+    margin-left: 1.5em;
+    margin-right: 0;
+    padding: 0.5em 1em;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 footer {
