@@ -43,7 +43,7 @@ title: NetHack References
 
 2004: ***NetHack*** mentioned in ***Gamespy.com***'s Developer Week: [*"The History of Computer Games - Part I"*](https://web.archive.org/web/20040906110027/http://archive.gamespy.com/legacy/articles/devweek_l.shtm).
 
-2004: ***Gamespy.com***'s *"The History of Computer Games"* continues with [*Worlds in Boxes* (2004)](https://web.archive.org/web/20040725052332/http://archive.gamespy.com/devcorner/january01/carlson/indexd.shtm) - and ***NetHack*** gets another [mention (2011)](https://web.archive.org/web/20110925062243/http://archive.gamespy.com/devcorner/january01/carlson/index2d.shtm).
+2004: ***Gamespy.com***'s *"The History of Computer Games"* continues with [*Worlds in Boxes*](https://web.archive.org/web/20040725052332/http://archive.gamespy.com/devcorner/january01/carlson/indexd.shtm) - and ***NetHack*** gets another [mention](https://web.archive.org/web/20110925062243/http://archive.gamespy.com/devcorner/january01/carlson/index2d.shtm).
 
 2004: ***Gamespy.com***: [***NetHack*** is simply an anomaly...](https://web.archive.org/web/20040701101647/http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm)
 
