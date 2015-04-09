@@ -47,7 +47,7 @@ title: NetHack References
 
 2004: ***Gamespy.com***: [***NetHack*** is simply an anomaly...](https://web.archive.org/web/20040701101647/http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm)
 
-2004: Our pet dog is one of the [*Top Ten Videogame Sidekicks*](https://web.archive.org/web/20040616111033/http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
+2004: Our pet dog is one of ***Gamespy.com***'s [*Top Ten Videogame Sidekicks*](https://web.archive.org/web/20040616111033/http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
 
 2003: [***BBspot***](http://www.bbspot.com/) on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://www.bbspot.com/News/2003/02/ati_ascii.html).
 
