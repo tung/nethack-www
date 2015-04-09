@@ -11,7 +11,7 @@
     {% assign post-date = post.date %}
     {% assign post-tags = post.tags %}
 {% endif %}
-<article class="post">
+<article class="{% if include.excerpt %}post-excerpt{% else %}post{% endif %}">
     <h2 class="post-title">{% if page.is_blog_post %}{{ post-title }}{% else %}<a href="{{ site.baseurl }}{{ post-url }}">{{ post-title }}</a>{% endif %}</h2>
     <div class="post-meta">
         Posted by <a class="post-author" href="{{ site.baseurl }}/blog/authors/{{ post-author }}.html">{{ post-author }}</a>
@@ -30,6 +30,11 @@
             {% else %}
                 {{ post.content }}
             {% endif %}
+        </div>
+    {% elsif include.excerpt %}
+        <div class="post-content">
+            {{ post.excerpt }}
+            <p>...</p>
         </div>
     {% endif %}
 </article>

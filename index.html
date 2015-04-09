@@ -13,3 +13,13 @@ Here, the Wizard of Yendor has no power, the Oracle speaks with utmost clarity. 
 NetHack is a single player dungeon exploration roguelike game with randomly generated levels.
 Click here to find out more <a href="{{ site.baseurl }}/about.html">about NetHack</a>.
 </p>
+
+<h2>Latest from the NetHack Blog</h2>
+
+{% for post in site.posts limit: 1 %}
+    {% include blog-post.html excerpt=true %}
+{% endfor %}
+
+<p>
+Find out more at the <a href="{{ site.baseurl }}/blog/">NetHack blog</a>!
+</p>
