@@ -9,7 +9,7 @@ title: NetHack References
 ## NetHack Quotes
 
 > Nethack is one of my all-time favorite games, one I've been playing since 1200 baud was smokin' fast.
-> -- *Actor Wil Wheaton, <http://www.wilwheaton.net>*
+> -- *Actor Wil Wheaton, <http://wilwheaton.net/2002/03/seek_ye_the_amulet_of_yendor/>*
 
 > In short, NetHack 3.1.3 is the most elaborate role-playing environment you are ever likely to explore. This is a place to return again and again, each time for a different experience. You're really going to have to play it for a year or two and see for yourself.
 > -- *"Fatal Distractions" by David Gerrold*
@@ -23,57 +23,56 @@ title: NetHack References
 
 [***NetHack***](http://techland.time.com/2012/11/15/all-time-100-video-games/slide/nethack-1987/) in ***Time***'s list of [*All-TIME 100 Video Games*](http://techland.time.com/2012/11/15/all-time-100-video-games/slide/all/).
 
-[***NetHack***](http://uk.games.ign.com/articles/121/1213050p1.html) in ***IGN***'s *"Fifteen Really, Really, Really Hard Games"*.
+[***NetHack***](http://ign.com/articles/2011/11/21/fifteen-really-really-really-hard-games) in ***IGN***'s *"Fifteen Really, Really, Really Hard Games"*.
 
 [***NetHack***](http://www.gamasutra.com/view/feature/4066/game_design_essentials_20_rpgs.php?page=8) in ***Gamasutra***'s *"Game Design Essentials: 20 RPGs"*.
 
 [***NetHack***](http://www.shamusyoung.com/twentysidedtale/?p=1080) shows up in [***The DM Of The Rings***](http://www.shamusyoung.com/twentysidedtale/?p=612).
 
-[***NetHack*** meets ***EverQuest II***.](http://eq2players.station.sony.com/news_archive_content.vm?month=042007&id=1114) (At least on April Fool's Day.)
+[***NetHack*** meets ***EverQuest II***.](https://www.everquest2.com/news/imported-eq2-enus-1114) (At least on April Fool's Day.)
 
-[***NetHack***](http://www.partiallyclips.com/filk/nethack) (a song parody), by [Rob Balder](http://www.robbalder.com/).
+[***NetHack***](http://www.partiallyclips.com/filk/nethack/) (a song parody), by [Rob Balder](http://www.partiallyclips.com/robbalder/).
 
-[***BBC***](http://www.bbc.co.uk/) discovers [*NetHack - the Computer Game*](http://www.bbc.co.uk/dna/h2g2/A2266805).
+[***The Hitchhiker's Guide to the Galaxy: Earth Edition***](http://h2g2.com/) discovers [*NetHack - the Computer Game*](http://h2g2.com/edited_entry/A2266805).
 
 [*Top 11 Signs You've Got an Old Computer*](http://www.bbspot.com/News/2005/09/top_11_signs_old_computer.html).
 
 [*Play NetHack*](http://www.bbspot.com/News/2004/10/play_nethack.html), a theme song for ***NetHack***.
 
-Our pet dog is one of the [*Top Ten Videogame Sidekicks*](http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
+Our pet dog is one of the [*Top Ten Videogame Sidekicks*](https://web.archive.org/web/20040616111033/http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
 
-[*Dudley's Dungeon*](http://www.nicolaas.net/dudley/), a web comic.
+[*Dudley's (New, Improved) Dungeon*](http://alt.org/nethack/dudley/), a web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
 
-[***BBspot***](http://www.bbspot.com/) on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://bbspot.com/News/2003/02/ati_ascii.html).
+[***BBspot***](http://www.bbspot.com/) on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://www.bbspot.com/News/2003/02/ati_ascii.html).
 
-***NetHack*** makes [***techtv***](http://www.techtv.com/)'s list of [*Best Internet Games*](http://www.techtv.com/extendedplay/story/0,24330,3310903,00.html).
+***NetHack*** makes [***TechTV***](http://www.techtv.com/)'s list of [*Best Internet Games*](https://web.archive.org/web/20020604185956/http://www.techtv.com/extendedplay/story/0,24330,3310903,00.html).
 
-Backhanded compliment of the month award: [ignpsx](http://uk.psx.ign.com/)'s review of [Darkstone](http://uk.psx.ign.com/articles/163/163672p1.html):
+Backhanded compliment of the month award: [IGN](http://ign.com/)'s review of [Darkstone](http://ign.com/articles/2001/02/14/darkstone):
 
 > Ten bucks buys you an awful lot of dungeon-hacking -- it sure ain't NetHack but it ain't bad.
 
-[***Gamespy.com***](http://archive.gamespy.com/)'s *"The History of Computer Games"* continues with [*Worlds in Boxes*](http://archive.gamespy.com/devcorner/january01/carlson/indexd.shtm) - and ***NetHack*** gets another [mention](http://archive.gamespy.com/devcorner/january01/carlson/index2d.shtm).
+***Gamespy.com***'s *"The History of Computer Games"* continues with [*Worlds in Boxes*](https://web.archive.org/web/20040725052332/http://archive.gamespy.com/devcorner/january01/carlson/indexd.shtm) - and ***NetHack*** gets another [mention](https://web.archive.org/web/20110925062243/http://archive.gamespy.com/devcorner/january01/carlson/index2d.shtm).
 
-[***Gamespot.com***](http://www.gamespot.com/): [*Unsung Heroes - NetHack*](http://www.gamespot.com/gamespot/features/pc/unsung_heroes/sec2_04.html)
+[***Gamespot.com***](http://www.gamespot.com/): [*Unsung Heroes - NetHack*](https://web.archive.org/web/20010501050608/http://gamespot.com/gamespot/features/pc/unsung_heroes/sec2_04.html).
 
-[***Gamespy.com***](http://archive.gamespy.com/): [***NetHack*** is simply an anomaly...](http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm)
+***Gamespy.com***: [***NetHack*** is simply an anomaly...](https://web.archive.org/web/20040701101647/http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm)
+
+[***Salon*** Technology](http://www.salon.com/writer/technology/): [*"The Best Game Ever"*](http://www.salon.com/2000/01/27/nethack/).
+
+***NetHack*** mentioned in ***Gamespy.com***'s Developer Week: [*"The History of Computer Games - Part I"*](https://web.archive.org/web/20040906110027/http://archive.gamespy.com/legacy/articles/devweek_l.shtm).
 
 
-[***Salon*** Technology](http://www.salon.com/tech/): [*"The Best Game Ever"*](http://www.salon.com/tech/feature/2000/01/27/nethack/index.html)
+### The Internet Oracle
 
-***NetHack*** mentioned in [***Gamespy.com***](http://archive.gamespy.com/)'s [Developer Week](http://archive.gamespy.com/legacy/articles/devweek_l.shtm): [*"The History of Computer Games - Part I"*](http://archive.gamespy.com/legacy/articles/devweek_j.shtm)
+[***The Internet Oracle***](http://internetoracle.org/) contemplates:
 
-
-### The USENET Oracle
-
-[***The USENET Oracle***](http://cgi.cs.indiana.edu/~oracle) contemplates:
-
-* [encountering a woodchuck](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1366#1366-01)
-* [the amulet](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1382#1382-02)
-* [stairs](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1365#1365-02)
-* [sacrifice](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1353#1353-10)
-* [coping with loss](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1347#1347-03)
-* [NetHack in Denver](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1285#1285-01)
-* [the greatness of NetHack](http://cgi.cs.indiana.edu/~oracle/digest.cgi?N=1247#1247-08)
+* [encountering a woodchuck](http://internetoracle.org/digest.cgi?N=1366#1366-01)
+* [the Amulet of Yendor](http://internetoracle.org/digest.cgi?N=1382#1382-02)
+* [stairs](http://internetoracle.org/digest.cgi?N=1365#1365-02)
+* [sacrifice](http://internetoracle.org/digest.cgi?N=1353#1353-10)
+* [coping with loss](http://internetoracle.org/digest.cgi?N=1347#1347-03)
+* [NetHack in Denver](http://internetoracle.org/digest.cgi?N=1285#1285-01)
+* [the greatness of NetHack](http://internetoracle.org/digest.cgi?N=1247#1247-08)
 
 
 ### User Friendly
