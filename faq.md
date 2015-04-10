@@ -125,7 +125,7 @@ TODO:
 
 ### Why is it called NetHack if it's a single player game that doesn't use the net?
 
-The "Net" in ***NetHack*** refers to USENET, which was the way the developers, many of whom have never met in person, originally used to organize the work on the program.  (Learn more at [USENET on Wikipedia](https://en.wikipedia.org/wiki/Usenet).)
+The "Net" in ***NetHack*** refers to Usenet, which was the way the developers, many of whom have never met in person, originally used to organize the work on the program.  (Learn more at [Usenet on Wikipedia](https://en.wikipedia.org/wiki/Usenet).)
 
 ### How about a multi-player version?
 

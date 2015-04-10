@@ -6,7 +6,7 @@ If you find a broken or out-of-date link, [let us know](#TODO "Contact Us")!
 ## Community
 
 * [Official NetHack Forums](#TODO "forums.nethack.org")
-* [rec.games.roguelike.nethack USENET newsgroup](http://bilious.alt.org/rgrn/)
+* [rec.games.roguelike.nethack Usenet newsgroup](http://bilious.alt.org/rgrn/)
 
 {::comment}
 Work-around for kramdown formatting quirk.

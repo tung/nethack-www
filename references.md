@@ -15,7 +15,7 @@ title: NetHack References
 > -- *"Fatal Distractions" by David Gerrold*
 
 > Thank you for the latest release of gradewrecker. My GPA just went in the corner and shot itself.
-> -- *USENET posting, author unknown*
+> -- *Usenet posting, author unknown*
 
 ---
 
@@ -130,9 +130,9 @@ title: NetHack References
 
 ---
 
-## NetHack meets T-rex (USENET post)
+## NetHack meets T-rex (Usenet post)
 
-See what happens when ***NetHack*** meets T-rex - isn't USENET great?
+See what happens when ***NetHack*** meets T-rex - isn't Usenet great?
 
 ```
 Newsgroups: rec.arts.sf.written
