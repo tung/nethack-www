@@ -53,13 +53,3 @@ These links take you to content not under our control.  If it's no longer useful
 * [NetHack for RISC OS](http://www.quote-egnufeb-quote-greaterthan-colon-hash-comma-underscore-at.info/riscos/games.php)
 * [Absolute Beginner's Guide for NetHack 3.4.1](http://www.melankolia.net/nethack/nethack.guide.html)
 * [An archive of old to ancient versions of Hack and NetHack for MS DOS](ftp://ftp.sunet.se/pub/games/nethack/Msdos/NH_older)
-
----
-
-## Mirror Sites
-
-We've been told about the following mirror sites - you may get better download speeds from a mirror closer to you.
-
-* German mirror: <http://www.nethack.de/> Sascha Wostmann's NetHack Page, hosted by: <http://www.vcities.de/>
-  * Download [Download site](http://www.nethack.de/download)
-* Australia/New Zealand mirror [by HTTP](http://planetmirror.com/pub/nethack/) or [by FTP](ftp://ftp.planetmirror.com/pub/nethack/)
