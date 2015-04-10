@@ -21,6 +21,7 @@ Work-around for kramdown formatting quirk.
 {:/}
 
 * [Dudley's (New, Improved) Dungeon](http://alt.org/nethack/dudley/), a user-submitted web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
+* [@Play](http://rodneylives.blogspot.com/), a roguelike column by John Harris that often covers NetHack.  ([Archive of articles](http://www.gamesetwatch.com/column_at_play/), [article list](#TODO "@Play on NetHackWiki").)
 
 ## Information and Spoilers
 
