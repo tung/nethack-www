@@ -3,6 +3,25 @@ title: Other Links
 ---
 If you find a broken or out-of-date link, [let us know](#TODO "Contact Us")!
 
+## Community
+
+* [Official NetHack Forums](#TODO "forums.nethack.org")
+* [rec.games.roguelike.nethack USENET newsgroup](http://bilious.alt.org/rgrn/)
+
+{::comment}
+Work-around for kramdown formatting quirk.
+{:/}
+
+* [NetHack on Reddit](https://www.reddit.com/r/nethack/)
+* [Hashtag #nethack on Twitter](https://twitter.com/search?f=realtime&q=nethack&src=savs)
+* [NetHack tag on Tumblr](https://www.tumblr.com/tagged/nethack)
+
+{::comment}
+Work-around for kramdown formatting quirk.
+{:/}
+
+* [Dudley's (New, Improved) Dungeon](http://alt.org/nethack/dudley/), a user-submitted web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
+
 ## Information and Spoilers
 
 * [NetHackWiki](http://nethackwiki.com), a NetHack Wiki

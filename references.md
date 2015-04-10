@@ -21,7 +21,6 @@ title: NetHack References
 
 ## NetHack on the Web
 
-[*Dudley's (New, Improved) Dungeon*](http://alt.org/nethack/dudley/), a web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
 
 2012: [***NetHack***](http://techland.time.com/2012/11/15/all-time-100-video-games/slide/nethack-1987/) in ***Time***'s list of [*All-TIME 100 Video Games*](http://techland.time.com/2012/11/15/all-time-100-video-games/slide/all/).
 
