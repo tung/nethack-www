@@ -35,11 +35,11 @@ title: NetHack References
 
 2006: [***NetHack***](http://www.partiallyclips.com/filk/nethack/) (a song parody), by [Rob Balder](http://www.partiallyclips.com/robbalder/).
 
-2005: [*Top 11 Signs You've Got an Old Computer*](http://www.bbspot.com/News/2005/09/top_11_signs_old_computer.html).
+2005: ***BBspot***: [*Top 11 Signs You've Got an Old Computer*](http://www.bbspot.com/News/2005/09/top_11_signs_old_computer.html).
 
-2004: [***The Hitchhiker's Guide to the Galaxy: Earth Edition***](http://h2g2.com/) discovers [*NetHack - the Computer Game*](http://h2g2.com/edited_entry/A2266805).
+2004: ***The Hitchhiker's Guide to the Galaxy: Earth Edition*** discovers [*NetHack - the Computer Game*](http://h2g2.com/edited_entry/A2266805).
 
-2004: [*Play NetHack*](http://www.bbspot.com/News/2004/10/play_nethack.html), a theme song for ***NetHack***.
+2004: ***BBspot***: [*Play NetHack*](http://www.bbspot.com/News/2004/10/play_nethack.html), a theme song for ***NetHack***.
 
 2004: ***NetHack*** mentioned in ***Gamespy.com***'s Developer Week: [*"The History of Computer Games - Part I"*](https://web.archive.org/web/20040906110027/http://archive.gamespy.com/legacy/articles/devweek_l.shtm).
 
@@ -49,17 +49,17 @@ title: NetHack References
 
 2004: Our pet dog is one of ***Gamespy.com***'s [*Top Ten Videogame Sidekicks*](https://web.archive.org/web/20040616111033/http://www.gamespy.com/articles/489/489774p5.html).  Congratulations!
 
-2003: [***BBspot***](http://www.bbspot.com/) on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://www.bbspot.com/News/2003/02/ati_ascii.html).
+2003: ***BBspot*** on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://www.bbspot.com/News/2003/02/ati_ascii.html).
 
 2002: ***NetHack*** makes [***TechTV***](http://www.techtv.com/)'s list of [*Best Internet Games*](https://web.archive.org/web/20020604185956/http://www.techtv.com/extendedplay/story/0,24330,3310903,00.html).
 
-2001: Backhanded compliment of the month award: [IGN](http://ign.com/)'s review of [Darkstone](http://ign.com/articles/2001/02/14/darkstone):
+2001: Backhanded compliment of the month award: ***IGN***'s review of [***Darkstone***](http://ign.com/articles/2001/02/14/darkstone):
 
 > Ten bucks buys you an awful lot of dungeon-hacking -- it sure ain't NetHack but it ain't bad.
 
-2001: [***Gamespot.com***](http://www.gamespot.com/): [*Unsung Heroes - NetHack*](https://web.archive.org/web/20010501050608/http://gamespot.com/gamespot/features/pc/unsung_heroes/sec2_04.html).
+2001: ***Gamespot.com***: [*Unsung Heroes - NetHack*](https://web.archive.org/web/20010501050608/http://gamespot.com/gamespot/features/pc/unsung_heroes/sec2_04.html).
 
-2000: [***Salon*** Technology](http://www.salon.com/writer/technology/): [*"The Best Game Ever"*](http://www.salon.com/2000/01/27/nethack/).
+2000: ***Salon*** Technology: [*"The Best Game Ever"*](http://www.salon.com/2000/01/27/nethack/).
 
 
 ### The Internet Oracle
