@@ -1,12 +1,6 @@
 ---
 title: Other Links
 ---
-## Official Links
-
-* [Our host](https://sourceforge.net/)
-
----
-
 ## Unofficial Links
 
 These links take you to content not under our control.  If it's no longer useful, doesn't work, or is missing, all we can do is remove the link.
