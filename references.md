@@ -8,14 +8,11 @@ title: NetHack References
 
 ## NetHack Quotes
 
-> Nethack is one of my all-time favorite games, one I've been playing since 1200 baud was smokin' fast.
-> -- *Actor Wil Wheaton, <http://wilwheaton.net/2002/03/seek_ye_the_amulet_of_yendor/>*
-
-> In short, NetHack 3.1.3 is the most elaborate role-playing environment you are ever likely to explore. This is a place to return again and again, each time for a different experience. You're really going to have to play it for a year or two and see for yourself.
-> -- *"Fatal Distractions" by David Gerrold*
-
-> Thank you for the latest release of gradewrecker. My GPA just went in the corner and shot itself.
-> -- *Usenet posting, author unknown*
+{::nomarkdown}
+    {% for quote in site.data.quotes %}
+        {% include quote.html %}
+    {% endfor %}
+{:/}
 
 ---
 

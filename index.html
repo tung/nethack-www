@@ -23,3 +23,13 @@ Click here to find out more <a href="{{ site.baseurl }}/about.html">about NetHac
 <p>
 Find out more at the <a href="{{ site.baseurl }}/blog/">NetHack blog</a>!
 </p>
+
+<h2>What do people say about NetHack?</h2>
+
+{% for quote in site.data.quotes limit: 1 %}
+    {% include quote.html %}
+{% endfor %}
+
+<p>
+Find what others have said about NetHack at <a href="{{ site.baseurl }}/references.html">our collection of references</a>!
+</p>
