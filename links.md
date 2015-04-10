@@ -35,6 +35,7 @@ Work-around for kramdown formatting quirk.
 ## Unofficial NetHack Extras
 
 * [NetHack Patch Database](http://bilious.alt.org/)
+* [Leon "L" Arnott's NetHack Patches](http://l.j-factor.com/nethack/)
 * [Big X11 NetHack Font](http://hea-www.harvard.edu/~fine/Fun/nethack.html)
 
 ## Online NetHack Servers
