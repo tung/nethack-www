@@ -47,12 +47,6 @@ For a more detailed list of what letters and symbols mean, consult the [Guideboo
 
 You have the autopickup option enabled.  You can toggle it off by pressing the `@` (at) key, or via the options screen.  You can then use the `d` (drop) or `D` (multi-drop) commands to drop the heavy objects from your inventory.
 
-### I keep starving to death!
-
-You should eat the corpses of slain foes by pressing `e` while standing over them.  Make sure they're fresh, otherwise you'll gain fatal food poisoning, shown as "FoodPois" in your status line.  Some corpses will keep indefinitely, such as those of lichens and lizards.  Beware the corpses of poisonous creatures, since their poison (not to be confused with food poisoning) will hurt you unless your character is poison-resistant.
-
-If you're still starving, you can try `#pray`ing to your deity for help while weak or fainting from hunger.
-
 ### How do I use doors?
 
 Doors can be `o`pened and `c`losed.  If a door is locked, you may need to kick it down using `Ctrl+D`.
@@ -64,6 +58,12 @@ Press `<` to go upstairs, and `>` to go downstairs.
 ### I can't find any stairs down!  Am I stuck?
 
 There may be hidden doors or passages on the level; press `s` to search next to walls and at the ends of dead-end corridors to find them.  You may need to search a location multiple times before any secrets are revealed.
+
+### I keep starving to death!
+
+You should eat the corpses of slain foes by pressing `e` while standing over them.  Make sure they're fresh, otherwise you'll gain fatal food poisoning, shown as "FoodPois" in your status line.  Some corpses will keep indefinitely, such as those of lichens and lizards.  Beware the corpses of poisonous creatures, since their poison (not to be confused with food poisoning) will hurt you unless your character is poison-resistant.
+
+If you're still starving, you can try `#pray`ing to your deity for help while weak or fainting from hunger.
 
 ### My options were reset when I started the game again!
 
