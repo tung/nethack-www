@@ -27,7 +27,7 @@ Work-around for kramdown formatting quirk.
 
 * [NetHackWiki](http://nethackwiki.com), a NetHack Wiki
 * [Absolute Beginner's Guide for NetHack 3.4.1](http://www.melankolia.net/nethack/nethack.guide.html)
-* [Nethack reference card](http://www.webfroot.co.nz/projects/nethack/)
+* [NetHack reference card](http://www.webfroot.co.nz/projects/nethack/)
 * [Boudewijn Waijers' NetHack Page](ftp://roguelikes.sauceforge.net/pub/nethack)
 * [Dylan O'Donnell's spoiler page](http://www.spod-central.org/~psmith/nh/)
 * [Ali's NetHack Page](http://www.juiblex.co.uk/nethack.html)
