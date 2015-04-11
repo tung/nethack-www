@@ -18,6 +18,10 @@ a[href="#"], a[href="#TODO"] {
     color: #c00;
 }
 
+a:visited {
+    color: #3f1367;
+}
+
 header {
     border-bottom: 1px solid #888;
     padding: 1em;
