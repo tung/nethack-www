@@ -203,3 +203,21 @@ ol#copying-policies li {
 span.pagination-older, span.pagination-newer {
     color: #444;
 }
+
+.screenshot {
+    background-color: #ddd;
+    border: 1px solid #888;
+    margin: 1.5em auto;
+    max-width: 700px;
+    padding: 7px;
+    text-align: center;
+}
+
+.screenshot img {
+    max-width: 100%;
+}
+
+.screenshot p {
+    color: #333;
+    margin: 0;
+}

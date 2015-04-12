@@ -1,0 +1,9 @@
+{% assign screenshot_meta_path = include.file | replace: ".png" | append: ".md" | prepend: "_screenshots/" %}
+{% assign screenshot_meta = site.collections.screenshots.docs | where: "relative_path", screenshot_meta_path | first %}
+{% assign thumb_path = include.file | prepend: "/assets/images/screenshots/thumb/" %}
+{% assign thumb = site.static_files | where: "path", thumb_path | first %}
+<div class="screenshot">
+    <a href="{{ site.baseurl }}/assets/images/screenshots/full/{{ include.file }}"><img src="{{ site.baseurl }}/assets/images/screenshots/{% if thumb %}thumb{% else %}full{% endif %}/{{ include.file }}" alt="{{ include.file }}"></a>
+    {{ screenshot_meta.content }}
+    <!-- license: {{ screenshot_meta.license }}; source: {{ screenshot_meta.sourceurl }} -->
+</div>

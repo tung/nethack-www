@@ -21,6 +21,7 @@ paginate_path: "/blog/page:num"
 exclude: [Gemfile, Gemfile.lock]
 
 collections:
+  screenshots:
   authors:
     output: true
     permalink: "/blog/authors/:path.html"
