@@ -16,7 +16,7 @@ Although NetHack is a single-player game, it can still be played online.  By con
 
 ## Online NetHack Servers
 
-NetHack servers exist in various geographical locations, so choosing one close to you will reduce lag.  Different servers may also host different versions of NetHack, and sometimes even NetHack variants, so look around.  Examples of NetHack servers are [nethack.alt.org (NAO)](http://alt.org/nethack/) and [nethack.xd.cm](https://nethack.xd.cm/).
+NetHack servers exist in various geographical locations, so choosing one close to you will reduce lag.  Different servers may also host different versions of NetHack, and sometimes even NetHack variants, so look around.  Examples of NetHack servers are [nethack.alt.org](http://alt.org/nethack/) (commonly known as *NAO*) and [nethack.xd.cm](https://nethack.xd.cm/).
 
 [List of NetHack servers on the NetHack Wiki.](http://nethackwiki.com/wiki/Public_server)
 

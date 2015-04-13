@@ -38,10 +38,6 @@ Work-around for kramdown formatting quirk.
 * [Leon "L" Arnott's NetHack Patches](http://l.j-factor.com/nethack/)
 * [Big X11 NetHack Font](http://hea-www.harvard.edu/~fine/Fun/nethack.html)
 
-## Online NetHack Servers
-
-* [Public NetHack Server](http://alt.org/nethack/)
-
 ## Unofficial Ports, Packages and Interfaces
 
 * [Vulture's Eye](http://www.darkarts.co.za/vulture-for-nethack), NetHack with a unique isometric view
