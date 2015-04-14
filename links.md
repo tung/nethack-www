@@ -5,7 +5,7 @@ If you find a broken or out-of-date link, [let us know](#TODO "Contact Us")!
 
 ## Community
 
-* [Official NetHack Forums](#TODO "forums.nethack.org")
+* [Official NetHack Forums]({{ site.forums_url }})
 * [rec.games.roguelike.nethack Usenet newsgroup](http://bilious.alt.org/rgrn/)
 
 {::comment}

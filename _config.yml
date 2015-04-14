@@ -11,6 +11,12 @@ baseurl: /nethack-www
 #url: http://www.nethack.org
 url: https://tung.github.io
 
+# Fill these URLs in when their respective systems go live.
+code_repository_url: "#TODO"
+public_bug_tracker_url: "#TODO"
+legacy_bug_search_url: "#TODO"
+forums_url: "#TODO"
+
 # Generate the site from a fixed timezone.
 timezone: UTC
 
