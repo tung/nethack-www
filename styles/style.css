@@ -205,12 +205,18 @@ span.pagination-older, span.pagination-newer {
 }
 
 .screenshot {
+    margin: 1.5em auto;
+    max-width: 716px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.screenshot div {
     background-color: #ddd;
     border: 1px solid #888;
-    margin: 1.5em auto;
-    max-width: 700px;
+    display: inline-block;
+    max-width: 100%;
     padding: 7px;
-    text-align: center;
 }
 
 .screenshot img {
