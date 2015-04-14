@@ -1,7 +1,7 @@
 ---
 title: Other Links
 ---
-If you find a broken or out-of-date link, [let us know](#TODO "Contact Us")!
+If you find a broken or out-of-date link, [let us know]({{ site.baseurl }}/contact-us.html#website-issues)!
 
 ## Community
 
