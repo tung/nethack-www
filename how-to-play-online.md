@@ -8,9 +8,7 @@ Although NetHack is a single-player game, it can still be played online.  By con
 
 ***Note:*** *Do NOT contact us with questions or issues about programs and servers related to playing NetHack online; they are unaffiliated with the DevTeam.*
 
-{::nomarkdown}
-{% include screenshot.html file='putty-nao-gameplay.png' %}
-{:/}
+{% include screenshot.html file='putty-nao-gameplay.png' markdown=true %}
 
 ---
 
@@ -32,15 +30,11 @@ If you're using Windows, you'll need to download a **telnet client** such as [Pu
 
 First, run `putty.exe`.  At the configuration screen, select "Telnet" for you connection type, enter `nethack.alt.org` as the host name, then click the "Open" button.
 
-{::nomarkdown}
-{% include screenshot.html file='putty-telnet.png' %}
-{:/}
+{% include screenshot.html file='putty-telnet.png' markdown=true %}
 
 With any luck, you should be presented with something like this:
 
-{::nomarkdown}
-{% include screenshot.html file='putty-nao.png' %}
-{:/}
+{% include screenshot.html file='putty-nao.png' markdown=true %}
 
 Follow the on-screen instructions to watch other players or register to play on the server.
 
@@ -56,15 +50,11 @@ If you're using Windows, you'll need an **SSH client**, and it just so happens t
 
 Run `putty.exe`.  At the configuration screen, select "SSH" for your connection type, enter `nethack@alt.org` as the host name (i.e. username `nethack` and host name `alt.org`), then click the "Open" button.
 
-{::nomarkdown}
-{% include screenshot.html file='putty-ssh.png' %}
-{:/}
+{% include screenshot.html file='putty-ssh.png' markdown=true %}
 
 The first time you connect, you'll be asked to trust the host key, so select 'Yes'.
 
-{::nomarkdown}
-{% include screenshot.html file='putty-host-key.png' %}
-{:/}
+{% include screenshot.html file='putty-host-key.png' markdown=true %}
 
 From here you should see the server's welcome screen, similar to connecting via telnet.
 
@@ -81,9 +71,7 @@ A few caveats:
 * For best results, you'll need to set the `vt_tiledata` option in the configuration file for your account.
 * If you're watching another player and they do not have `vt_tiledata` enabled, the graphics may appear jumbled; press the 'Home' key to toggle graphics on and off.
 
-{::nomarkdown}
-{% include screenshot.html file='ebonhack-default.png' %}
-{:/}
+{% include screenshot.html file='ebonhack-default.png' markdown=true %}
 
 ---
 
