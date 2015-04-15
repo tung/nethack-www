@@ -2,7 +2,7 @@
 layout: null
 ---
 body {
-    background-image: url("{{ site.baseurl }}/assets/images/papyrus.jpg");
+    background-image: url("{{ site.baseurl }}/images/papyrus.jpg");
     font-family: "Times New Roman", serif;
     margin: 0;
     padding: 0;
