@@ -6,12 +6,8 @@
     {% if include.title %}
         {% assign nav-li-title = include.title %}
     {% else %}
-        {% comment %}
-            There should only be one matching page,
-            but `where` returns an array.
-        {% endcomment %}
-        {% assign nav-li-pages = site.pages | where: "url", include.url %}
-        {% assign nav-li-title = nav-li-pages[0].title %}
+        {% assign nav-li-page = site.pages | where: "url", include.url | first %}
+        {% assign nav-li-title = nav-li-page.title %}
     {% endif %}
 
     {% if page.url == include.url %}
