@@ -1,7 +1,7 @@
 ---
 title: How to Play Online
 ---
-Although NetHack is a single-player game, it can still be played online.  By connecting to a NetHack server, you can track and live-report your deaths, ascensions and in-game accomplishments, as well as spectate other players' games and let them spectate yours.  Playing online also allows you to participate in community-driven NetHack tournaments such as [Junethack](http://nethackwiki.com/wiki/Junethack) and [/dev/null](http://nethackwiki.com/wiki//dev/null/nethack_tournament).
+Although NetHack is a single-player game, it can still be played online.  By connecting to a NetHack server, you can track and live-report your deaths, ascensions and in-game accomplishments, as well as spectate other players' games and let them spectate yours.  You can even find each other's bones files!  Playing online also allows you to participate in community-driven NetHack tournaments such as [Junethack](http://nethackwiki.com/wiki/Junethack) and [/dev/null](http://nethackwiki.com/wiki//dev/null/nethack_tournament).
 
 * table of contents
 {:toc}
