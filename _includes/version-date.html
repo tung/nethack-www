@@ -3,7 +3,17 @@
 {% endcapture %}
 {% if include.version.current == true %}
     <div id="version-date" class="version-new">
-        <p>{{ version_date }}</p>
+        <p>
+            {{ version_date }}
+            {% if include.version == site.data.versions[0] %}
+                {% assign version_downloads_url = "/" | append: include.version.path | append: "/downloads.html" %}
+                {% if page.url == version_downloads_url %}
+                    <strong>Download it here!</strong>
+                {% else %}
+                    <strong><a href="{{ site.baseurl }}{{ version_downloads_url }}">Download it now!</a></strong>
+                {% endif %}
+            {% endif %}
+        </p>
     </div>
 {% else %}
     <div id="version-date" class="version-old">
