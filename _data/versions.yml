@@ -1,0 +1,73 @@
+#
+# The version of NetHack that new players should download should be placed on
+# the top of this list.
+#
+# Non-obsolete versions of NetHack should be marked `current: true`, for e.g.
+# the latest version and latest bugfix release.
+#
+-
+  version: 3.4.3
+  release_date: 2003-12-08 00:00:00 +0000
+  current: true
+  path: v343
+  sub_nav:
+    - release.html
+    - downloads.html
+    - guidebook.html
+    - bugs.html
+    - spoiler.html
+-
+  version: 3.4.2
+  release_date: 2003-08-31 00:00:00 +0000
+  path: v342
+  sub_nav:
+    - release.html
+    - downloads.html
+    - guidebook.html
+    - bugs.html
+    - spoiler.html
+-
+  version: 3.4.1
+  release_date: 2003-02-23 00:00:00 +0000
+  path: v341
+  sub_nav:
+    - release.html
+    - downloads.html
+    - guidebook.html
+    - bugs.html
+    - spoiler.html
+-
+  version: 3.4.0
+  release_date: 2002-03-20 00:00:00 +0000
+  path: v340
+  sub_nav:
+    - release.html
+    - downloads.html
+    - guidebook.html
+    - bugs.html
+    - spoiler.html
+-
+  version: 3.3.1
+  release_date: 2000-08-10 00:00:00 +0000
+  path: v331
+  sub_nav:
+    - release.html
+    - downloads.html
+    - bugs.html
+    - spoiler.html
+-
+  version: 3.3.0
+  release_date: 1999-12-10 00:00:01 +0000
+  path: v330
+  sub_nav:
+    - release.html
+    - downloads.html
+    - bugs.html
+    - spoiler.html
+-
+  version: 3.2.3
+  release_date: 1999-12-10 00:00:00 +0000
+  path: v323
+  sub_nav:
+    - release.html
+    - downloads.html

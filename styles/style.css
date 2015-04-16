@@ -227,3 +227,18 @@ span.pagination-older, span.pagination-newer {
     color: #333;
     margin: 0;
 }
+
+#version-date {
+    padding: 0 1em;
+    text-align: center;
+}
+
+.version-new {
+    background-color: #8f8;
+    border: 1px solid #080;
+}
+
+.version-old {
+    background-color: #f88;
+    border: 1px solid #800;
+}

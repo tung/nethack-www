@@ -1,11 +1,10 @@
 <div>
     <h2>Older Versions</h2>
     <ul>
-        <li><a href="#">Version 3.4.2</a></li>
-        <li><a href="#">Version 3.4.1</a></li>
-        <li><a href="#">Version 3.4.0</a></li>
-        <li><a href="#">Version 3.3.1</a></li>
-        <li><a href="#">Version 3.3.0</a></li>
-        <li><a href="#">Version 3.2.3</a></li>
+        {% for older_version in site.data.versions offset: 1 %}
+            {% assign older_version_url = "/" | append: older_version.path | append: "/" | append: older_version.sub_nav[0] %}
+            {% assign older_version_title = "Version " | append: older_version.version %}
+            {% include nav-li.html url=older_version_url title=older_version_title %}
+        {% endfor %}
     </ul>
 </div>

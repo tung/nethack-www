@@ -1,0 +1,12 @@
+{% capture version_date %}
+{{ site.title }} {{ include.version.version }} released on {{ include.version.release_date | date: "%B %d, %Y" }}.
+{% endcapture %}
+{% if include.version.current == true %}
+    <div id="version-date" class="version-new">
+        <p>{{ version_date }}</p>
+    </div>
+{% else %}
+    <div id="version-date" class="version-old">
+        <p>{{ version_date }} <strong>This is NOT the current version!</strong></p>
+    </div>
+{% endif %}

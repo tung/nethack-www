@@ -1,11 +1,12 @@
+{% assign latest_version = site.data.versions[0] %}
 <div>
-    <h2>Latest Version: 3.4.3</h2>
+    <h2>Latest Version: {{ latest_version.version }}</h2>
     <ul>
-        <li><a href="#">Version 3.4.3</a></li>
-        <li><a href="#">3.4.3 Release Notes</a></li>
-        <li><a href="#">3.4.3 Downloads</a></li>
-        <li><a href="#">3.4.3 Guidebook</a></li>
-        <li><a href="#">3.4.3 Bug List</a></li>
-        <li><a href="#">3.4.3 Spoiler Bugs</a></li>
+        {% for version_page in latest_version.sub_nav %}
+            {% assign version_page_url = "/" | append: latest_version.path | append: "/" | append: version_page %}
+            {% assign version_page_info = site.pages | where: "url", version_page_url | first %}
+            {% assign version_page_title = version_page_info.title | prepend: " " | prepend: latest_version.version %}
+            {% include nav-li.html url=version_page_url title=version_page_title %}
+        {% endfor %}
     </ul>
 </div>

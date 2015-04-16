@@ -5,7 +5,27 @@
 <head>
 
 <meta charset="utf-8">
-<title>{{ page.title }}{% if page.is_blog_page %} - Blog{% endif %} - {{ site.title }} 3.4.3</title>
+
+{% comment %}
+    Find out if this is a version-specific page by checking if its path starts
+    with one of the version path prefixes.  This would be *much* simpler if
+    Liquid had a `startswith` operator...
+{% endcomment %}
+
+{% assign dummy = "||zx||" %}
+{% assign dummy_page_path = page.path | prepend: dummy %}
+{% for version in site.data.versions %}
+    {% assign dummy_version_path = version.path | prepend: dummy %}
+    {% if dummy_page_path contains dummy_version_path %}
+        {% assign page_version = version %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% assign latest_version = site.data.versions[0] %}
+
+<title>{% if page_version and page_version.current != true %}[OLD] {% endif %}{{ page.title }}{% if page.is_blog_page %} - Blog{% endif %} - {{ site.title }} {% if page_version %}{{ page_version.version }}{% else %}{{ latest_version.version }}{% endif %}</title>
+
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Blog - Feed" href="{{ site.baseurl }}/blog/feed.xml">
 <link rel="stylesheet" href="{{ site.baseurl }}/styles/style.css">
@@ -25,13 +45,19 @@
 <main>
     {% if page.is_blog_page %}
         {% include blog-nav.html %}
+    {% elsif page_version %}
+        {% include version-nav.html version=page_version %}
+    {% endif %}
+
+    {% if page_version %}
+        {% include version-date.html version=page_version %}
     {% endif %}
 
     {% comment %}
-        Blogs include their own headings which have their own titles.
+        Blog posts include their own headings which have their own titles.
     {% endcomment %}
     {% unless page.is_blog_post %}
-        <h1>{{ page.title }}{% if page.is_blog_page %} - Blog{% endif %}</h1>
+        <h1>{{ page.title }}{% if page.is_blog_page %} - Blog{% elsif page_version %} - {{ site.title }} {{ page_version.version }}{% endif %}</h1>
     {% endunless %}
 
     {{ content }}
