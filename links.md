@@ -27,6 +27,7 @@ Work-around for kramdown formatting quirk.
 ## Information and Spoilers
 
 * [NetHackWiki](http://nethackwiki.com), a NetHack Wiki
+  * [More NetHack-related links on the NetHack Wiki](http://nethackwiki.com/wiki/Websites)
 * [Absolute Beginner's Guide for NetHack 3.4.1](http://www.melankolia.net/nethack/nethack.guide.html)
 * [NetHack reference cards](http://nethackwiki.com/wiki/Reference_card)
 * [Ali's NetHack Page](http://www.juiblex.co.uk/nethack.html)
