@@ -41,3 +41,8 @@ Check out more screenshots on <a href="{{ site.baseurl }}/screenshots.html">our 
 <p>
 Find what others have said about NetHack at <a href="{{ site.baseurl }}/references.html">our collection of references</a>!
 </p>
+
+<h2>Download NetHack {{ site.data.versions[0].version }}</h2>
+
+{% assign latest_version = site.data.versions[0] %}
+{% include version-date.html version=latest_version %}
