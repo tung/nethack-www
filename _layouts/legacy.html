@@ -19,20 +19,11 @@ layout: null
 
 {% include html-title.html page_version=page_version%}
 {% include html-meta.html %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/legacy.css">
 {% if page.legacy.style %}
     <link rel="stylesheet" href="{{ site.baseurl }}/styles/{{ page.legacy.style }}">
 {% endif %}
-
-<style>
-body {
-    margin: 1em auto;
-    max-width: 1000px;
-}
-
-#legacy-back-link {
-    font-weight: bold;
-}
-</style>
 
 </head>
 <body>
