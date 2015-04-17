@@ -1,1 +1,1 @@
-<h1>{{ page.title }}{% if page.is_blog_page %} - Blog{% elsif include.page_version %} - {{ site.title }} {{ include.page_version.version }}{% endif %}</h1>
+<h1>{% if include.page_version and include.page_version.current != true %}[OLD] {% endif %}{{ page.title }}{% if page.is_blog_page %} - Blog{% elsif include.page_version %} - {{ site.title }} {{ include.page_version.version }}{% endif %}</h1>
