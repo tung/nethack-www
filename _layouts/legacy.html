@@ -1,0 +1,67 @@
+---
+layout: null
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+{% assign dummy = "||zx||" %}
+{% assign dummy_page_path = page.path | prepend: dummy %}
+{% for version in site.data.versions %}
+    {% assign dummy_version_path = version.path | prepend: dummy %}
+    {% if dummy_page_path contains dummy_version_path %}
+        {% assign page_version = version %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% include html-title.html page_version=page_version%}
+{% include html-meta.html %}
+{% if page.legacy.style %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles/{{ page.legacy.style }}">
+{% endif %}
+
+<style>
+body {
+    margin: 1em auto;
+    max-width: 1000px;
+}
+
+#legacy-back-link {
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+{% if page_version %}
+    {% include version-date.html version=page_version %}
+{% endif %}
+
+{% if page.legacy.back_link %}
+    {% comment %}
+        Use a leading slash for the URL for an absolute link,
+        otherwise a relative link will be created instead.
+    {% endcomment %}
+    {% assign back_url = page.legacy.back_link.url %}
+    {% assign back_text = page.legacy.back_link.text %}
+    <p id="legacy-back-link">
+        {% assign dummy = "||zx||" %}
+        {% assign dummy_back_url = back_url | prepend: dummy %}
+        {% assign start_slash = "/" | prepend: dummy %}
+        {% if dummy_back_url contains start_slash %}
+            <a href="{{ site.baseurl }}{{ back_url | remove: 'index.html' }}">&laquo; Return to {{ back_text }}</a>
+        {% else %}
+            <a href="{{ back_url | remove: 'index.html' }}">&laquo; Return to {{ back_text }}</a>
+        {% endif %}
+    </p>
+{% endif %}
+
+{% include page-title.html page_version=page_version %}
+{{ content }}
+
+</body>
+</html>

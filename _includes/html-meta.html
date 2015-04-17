@@ -1,0 +1,7 @@
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} Blog - Feed" href="{{ site.baseurl }}/blog/feed.xml">
+<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+{% if page.url contains "index.html" %}
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}">
+{% endif %}
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/common.css">

@@ -1,0 +1,4273 @@
+---
+layout: legacy
+title: Known Bugs
+legacy:
+  style: legacy-bugs.css
+  back_link:
+    text: NetHack 3.4.3 Release Notes
+    url: release.html
+---
+<dl>
+<dt><a href="bugs.html#C">Core Bugs (common to all systems)</a>
+<dt><a href="bugs.html#W">Windows-only bugs</a>
+<dt><a href="bugs.html#X">X11-only bugs</a>
+<dt><a href="bugs.html#L">Linux-only bugs</a>
+<dt><a href="bugs.html#M">Macintosh-only bugs</a>
+<dt><a href="bugs.html#Q">Qt-only bugs</a>
+<dt><a href="bugs.html#CE">Windows-CE issues</a>
+<dt><a href="bugs.html#S">Build-from-source issues (all platforms)</a>
+<dt><a href="spoiler.html">Spoiler bugs</a>
+<dd>
+(These are bugs that merely reading about may spoil your enjoyment of the
+game or give away answers to puzzles that should be solved.  They are on
+a different page to keep you from seeing them by accident in the main lists.)
+</dl>
+<hr>
+<h2>Bugs lists for previous versions</h2>
+<ul>
+<li><a href="../v330/bugs.html">3.3.0 bugs list</a>       
+<li><a href="../v330/spoiler.html">3.3.0 spoiler bugs list</a>
+<li><a href="../v331/bugs.html">3.3.1 bugs list</a>       
+<li><a href="../v331/spoiler.html">3.3.1 spoiler bugs list</a>
+<li><a href="../v340/bugs.html">3.4.0 bugs list</a>       
+<li><a href="../v340/spoiler.html">3.4.0 spoiler bugs list</a>
+<li><a href="../v341/bugs.html">3.4.1 bugs list</a>       
+<li><a href="../v341/spoiler.html">3.4.1 spoiler bugs list</a>
+<li><a href="../v342/bugs.html">3.4.2 bugs list</a>       
+<li><a href="../v342/spoiler.html">3.4.2 spoiler bugs list</a>
+</ul>
+<hr>
+<h3><a name="C">Core Bugs (common to all systems)</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 11 -->
+<tr>
+<td><a name="C341-1">C341-1</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Monsters affected by stinking cloud always get angry at the hero even if the
+hero did not create the cloud..
+
+<td>
+</tr>
+<!-- line 16 -->
+<tr>
+<td><a name="C341-4">C341-4</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>opthelp does not list use_inverse
+
+<td>
+</tr>
+<!-- line 21 -->
+<tr>
+<td><a name="C341-5">C341-5</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>When you see your pet move, the pet may be referred to as "it".
+
+<td>
+</tr>
+<!-- line 26 -->
+<tr>
+<td><a name="C341-7">C341-7</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Skilled or expert caster of fireball/cone of cold can't target a monster
+known only by infravision or ESP.
+
+<td>
+</tr>
+<!-- line 31 -->
+<tr>
+<td><a name="C341-10">C341-10</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Fruit names ending in "us" are incorrectly considered plural.
+
+<td>
+</tr>
+<!-- line 39 -->
+<tr>
+<td><a name="C341-18">C341-18</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>ki-rins and couatls can wear (and may have) armor.
+
+<td>
+</tr>
+<!-- line 75 -->
+<tr>
+<td><a name="C342-12">C342-12</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>There are a number of places that misuse "your".
+
+<td>
+</tr>
+<!-- line 79 -->
+<tr>
+<td><a name="C342-13">C342-13</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hangup can cause loss of objects being moved internally.
+
+<td>
+</tr>
+<!-- line 94 -->
+<tr>
+<td><a name="C342-16">C342-16</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If you self-genocide while polymorphed, the death message makes no sense.
+
+<td>
+</tr>
+<!-- line 98 -->
+<tr>
+<td><a name="C342-19">C342-19</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Things that can kill you in the future (like stoning) can cause messages
+to show up out of order.
+
+<td>
+</tr>
+<!-- line 103 -->
+<tr>
+<td><a name="C342-22">C342-22</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Monsters can hide under cockatrice corpses without getting stoned.
+
+<td>
+</tr>
+<!-- line 114 -->
+<tr>
+<td><a name="C342-31">C342-31</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>You can get a message telling you a monster wields a weapon it already was
+wielding.
+
+<td>
+</tr>
+<!-- line 119 -->
+<tr>
+<td><a name="C342-36">C342-36</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If unable to see yourself while invisible and you are bestowed a spellbook,
+it doesn't show up on the display.
+
+<td>
+</tr>
+<!-- line 126 -->
+<tr>
+<td><a name="C342-46">C342-46</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cleric cast lightning doesn't blind as other lightning does.
+
+<td>
+</tr>
+<!-- line 131 -->
+<tr>
+<td><a name="C342-50">C342-50</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If you're hiding on the ceiling and try to #sit, you automatically unhide.
+
+<td>
+</tr>
+<!-- line 135 -->
+<tr>
+<td><a name="C342-51">C342-51</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The game thinks trappers hide on the ceiling.
+
+<td>
+</tr>
+<!-- line 139 -->
+<tr>
+<td><a name="C342-54">C342-54</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Statues of unique monsters in bones files are not handled correctly.
+
+<td>
+</tr>
+<!-- line 149 -->
+<tr>
+<td><a name="C343-1">C343-1</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>At a pit the game can give messages with poor grammar.
+
+<td>
+</tr>
+<!-- line 154 -->
+<tr>
+<td><a name="C343-2">C343-2</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Wielded silver arrows don't cause silver damage on some silver-haters.
+
+<td>
+</tr>
+<!-- line 168 -->
+<tr>
+<td><a name="C343-3">C343-3</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>In the ranger quest, monsters can end up off the map to the left.
+
+<td>
+</tr>
+<!-- line 172 -->
+<tr>
+<td><a name="C343-4">C343-4</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>On the Rogue level, tunnelling through rock doesn't leave a passage.
+
+<td>
+</tr>
+<!-- line 177 -->
+<tr>
+<td><a name="C343-5">C343-5</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>In wizard mode, level teleport in the endgame can cause a crash if confused.
+
+<td>
+</tr>
+<!-- line 182 -->
+<tr>
+<td><a name="C343-6">C343-6</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>You can #sit on an object at the bottom of a pit that you are not in.
+
+<td>
+</tr>
+<!-- line 186 -->
+<tr>
+<td><a name="C343-7">C343-7</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When a steed pushes a boulder into a pool, the message misuses "you".
+
+<td>
+</tr>
+<!-- line 195 -->
+<tr>
+<td><a name="C343-8">C343-8</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Plural of Nazgul is Nazgul - not Nazguls.
+
+<td>
+</tr>
+<!-- line 199 -->
+<tr>
+<td><a name="C343-9">C343-9</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Trap messages referring to a named steed when hallucinating are poorly worded.
+
+<td>
+</tr>
+<!-- line 203 -->
+<tr>
+<td><a name="C343-10">C343-10</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If there is a corpse in a pit, you have to enter the pit to pick it up but not
+to eat it.
+
+<td>
+</tr>
+<!-- line 232 -->
+<tr>
+<td><a name="C343-11">C343-11</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If you ask for help ('?') at a "what direction" prompt, you don't get to enter a
+direction afterward if the cmdassist option is set.
+
+<td>
+</tr>
+<!-- line 237 -->
+<tr>
+<td><a name="C343-12">C343-12</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>You can't use '>' to enter a pit.
+
+<td>
+</tr>
+<!-- line 241 -->
+<tr>
+<td><a name="C343-13">C343-13</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>On polymorph, you can get the message "It turns into it".
+
+<td>
+</tr>
+<!-- line 250 -->
+<tr>
+<td><a name="C343-14">C343-14</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The initial and any tombstone message resulting from eating an identified
+artifact is gramatically incorrect.
+
+<td>
+</tr>
+<!-- line 255 -->
+<tr>
+<td><a name="C343-15">C343-15</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>You can get a message that an invisible monster looks much better.
+
+<td>
+</tr>
+<!-- line 259 -->
+<tr>
+<td><a name="C343-16">C343-16</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Player polymorphed as a xorn can't pick up items in pits.
+
+<td>
+</tr>
+<!-- line 263 -->
+<tr>
+<td><a name="C343-17">C343-17</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>After polymorphing into a xorn and returning to human form, player can
+be stuck in a pit that isn't there.
+
+<td>
+</tr>
+<!-- line 268 -->
+<tr>
+<td><a name="C343-18">C343-18</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Scaring a mimicing mimic gives an incorrect "turns to flee" message.
+
+<td>
+</tr>
+<!-- line 272 -->
+<tr>
+<td><a name="C343-19">C343-19</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Dipping acid in a fountain may not destroy the acid.
+
+<td>
+</tr>
+<!-- line 276 -->
+<tr>
+<td><a name="C343-20">C343-20</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>When dying immediately on entering a level, the map may show you dying on
+the previous level.
+
+<td>This doesn't matter - mostly.
+
+</tr>
+<!-- line 283 -->
+<tr>
+<td><a name="C343-21">C343-21</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Pets can be pulled through closed doors with a leash.
+
+<td>
+</tr>
+<!-- line 292 -->
+<tr>
+<td><a name="C343-22">C343-22</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>You can untrap a monster in a pit while levitating.
+
+<td>
+</tr>
+<!-- line 296 -->
+<tr>
+<td><a name="C343-23">C343-23</a>
+<td><a href="bugs.html#state_H">Help</a>
+<td>Dungeon collapses after vault guard fails to lead you out.
+
+<td>
+</tr>
+<!-- line 300 -->
+<tr>
+<td><a name="C343-24">C343-24</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Documented default for option "null" is "off"; default is actually "on".
+
+<td>
+</tr>
+<!-- line 304 -->
+<tr>
+<td><a name="C343-25">C343-25</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>You can trip over a cockatrice corpse safely.
+
+<td>
+</tr>
+<!-- line 308 -->
+<tr>
+<td><a name="C343-26">C343-26</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A frozen swamp may be called a moat.
+
+<td>
+</tr>
+<!-- line 312 -->
+<tr>
+<td><a name="C343-27">C343-27</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Kicked objects do not slide properly on air or water levels.
+
+<td>
+</tr>
+<!-- line 316 -->
+<tr>
+<td><a name="C343-28">C343-28</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>There are several places that can't tell the diffence between a "hat" and
+a "helmet."
+
+<td>
+</tr>
+<!-- line 321 -->
+<tr>
+<td><a name="C343-29">C343-29</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When taking things out of a bag of holding, messages may say "lifting" instead
+of "removing."
+
+<td>
+</tr>
+<!-- line 326 -->
+<tr>
+<td><a name="C343-30">C343-30</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cursed scroll of destroy armor on cursed armor doesn't always interact correctly.
+
+<td>
+</tr>
+<!-- line 330 -->
+<tr>
+<td><a name="C343-31">C343-31</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If you hit a cockatrice with a weapon that breaks, you can be stoned.
+
+<td>
+</tr>
+<!-- line 338 -->
+<tr>
+<td><a name="C343-32">C343-32</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>When blind and levitating, the hero can still discover stairs.
+
+<td>
+</tr>
+<!-- line 343 -->
+<tr>
+<td><a name="C343-33">C343-33</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Sometimes a monster may remain hidden under a corpse that has rotted away.
+
+<td>
+</tr>
+<!-- line 347 -->
+<tr>
+<td><a name="C343-34">C343-34</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Mimics on the rogue level may try to mimic a closed door.
+
+<td>
+</tr>
+<!-- line 351 -->
+<tr>
+<td><a name="C343-35">C343-35</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Polymorphed or shapechanged monsters may get the wrong number of hit points.
+
+<td>
+</tr>
+<!-- line 355 -->
+<tr>
+<td><a name="C343-36">C343-36</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Weight of corpses on special levels may not be calculated correctly.
+
+<td>
+</tr>
+<!-- line 359 -->
+<tr>
+<td><a name="C343-37">C343-37</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Mimics may mimic a boulder over a pit or hole.
+
+<td>
+</tr>
+<!-- line 364 -->
+<tr>
+<td><a name="C343-38">C343-38</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Dismounting and kicking a monster that jumps may result in landing on
+the wrong side of a wall.
+
+<td>
+</tr>
+<!-- line 369 -->
+<tr>
+<td><a name="C343-39">C343-39</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Restoring a game where the character is wielding Sting may result
+in temporary display errors during the restore process.
+
+<td>
+</tr>
+<!-- line 374 -->
+<tr>
+<td><a name="C343-40">C343-40</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monster thrusting one of multiple wielded daggers gives misleading message.
+
+<td>
+</tr>
+<!-- line 378 -->
+<tr>
+<td><a name="C343-41">C343-41</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A rolling boulder falling into a pit you can't see only makes a sound if the
+hero is blind.
+
+<td>
+</tr>
+<!-- line 383 -->
+<tr>
+<td><a name="C343-42">C343-42</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a fire trap melts ice, it may trigger twice in the same turn.
+
+<td>
+</tr>
+<!-- line 393 -->
+<tr>
+<td><a name="C343-43">C343-43</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>An invisible troll that revives may be shown until it moves.
+
+<td>
+</tr>
+<!-- line 397 -->
+<tr>
+<td><a name="C343-44">C343-44</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Shopkeepers, doors, and traps interact oddly.
+
+<td>
+</tr>
+<!-- line 405 -->
+<tr>
+<td><a name="C343-45">C343-45</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Dropping the corpse of a unique monster without a personal name down the
+stairs gives a badly formed response.
+
+<td>
+</tr>
+<!-- line 410 -->
+<tr>
+<td><a name="C343-46">C343-46</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Breaking up a boulder or statue can result in pieces that are described
+incorrectly.
+
+<td>
+</tr>
+<!-- line 419 -->
+<tr>
+<td><a name="C343-47">C343-47</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monster and hero have different odds to err when throwing a greased weapon.
+
+<td>
+</tr>
+<!-- line 423 -->
+<tr>
+<td><a name="C343-48">C343-48</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Killing your pet doesn't get you any experience when it should.
+
+<td>
+</tr>
+<!-- line 427 -->
+<tr>
+<td><a name="C343-49">C343-49</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The boulder does not show up in a bones file caused by death by rolling
+boulder.
+
+<td>
+</tr>
+<!-- line 432 -->
+<tr>
+<td><a name="C343-50">C343-50</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A sleeping steed may answer a #chat.
+
+<td>
+</tr>
+<!-- line 436 -->
+<tr>
+<td><a name="C343-51">C343-51</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Luck's effect on random events isn't always as intended.
+
+<td>
+</tr>
+<!-- line 446 -->
+<tr>
+<td><a name="C343-52">C343-52</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Worn or wielded objects destroyed by dipping into lit potions of oil are
+not handled properly; this can result in odd game behavior.
+
+<td>
+</tr>
+<!-- line 458 -->
+<tr>
+<td><a name="C343-53">C343-53</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a shopkeeper is trapped adjacent to the door, the game may get confused
+and issue impossible or panic messages.
+
+<td>
+</tr>
+<!-- line 463 -->
+<tr>
+<td><a name="C343-54">C343-54</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"Ulch" cannibalism message grammar is poor.
+
+<td>
+</tr>
+<!-- line 467 -->
+<tr>
+<td><a name="C343-55">C343-55</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"Ulch" messages have inconsistent capitalization.
+
+<td>
+</tr>
+<!-- line 477 -->
+<tr>
+<td><a name="C343-56">C343-56</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Gas spores can't attack while hero is praying.
+
+<td>
+</tr>
+<!-- line 481 -->
+<tr>
+<td><a name="C343-57">C343-57</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>#enhance command descriptions in Guidebook and game do not match.
+
+<td>
+</tr>
+<!-- line 485 -->
+<tr>
+<td><a name="C343-58">C343-58</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>#conduct command description grammar is poor
+
+<td>
+</tr>
+<!-- line 489 -->
+<tr>
+<td><a name="C343-59">C343-59</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Engulfer stoned swallowing hero polymorphed to cockatrice causes incorrect
+screen display.  If hero has ball &amp; chain, game can panic.
+
+<td>
+</tr>
+<!-- line 494 -->
+<tr>
+<td><a name="C343-60">C343-60</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Several messages delivered when hero's fingers are slippery have poor grammar.
+
+<td>
+</tr>
+<!-- line 506 -->
+<tr>
+<td><a name="C343-61">C343-61</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Using a WIZKIT including the quest artifact will crash the game at startup.
+
+<td>
+</tr>
+<!-- line 510 -->
+<tr>
+<td><a name="C343-62">C343-62</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Riding into a magic portal gives an extra, useless message.
+
+<td>
+</tr>
+<!-- line 514 -->
+<tr>
+<td><a name="C343-63">C343-63</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>You can drink from a sink, fountain, or while underwater while swallowed.
+
+<td>
+</tr>
+<!-- line 518 -->
+<tr>
+<td><a name="C343-64">C343-64</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A black light leaves an hallucinated something while exploding.
+
+<td>
+</tr>
+<!-- line 523 -->
+<tr>
+<td><a name="C343-65">C343-65</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A monster that "shrieks in pain" may not awaken others nearby.
+
+<td>
+</tr>
+<!-- line 527 -->
+<tr>
+<td><a name="C343-66">C343-66</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Co-aligned unicorns in a bones file may be hostile.
+
+<td>
+</tr>
+<!-- line 531 -->
+<tr>
+<td><a name="C343-67">C343-67</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Finding a statue when searching while blind doesn't update map.
+
+<td>
+</tr>
+<!-- line 535 -->
+<tr>
+<td><a name="C343-68">C343-68</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Incorrect message may be given when a spellcasting monster summons other
+monsters.
+
+<td>
+</tr>
+<!-- line 540 -->
+<tr>
+<td><a name="C343-69">C343-69</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Attempting to add more candles than needed to a candelabrum with at least one
+candle gives an incorrect message.
+
+<td>
+</tr>
+<!-- line 549 -->
+<tr>
+<td><a name="C343-70">C343-70</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Experience may not be correctly gained for monsters causing nonphysical damage.
+
+<td>
+</tr>
+<!-- line 553 -->
+<tr>
+<td><a name="C343-71">C343-71</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>When swapping places with a pet pushes it into a trap, the messages are out of
+order.
+
+<td>
+</tr>
+<!-- line 558 -->
+<tr>
+<td><a name="C343-72">C343-72</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>You get confusing messages when you stop levitating while on a flying steed.
+
+<td>
+</tr>
+<!-- line 562 -->
+<tr>
+<td><a name="C343-73">C343-73</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Trying to kick a monster on a level forbidding teleport may give a bogus
+&quot;teleports&quot; message.
+
+<td>
+</tr>
+<!-- line 567 -->
+<tr>
+<td><a name="C343-74">C343-74</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Entering a long running, uninterruptible command after stoning starts will
+kill you.
+
+<td>
+</tr>
+<!-- line 572 -->
+<tr>
+<td><a name="C343-75">C343-75</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Eating Medusa's corpse may not work properly.
+
+<td>
+</tr>
+<!-- line 576 -->
+<tr>
+<td><a name="C343-76">C343-76</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A tin of Medusa meat isn't warned about properly.
+
+<td>
+</tr>
+<!-- line 580 -->
+<tr>
+<td><a name="C343-77">C343-77</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Some messages referring to monsters that look like horses refer to claws.
+
+<td>
+</tr>
+<!-- line 584 -->
+<tr>
+<td><a name="C343-78">C343-78</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Digging in an existing hole charges you for the time it takes to dig the
+whole hole.
+
+<td>
+</tr>
+<!-- line 589 -->
+<tr>
+<td><a name="C343-79">C343-79</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"Mr." or "Ms." may show up in front of names when it should not.
+
+<td>
+</tr>
+<!-- line 593 -->
+<tr>
+<td><a name="C343-80">C343-80</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Tame monsters with multiple attacks may allow themselves to be killed
+through passive attacks.
+
+<td>
+</tr>
+<!-- line 598 -->
+<tr>
+<td><a name="C343-81">C343-81</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Ghosts can be slimed.
+
+<td>
+</tr>
+<!-- line 606 -->
+<tr>
+<td><a name="C343-82">C343-82</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Land mine explosion on a drawbridge doesn't work right.
+
+<td>
+</tr>
+<!-- line 614 -->
+<tr>
+<td><a name="C343-83">C343-83</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>An eating pet will miss out on ascension.
+
+<td>
+</tr>
+<!-- line 618 -->
+<tr>
+<td><a name="C343-84">C343-84</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"finally finished" may be displayed when not eating.
+
+<td>
+</tr>
+<!-- line 622 -->
+<tr>
+<td><a name="C343-85">C343-85</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sometimes the hero can't move when conscious.
+
+<td>
+</tr>
+<!-- line 626 -->
+<tr>
+<td><a name="C343-86">C343-86</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can appear to be in the wall after destroying a drawbridge.
+
+<td>
+</tr>
+<!-- line 630 -->
+<tr>
+<td><a name="C343-87">C343-87</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sometimes shop items the hero is forced to buy can be sold twice.
+
+<td>
+</tr>
+<!-- line 634 -->
+<tr>
+<td><a name="C343-88">C343-88</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Polymorphing a statue into a boulder can leave an incorrect display.
+
+<td>
+</tr>
+<!-- line 638 -->
+<tr>
+<td><a name="C343-89">C343-89</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Unpaid objects damaged or improved in shops are not accounted for properly.
+
+<td>
+</tr>
+<!-- line 642 -->
+<tr>
+<td><a name="C343-90">C343-90</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"I u" with only one item unpaid lists the price twice.
+
+<td>
+</tr>
+<!-- line 646 -->
+<tr>
+<td><a name="C343-91">C343-91</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Auto-cursing armor does not do so when worn by monster.
+
+<td>
+</tr>
+<!-- line 650 -->
+<tr>
+<td><a name="C343-92">C343-92</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A blind player may find a trap which then fails to show up on the map.
+
+<td>
+</tr>
+<!-- line 655 -->
+<tr>
+<td><a name="C343-93">C343-93</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Astral vision can confuse the ; command.
+
+<td>
+</tr>
+<!-- line 659 -->
+<tr>
+<td><a name="C343-94">C343-94</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Probing a re-animated statue may cause a panic.
+
+<td>
+</tr>
+<!-- line 666 -->
+<tr>
+<td><a name="C343-95">C343-95</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If killed by the wish from a magic lamp (or similar situation) and a bones file
+is produced, the bones file has the lamp in the wrong state.
+
+<td>
+</tr>
+<!-- line 671 -->
+<tr>
+<td><a name="C343-96">C343-96</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If player aborts "In what direction?" question, prompt may remain displayed.
+
+<td>
+</tr>
+<!-- line 675 -->
+<tr>
+<td><a name="C343-97">C343-97</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>^R and ^L don't work in numberpad mode
+
+<td>
+</tr>
+<!-- line 679 -->
+<tr>
+<td><a name="C343-98">C343-98</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Chatting with quest leader brought back from the dead doesn't work.
+
+<td>
+</tr>
+<!-- line 689 -->
+<tr>
+<td><a name="C343-99">C343-99</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can still see for brief period after being blinded by potion vapors.
+
+<td>
+</tr>
+<!-- line 694 -->
+<tr>
+<td><a name="C343-100">C343-100</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Game may crash if thrown potion hits bars before a monster.
+
+<td>
+</tr>
+<!-- line 699 -->
+<tr>
+<td><a name="C343-101">C343-101</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The hero can see some things while asleep.
+
+<td>
+</tr>
+<!-- line 704 -->
+<tr>
+<td><a name="C343-102">C343-102</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Messages delivered when the ceiling collapses on a swallowed hero need revision.
+
+<td>
+</tr>
+<!-- line 709 -->
+<tr>
+<td><a name="C343-103">C343-103</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The hero is not protected from a mind flayer during successful prayer.
+
+<td>
+</tr>
+<!-- line 713 -->
+<tr>
+<td><a name="C343-104">C343-104</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Message from angry shopkeeper giving a price when hero picks up an object has
+poor spacing and construction.
+
+<td>
+</tr>
+<!-- line 718 -->
+<tr>
+<td><a name="C343-105">C343-105</a>
+<td><a href="bugs.html#state_N">Not a bug</a>
+<td>Message given when restoring a game refers to original gender and form,
+not current.
+
+<td>
+</tr>
+<!-- line 724 -->
+<tr>
+<td><a name="C343-106">C343-106</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sunsword continues to glow after its wielder dies.
+
+<td>
+</tr>
+<!-- line 728 -->
+<tr>
+<td><a name="C343-107">C343-107</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Killing your own steed never leaves a corpse.
+
+<td>
+</tr>
+<!-- line 732 -->
+<tr>
+<td><a name="C343-108">C343-108</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Entering "e-" does not remove the prompt.
+
+<td>
+</tr>
+<!-- line 740 -->
+<tr>
+<td><a name="C343-109">C343-109</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>There is a grammar error in the Tourist leader's greeting.
+
+<td>
+</tr>
+<!-- line 744 -->
+<tr>
+<td><a name="C343-110">C343-110</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Game can crash if shopkeeper dies while character is praying.
+
+<td>
+</tr>
+<!-- line 748 -->
+<tr>
+<td><a name="C343-111">C343-111</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Grammar of some graveyard sounds messages is wrong in some cases.
+
+<td>
+</tr>
+<!-- line 753 -->
+<tr>
+<td><a name="C343-112">C343-112</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero and monster afflicated with lycanthropy are treated differently.
+
+<td>
+</tr>
+<!-- line 758 -->
+<tr>
+<td><a name="C343-113">C343-113</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When flying down a hole or a ladder, the messages are inaccurate.
+
+<td>
+</tr>
+<!-- line 762 -->
+<tr>
+<td><a name="C343-114">C343-114</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Removing some but not all the boulders from a location confuses the vision
+system.
+
+<td>
+</tr>
+<!-- line 767 -->
+<tr>
+<td><a name="C343-115">C343-115</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sleeping or paralyzed unicorns can catch gems.
+
+<td>
+</tr>
+<!-- line 771 -->
+<tr>
+<td><a name="C343-116">C343-116</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Grammar error in messages related to choking on gold.
+
+<td>
+</tr>
+<!-- line 779 -->
+<tr>
+<td><a name="C343-117">C343-117</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Gaining and losing levels in normal and monster form do not balance.
+
+<td>
+</tr>
+<!-- line 784 -->
+<tr>
+<td><a name="C343-118">C343-118</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Some messages use "mirror" where they should use "looking glass."
+
+<td>
+</tr>
+<!-- line 788 -->
+<tr>
+<td><a name="C343-119">C343-119</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Options IBMgraphics, DECgraphics, and MACgraphics interact oddly in the
+config file, resulting in odd listings from the O command.
+
+<td>Workaround: only specify one option in the config file.
+
+</tr>
+<!-- line 795 -->
+<tr>
+<td><a name="C343-120">C343-120</a>
+<td><a href="bugs.html#state_N">Not a bug</a>
+<td>There is no warning when hitting floating eyes.
+
+<td>
+</tr>
+<!-- line 800 -->
+<tr>
+<td><a name="C343-121">C343-121</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Eating various brains which should have special handling, don't.
+
+<td>
+</tr>
+<!-- line 804 -->
+<tr>
+<td><a name="C343-122">C343-122</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Alignment of Angels is not handled consistently.
+
+<td>
+</tr>
+<!-- line 809 -->
+<tr>
+<td><a name="C343-123">C343-123</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Plural of "mother-in-law" is incorrect.
+
+<td>
+</tr>
+<!-- line 813 -->
+<tr>
+<td><a name="C343-124">C343-124</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>You can't rub a touchstone on gold.
+
+<td>
+</tr>
+<!-- line 818 -->
+<tr>
+<td><a name="C343-125">C343-125</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Killing a vault guard outside a vault gives incorrect feedback.
+
+<td>
+</tr>
+<!-- line 822 -->
+<tr>
+<td><a name="C343-126">C343-126</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When wielding Greyswandir, feedback from a trapped chest may be wrong.
+
+<td>
+</tr>
+<!-- line 827 -->
+<tr>
+<td><a name="C343-127">C343-127</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a vault guard leads the hero to gold in the rock, inappropriate feedback
+is given.
+
+<td>
+</tr>
+<!-- line 832 -->
+<tr>
+<td><a name="C343-128">C343-128</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Feedback for gas spore explosion when hallucinating could be improved.
+
+<td>
+</tr>
+<!-- line 842 -->
+<tr>
+<td><a name="C343-129">C343-129</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Cancelling objects in or near a shop doorway may make the shopkeeper think you
+are a thief.
+
+<td>
+</tr>
+<!-- line 848 -->
+<tr>
+<td><a name="C343-130">C343-130</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sometimes you can't rub an arbitrary object on a touchstone.
+
+<td>
+</tr>
+<!-- line 852 -->
+<tr>
+<td><a name="C343-131">C343-131</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Message has poor grammar if hero killed when stealing cockatrice corpse from
+a monster.
+
+<td>
+</tr>
+<!-- line 857 -->
+<tr>
+<td><a name="C343-132">C343-132</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Message when death caused by kicking an object can be too verbose.
+
+<td>
+</tr>
+<!-- line 862 -->
+<tr>
+<td><a name="C343-133">C343-133</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Effects of varying consuming Medusa are inconsistent.
+
+<td>
+</tr>
+<!-- line 867 -->
+<tr>
+<td><a name="C343-134">C343-134</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Being petrified by swallowing a cockatrice violates foodless conduct.
+
+<td>
+</tr>
+<!-- line 871 -->
+<tr>
+<td><a name="C343-135">C343-135</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Several quest messages are inappropriate if the hero is blind.
+
+<td>
+</tr>
+<!-- line 875 -->
+<tr>
+<td><a name="C343-136">C343-136</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A samurai quest guardian message uses "ninja" where "ronin" is intended.
+
+<td>
+</tr>
+<!-- line 879 -->
+<tr>
+<td><a name="C343-137">C343-137</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Demons may demand money from (and get paid by) a fainted hero.
+
+<td>
+</tr>
+<!-- line 883 -->
+<tr>
+<td><a name="C343-138">C343-138</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Some spheres pick up objects and some don't.
+
+<td>
+</tr>
+<!-- line 887 -->
+<tr>
+<td><a name="C343-139">C343-139</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>There's no feedback when an unseen drawbridge opens or closes.
+
+<td>
+</tr>
+<!-- line 891 -->
+<tr>
+<td><a name="C343-140">C343-140</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Pets may continue eating after being paralyzed or falling asleep.
+
+<td>
+</tr>
+<!-- line 895 -->
+<tr>
+<td><a name="C343-141">C343-141</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Running, searching, and resting should stop wnen levitation ends.
+
+<td>
+</tr>
+<!-- line 899 -->
+<tr>
+<td><a name="C343-142">C343-142</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Shopkeepers can be identified while hallucinating.
+
+<td>
+</tr>
+<!-- line 903 -->
+<tr>
+<td><a name="C343-143">C343-143</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Leprechauns stealing gold from a mounted hero cause oddly worded messages.
+
+<td>
+</tr>
+<!-- line 912 -->
+<tr>
+<td><a name="C343-144">C343-144</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Creatures that can fit under doors can't fit through diagonal gaps.
+
+<td>
+</tr>
+<!-- line 917 -->
+<tr>
+<td><a name="C343-145">C343-145</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Mattock is mishandled when forcing locks.
+
+<td>
+</tr>
+<!-- line 922 -->
+<tr>
+<td><a name="C343-146">C343-146</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Unseen wand of striking becomes known if zapped by unseen monster and it
+hits a door.
+
+<td>
+</tr>
+<!-- line 927 -->
+<tr>
+<td><a name="C343-147">C343-147</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The game panics if a magic trap tames a monster that just expelled the hero.
+
+<td>
+</tr>
+<!-- line 944 -->
+<tr>
+<td><a name="C343-148">C343-148</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Changing locations while asleep lets you see objects or read engravings.
+
+<td>
+</tr>
+<!-- line 949 -->
+<tr>
+<td><a name="C343-149">C343-149</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Polymorphed spellbooks don't behave as intended.
+
+<td>
+</tr>
+<!-- line 957 -->
+<tr>
+<td><a name="C343-150">C343-150</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Gender and/or size of some quest leaders and nemeses are wrong.
+
+<td>
+</tr>
+<!-- line 961 -->
+<tr>
+<td><a name="C343-151">C343-151</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monsters can teleport to or be created outside of legal area in special levels.
+
+<td>
+</tr>
+<!-- line 970 -->
+<tr>
+<td><a name="C343-152">C343-152</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Using a cursed lamp while blind may give inappropriate messages.
+
+<td>
+</tr>
+<!-- line 974 -->
+<tr>
+<td><a name="C343-153">C343-153</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Player polymorphed into guardian naga spits the wrong kind of venom.
+
+<td>
+</tr>
+<!-- line 978 -->
+<tr>
+<td><a name="C343-154">C343-154</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Candles are fireproof.
+
+<td>
+</tr>
+<!-- line 983 -->
+<tr>
+<td><a name="C343-155">C343-155</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Proper names may be incorrectly preceeded by "the" when hallucinating.
+
+<td>
+</tr>
+<!-- line 987 -->
+<tr>
+<td><a name="C343-156">C343-156</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Reading scrolls may give redundant feedback messages.
+
+<td>
+</tr>
+<!-- line 991 -->
+<tr>
+<td><a name="C343-157">C343-157</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Worms don't have scales.
+
+<td>
+</tr>
+<!-- line 994 -->
+<tr>
+<td><a name="C343-158">C343-158</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Krakens have tentacles.
+
+<td>
+</tr>
+<!-- line 997 -->
+<tr>
+<td><a name="C343-159">C343-159</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Stalkers have a head.
+
+<td>
+</tr>
+<!-- line 1001 -->
+<tr>
+<td><a name="C343-160">C343-160</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Name "leather spellbook" is misleading.
+
+<td>
+</tr>
+<!-- line 1005 -->
+<tr>
+<td><a name="C343-161">C343-161</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A scroll of charging that has disappeared may still show in the list of things
+to charge.
+
+<td>
+</tr>
+<!-- line 1010 -->
+<tr>
+<td><a name="C343-162">C343-162</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Using magicbane may cause an ungrammatical message.
+
+<td>
+</tr>
+<!-- line 1014 -->
+<tr>
+<td><a name="C343-163">C343-163</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Antholes are mispopulated under some conditions.
+
+<td>
+</tr>
+<!-- line 1018 -->
+<tr>
+<td><a name="C343-164">C343-164</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cancelled nurses may give inappropriate messages.
+
+<td>
+</tr>
+<!-- line 1022 -->
+<tr>
+<td><a name="C343-165">C343-165</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Scroll of mail can be abused slightly.
+
+<td>
+</tr>
+<!-- line 1026 -->
+<tr>
+<td><a name="C343-166">C343-166</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Pits dug in vault guard's corridor don't get removed.
+
+<td>
+</tr>
+<!-- line 1030 -->
+<tr>
+<td><a name="C343-167">C343-167</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Length of time swallowed is sometimes calculated incorrectly.
+
+<td>
+</tr>
+<!-- line 1034 -->
+<tr>
+<td><a name="C343-168">C343-168</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Shattering a monster's weapon doesn't work right if the weapon is part of a
+stack of more than one.
+
+<td>
+</tr>
+<!-- line 1040 -->
+<tr>
+<td><a name="C343-169">C343-169</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Autopickup fails during a failed untrap attempt.
+
+<td>
+</tr>
+<!-- line 1044 -->
+<tr>
+<td><a name="C343-170">C343-170</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Damage by silver weapons is sometimes higher than intended when hero is
+polymorphed.
+
+<td>
+</tr>
+<!-- line 1049 -->
+<tr>
+<td><a name="C343-171">C343-171</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Silver weapon damage message is sometimes missing when hero is polymorphed.
+
+<td>
+</tr>
+<!-- line 1057 -->
+<tr>
+<td><a name="C343-172">C343-172</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Crash could occur when monster uses potion or food to cure stoning or confusion.
+
+<td>
+</tr>
+<!-- line 1060 -->
+<tr>
+<td><a name="C343-173">C343-173</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monster eating lizard corpse is not handled correctly.
+
+<td>
+</tr>
+<!-- line 1064 -->
+<tr>
+<td><a name="C343-174">C343-174</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Drum of earthquake gives inappropriate message if hero or monster is in a pit.
+
+<td>
+</tr>
+<!-- line 1068 -->
+<tr>
+<td><a name="C343-175">C343-175</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Chatting to hostile prisoners may give an inappropriate message.
+
+<td>
+</tr>
+<!-- line 1073 -->
+<tr>
+<td><a name="C343-176">C343-176</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Disintegration breath hitting equipment carried by monsters is not handled
+properly; if the monster life-saves the situation is worse; saddles are
+especially troublesome.
+
+<td>
+</tr>
+<!-- line 1079 -->
+<tr>
+<td><a name="C343-177">C343-177</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>First false rumor is displayed as gibberish on some platforms.
+
+<td>
+</tr>
+<!-- line 1083 -->
+<tr>
+<td><a name="C343-178">C343-178</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Wisdom is mishandled when rumors are used for random graffiti.
+
+<td>
+</tr>
+<!-- line 1087 -->
+<tr>
+<td><a name="C343-179">C343-179</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a monster is killed or tamed while over water (or by a drawbridge) while
+carrying a potion of acid, the game may panic.
+
+<td>
+</tr>
+<!-- line 1101 -->
+<tr>
+<td><a name="C343-180">C343-180</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>In an obscure case on special levels, troll corpses may fail to revive and
+lizard corpses may revive.
+
+<td>
+</tr>
+<!-- line 1106 -->
+<tr>
+<td><a name="C343-181">C343-181</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The hero is welcomed to Delphi even if the Oracle was previously angered.
+
+<td>
+</tr>
+<!-- line 1110 -->
+<tr>
+<td><a name="C343-182">C343-182</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Putting on the Eyes of the Overworld while blind gives an ungrammatical message.
+
+<td>
+</tr>
+<!-- line 1114 -->
+<tr>
+<td><a name="C343-183">C343-183</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Jumping over an already seen trap may give an ungrammatical message.
+
+<td>
+</tr>
+<!-- line 1118 -->
+<tr>
+<td><a name="C343-184">C343-184</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Levitation via worn equipment is not implemented for monsters.
+
+<td>
+</tr>
+<!-- line 1122 -->
+<tr>
+<td><a name="C343-185">C343-185</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>No message is generated when attempting to name a monster that cannot be
+named by the player.
+
+<td>
+</tr>
+<!-- line 1127 -->
+<tr>
+<td><a name="C343-186">C343-186</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Some messages referring to "priestess" say "priest."
+
+<td>
+</tr>
+<!-- line 1131 -->
+<tr>
+<td><a name="C343-187">C343-187</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Meditating monsters continue meditating when affected by something which wakes
+sleeping monsters.
+
+<td>
+</tr>
+<!-- line 1137 -->
+<tr>
+<td><a name="C343-188">C343-188</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Specifying role and/or race and an invalid alignment in NETHACKOPTIONS or
+config file causes a misleading message.
+
+<td>
+</tr>
+<!-- line 1143 -->
+<tr>
+<td><a name="C343-189">C343-189</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Temple donations and protection lost to gremlin attack interact incorrectly.
+
+<td>
+</tr>
+<!-- line 1148 -->
+<tr>
+<td><a name="C343-190">C343-190</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Monsters can hide while trapped or holding the hero.
+
+<td>
+</tr>
+<!-- line 1153 -->
+<tr>
+<td><a name="C343-191">C343-191</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When an unseen monster forces a polymorphed hero out of hiding, feedback is
+insufficient.
+
+<td>
+</tr>
+<!-- line 1158 -->
+<tr>
+<td><a name="C343-192">C343-192</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If invocation is performed while hero is trapped, hero remains trapped.
+
+<td>
+</tr>
+<!-- line 1162 -->
+<tr>
+<td><a name="C343-193">C343-193</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Polymorphed hero can fall into water once and crawl out twice.
+
+<td>
+</tr>
+<!-- line 1166 -->
+<tr>
+<td><a name="C343-194">C343-194</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Saving and restoring a game while punished and swallowed sometimes loses the
+ball and chain.
+
+<td>
+</tr>
+<!-- line 1171 -->
+<tr>
+<td><a name="C343-195">C343-195</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Glass wand thrown and broken in a shop is not charged for.
+
+<td>
+</tr>
+<!-- line 1175 -->
+<tr>
+<td><a name="C343-196">C343-196</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wielded light source may get missed by rust trap.
+
+<td>
+</tr>
+<!-- line 1180 -->
+<tr>
+<td><a name="C343-197">C343-197</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Attacking a hidden monster sensed via ongoing monster detectionis interrupted
+inapropropriately.
+
+<td>
+</tr>
+<!-- line 1195 -->
+<tr>
+<td><a name="C343-198">C343-198</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Playing in a 20 or 21 line window can cause the game to crash.
+
+<td>
+</tr>
+<!-- line 1207 -->
+<tr>
+<td><a name="C343-199">C343-199</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The database entry for "monk" has a typo.
+
+<td>
+</tr>
+<!-- line 1212 -->
+<tr>
+<td><a name="C343-200">C343-200</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>In the quest, it's possible to accidently skip the locate level.
+
+<td>
+</tr>
+<!-- line 1216 -->
+<tr>
+<td><a name="C343-201">C343-201</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Phrasing of message when one monster attacks another with stacked weapons is
+odd.
+
+<td>
+</tr>
+<!-- line 1221 -->
+<tr>
+<td><a name="C343-202">C343-202</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Pushing a boulder onto a level teleporter trap could cause repeated messages.
+
+<td>
+</tr>
+<!-- line 1230 -->
+<tr>
+<td><a name="C343-203">C343-203</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero arriving on a very crowded level may land on a monster causing game
+state corruption and possibly a crash.
+
+<td>
+</tr>
+<!-- line 1235 -->
+<tr>
+<td><a name="C343-204">C343-204</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero grabbed or engulfed due to conflict should be released when conflict ends.
+
+<td>
+</tr>
+<!-- line 1240 -->
+<tr>
+<td><a name="C343-205">C343-205</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Changes in hallucination state are not reflected properly when also mimicing.
+
+<td>
+</tr>
+<!-- line 1244 -->
+<tr>
+<td><a name="C343-206">C343-206</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Divine gifts resulting from #offer are identified when blind.
+
+<td>
+</tr>
+<!-- line 1248 -->
+<tr>
+<td><a name="C343-207">C343-207</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Certain items that should never be created in Gehennom can be created there.
+
+<td>
+</tr>
+<!-- line 1253 -->
+<tr>
+<td><a name="C343-208">C343-208</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can be blinded while fainted.
+
+<td>
+</tr>
+<!-- line 1263 -->
+<tr>
+<td><a name="C343-210">C343-210</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can "feel a bit steadier" while unconscious.
+
+<td>
+</tr>
+<!-- line 1268 -->
+<tr>
+<td><a name="C343-211">C343-211</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Engraving under water gives a poorly worded message.
+
+<td>
+</tr>
+<!-- line 1273 -->
+<tr>
+<td><a name="C343-212">C343-212</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If the hero is killed by a thrown potion of burning oil, the game will panic.
+
+<td>
+</tr>
+<!-- line 1277 -->
+<tr>
+<td><a name="C343-213">C343-213</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Display of stinking cloud may be incorrect when wearing Eyes of the Overworld.
+
+<td>
+</tr>
+<!-- line 1283 -->
+<tr>
+<td><a name="C343-214">C343-214</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monster escaping by changing levels in the wizard tower may end up outside
+the tower too easily.
+
+<td>
+</tr>
+<!-- line 1288 -->
+<tr>
+<td><a name="C343-215">C343-215</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Elbereth is sometimes ignored by monsters.
+
+<td>
+</tr>
+<!-- line 1293 -->
+<tr>
+<td><a name="C343-216">C343-216</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Fireproof containers catch fire in lava.
+
+<td>
+</tr>
+<!-- line 1298 -->
+<tr>
+<td><a name="C343-217">C343-217</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Missile which kills engulfer is temporarily lost when hero is expelled.
+
+<td>
+</tr>
+<!-- line 1302 -->
+<tr>
+<td><a name="C343-218">C343-218</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Applying a wielded cream pie can crash the game.
+
+<td>
+</tr>
+<!-- line 1306 -->
+<tr>
+<td><a name="C343-219">C343-219</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can die due to "burned by burning" or "drowned by drowning."
+
+<td>
+</tr>
+<!-- line 1315 -->
+<tr>
+<td><a name="C343-220">C343-220</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Eating a Rider corpse doesn't work quite right.
+
+<td>
+</tr>
+<!-- line 1319 -->
+<tr>
+<td><a name="C343-221">C343-221</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Jabberwoks do not always wake up when they should.
+
+<td>
+</tr>
+<!-- line 1323 -->
+<tr>
+<td><a name="C343-222">C343-222</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>It's possible to end up wielding a cockatrice corpse when no longer polymorphed.
+
+<td>
+</tr>
+<!-- line 1327 -->
+<tr>
+<td><a name="C343-223">C343-223</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hidden pet can follow hero down stairs, remain hiding and show up as hidden
+monster.  Also can happen with a magic whistle.
+
+<td>
+</tr>
+<!-- line 1332 -->
+<tr>
+<td><a name="C343-224">C343-224</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Carrying too many items creates uselessly long prompts.
+
+<td>
+</tr>
+<!-- line 1336 -->
+<tr>
+<td><a name="C343-225">C343-225</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can sometimes carry too many boulders.
+
+<td>
+</tr>
+<!-- line 1340 -->
+<tr>
+<td><a name="C343-226">C343-226</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Inventory display doesn't mention unpaid items in a container the hero owns.
+
+<td>
+</tr>
+<!-- line 1344 -->
+<tr>
+<td><a name="C343-227">C343-227</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Container dropped in a shop then moved to an untended shop behaves oddly.
+
+<td>
+</tr>
+<!-- line 1348 -->
+<tr>
+<td><a name="C343-228">C343-228</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cloak of magic resistance is active when it shouldn't be.
+
+<td>
+</tr>
+<!-- line 1352 -->
+<tr>
+<td><a name="C343-229">C343-229</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero can dip or apply grease to a worn item that is covered by another
+worn item.
+
+<td>
+</tr>
+<!-- line 1357 -->
+<tr>
+<td><a name="C343-230">C343-230</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Drawbridges act differently depending on which direction they are pointing.
+
+<td>
+</tr>
+<!-- line 1361 -->
+<tr>
+<td><a name="C343-231">C343-231</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Time is distorted while sinking into lava.
+
+<td>
+</tr>
+<!-- line 1365 -->
+<tr>
+<td><a name="C343-232">C343-232</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can be slimed while in lava.
+
+<td>
+</tr>
+<!-- line 1369 -->
+<tr>
+<td><a name="C343-233">C343-233</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero polymorphed into Quantum Mechanic may get erroneous messages about
+disappearing monsters.
+
+<td>
+</tr>
+<!-- line 1374 -->
+<tr>
+<td><a name="C343-234">C343-234</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Sacrifice on an altar can have unintended consequences.
+
+<td>
+</tr>
+<!-- line 1378 -->
+<tr>
+<td><a name="C343-235">C343-235</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Casting spell of protection gives incorrect message if hero is swallowed or
+in rock.
+
+<td>
+</tr>
+<!-- line 1383 -->
+<tr>
+<td><a name="C343-236">C343-236</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Engraving works in places it shouldn't.
+
+<td>
+</tr>
+<!-- line 1387 -->
+<tr>
+<td><a name="C343-237">C343-237</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The relationship between crossbow use and strength is wrong.
+
+<td>
+</tr>
+<!-- line 1391 -->
+<tr>
+<td><a name="C343-238">C343-238</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>(Unix and VMS only) The "Who are you?" prompt does not accept digits in the
+response.
+
+<td>
+</tr>
+<!-- line 1396 -->
+<tr>
+<td><a name="C343-239">C343-239</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Engravings can transfer between a moat and a drawbridge.
+
+<td>
+</tr>
+<!-- line 1400 -->
+<tr>
+<td><a name="C343-240">C343-240</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can create a pit in air.
+
+<td>
+</tr>
+<!-- line 1404 -->
+<tr>
+<td><a name="C343-241">C343-241</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero is not charged for breaking the lock on a container owned by a shop.
+
+<td>
+</tr>
+<!-- line 1408 -->
+<tr>
+<td><a name="C343-242">C343-242</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Shopkeepers and priests avoid graves when they should not.
+
+<td>
+</tr>
+<!-- line 1412 -->
+<tr>
+<td><a name="C343-243">C343-243</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero can throw without hands.
+
+<td>
+</tr>
+<!-- line 1416 -->
+<tr>
+<td><a name="C343-244">C343-244</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sometimes you can eat artifacts you can't touch with your hands.
+
+<td>
+</tr>
+<!-- line 1420 -->
+<tr>
+<td><a name="C343-245">C343-245</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero trying to kick beyond map edge is handled improperly.
+
+<td>
+</tr>
+<!-- line 1424 -->
+<tr>
+<td><a name="C343-246">C343-246</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Engraving with an empty wand handles time wrong.
+
+<td>
+</tr>
+<!-- line 1428 -->
+<tr>
+<td><a name="C343-247">C343-247</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A magic portal may be deactivated if the game is saved due to hangup while
+changing levels.
+
+<td>Leave the level some other way then return to it.
+
+</tr>
+<!-- line 1436 -->
+<tr>
+<td><a name="C343-248">C343-248</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>You can't put candles in a candelabrum while underwater.
+
+<td>
+</tr>
+<!-- line 1441 -->
+<tr>
+<td><a name="C343-249">C343-249</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>There are a number of errors handling vomit; and real rats can't vomit.
+
+<td>
+</tr>
+<!-- line 1445 -->
+<tr>
+<td><a name="C343-250">C343-250</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Rust-causing targets can reveal other information about a weapon.
+
+<td>
+</tr>
+<!-- line 1449 -->
+<tr>
+<td><a name="C343-251">C343-251</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monsters sleeping due to being hit may wake up at the wrong time.
+
+<td>
+</tr>
+<!-- line 1453 -->
+<tr>
+<td><a name="C343-252">C343-252</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>There is a typo in the quote from "The Count of Monte Cristo."
+
+<td>
+</tr>
+<!-- line 1457 -->
+<tr>
+<td><a name="C343-253">C343-253</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Choking on certain food items doesn't work properly.
+
+<td>
+</tr>
+<!-- line 1461 -->
+<tr>
+<td><a name="C343-254">C343-254</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Shapechanger's don't take advantage of being mimics or hiders.
+
+<td>
+</tr>
+<!-- line 1465 -->
+<tr>
+<td><a name="C343-255">C343-255</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Tinning on a full level fails improperly.
+
+<td>
+</tr>
+<!-- line 1469 -->
+<tr>
+<td><a name="C343-256">C343-256</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Very very very long messages can cause a crash.
+
+<td>
+</tr>
+<!-- line 1477 -->
+<tr>
+<td><a name="C343-257">C343-257</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cursed corpses wielded by monsters are not handled properly.
+
+<td>
+</tr>
+<!-- line 1481 -->
+<tr>
+<td><a name="C343-258">C343-258</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Grammar error in samurai quest: "wakarimasu?" instead of "wakarimasu ka?"
+
+<td>
+</tr>
+<!-- line 1485 -->
+<tr>
+<td><a name="C343-259">C343-259</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"Dr. Dolittle" is spelled incorrectly.
+
+<td>
+</tr>
+<!-- line 1489 -->
+<tr>
+<td><a name="C343-260">C343-260</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Ridden steeds are sometimes immune to gas traps.
+
+<td>
+</tr>
+<!-- line 1493 -->
+<tr>
+<td><a name="C343-261">C343-261</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Sleeping steeds can jump.
+
+<td>
+</tr>
+<!-- line 1501 -->
+<tr>
+<td><a name="C343-262">C343-262</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Polyporph mis-handles a used and wielded leash.
+
+<td>
+</tr>
+<!-- line 1505 -->
+<tr>
+<td><a name="C343-263">C343-263</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Probing may miss Schroedinger's cat.
+
+<td>
+</tr>
+<!-- line 1509 -->
+<tr>
+<td><a name="C343-264">C343-264</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>"You must drop your weapon" may appear when it should not.
+
+<td>
+</tr>
+<!-- line 1513 -->
+<tr>
+<td><a name="C343-265">C343-265</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Force may work when hero can't reach lock being forced.
+
+<td>
+</tr>
+<!-- line 1517 -->
+<tr>
+<td><a name="C343-266">C343-266</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero on drawbridge when it's destroyed is not handled properly.
+
+<td>
+</tr>
+<!-- line 1521 -->
+<tr>
+<td><a name="C343-267">C343-267</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Game says monster speed changes even if monster can't move at all.
+
+<td>
+</tr>
+<!-- line 1525 -->
+<tr>
+<td><a name="C343-268">C343-268</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Used up potion of acid may end up in bones file.
+
+<td>
+</tr>
+<!-- line 1529 -->
+<tr>
+<td><a name="C343-269">C343-269</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Bones file created after hero dies outside shop may mis-handle items.
+
+<td>
+</tr>
+<!-- line 1533 -->
+<tr>
+<td><a name="C343-270">C343-270</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Dying in a shop while wielding two weapons may cause a warning message.
+
+<td>
+</tr>
+<!-- line 1537 -->
+<tr>
+<td><a name="C343-271">C343-271</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Pet messages at the very end of the game may appear in the wrong place.
+
+<td>
+</tr>
+<!-- line 1541 -->
+<tr>
+<td><a name="C343-272">C343-272</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Corrupted score file can crash the game.
+
+<td>
+</tr>
+<!-- line 1550 -->
+<tr>
+<td><a name="C343-273">C343-273</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Changing alignment and held artifacts interact incorrectly.
+
+<td>
+</tr>
+<!-- line 1567 -->
+<tr>
+<td><a name="C343-274">C343-274</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Odd message when attempting to apply a wielded towel.
+
+<td>
+</tr>
+<!-- line 1572 -->
+<tr>
+<td><a name="C343-275">C343-275</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a lit, wielded, candle or potion of oil burns out, the game may crash.
+
+<td>
+</tr>
+<!-- line 1575 -->
+<tr>
+<td><a name="C343-276">C343-276</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a figurine auto-transforms while wielded or worn, the game may crash.
+
+<td>
+</tr>
+<!-- line 1580 -->
+<tr>
+<td><a name="C343-277">C343-277</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wooden weapons don't always burn when they should.
+
+<td>
+</tr>
+<!-- line 1584 -->
+<tr>
+<td><a name="C343-278">C343-278</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Quest leaders are too likely to be affected by traps.
+
+<td>
+</tr>
+<!-- line 1588 -->
+<tr>
+<td><a name="C343-279">C343-279</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Kicked arrows may get wrong bonuses.
+
+<td>
+</tr>
+<!-- line 1592 -->
+<tr>
+<td><a name="C343-280">C343-280</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Ranged polearm attack doesn't always work properly.
+
+<td>
+</tr>
+<!-- line 1596 -->
+<tr>
+<td><a name="C343-281">C343-281</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Kicking shop-owned food is not always accounted for correctly.
+
+<td>
+</tr>
+<!-- line 1601 -->
+<tr>
+<td><a name="C343-282">C343-282</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Damage calculation may be wrong when hero is polymorphed into a pudding.
+
+<td>
+</tr>
+<!-- line 1606 -->
+<tr>
+<td><a name="C343-283">C343-283</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Long walks take a non-optimial path.
+
+<td>
+</tr>
+<!-- line 1611 -->
+<tr>
+<td><a name="C343-284">C343-284</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Activating a shop-owned figurine sometimes doesn't entail shop charges.
+
+<td>
+</tr>
+<!-- line 1622 -->
+<tr>
+<td><a name="C343-285">C343-285</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Water elementals can be trapped in a bear trap.
+
+<td>
+</tr>
+<!-- line 1627 -->
+<tr>
+<td><a name="C343-286">C343-286</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Polymorph and lycanthropy do not interact properly.
+
+<td>
+</tr>
+<!-- line 1632 -->
+<tr>
+<td><a name="C343-287">C343-287</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero polymorphed into monster with kick attack doesn't get bonus from ring of
+increase damage when kicking.
+
+<td>
+</tr>
+<!-- line 1638 -->
+<tr>
+<td><a name="C343-288">C343-288</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The message "a monster appears" can show up when multiple monsters appear.
+
+<td>
+</tr>
+<!-- line 1642 -->
+<tr>
+<td><a name="C343-289">C343-289</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If magical removal of a steed's saddle is fatal to the hero, the saddle may
+still be on the steed in a bones file.
+
+<td>
+</tr>
+<!-- line 1647 -->
+<tr>
+<td><a name="C343-290">C343-290</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Rings do not show up in the "what do you want to charge?" prompt when they
+should.
+
+<td>
+</tr>
+<!-- line 1652 -->
+<tr>
+<td><a name="C343-291">C343-291</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Backstab bonus interacts incorrectly with thrown weapons and two-weapon mode.
+
+<td>
+</tr>
+<!-- line 1656 -->
+<tr>
+<td><a name="C343-292">C343-292</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Touching a pile of objects while blind does not always work correctly.
+
+<td>
+</tr>
+<!-- line 1660 -->
+<tr>
+<td><a name="C343-293">C343-293</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>There are a number of errors changing words between singular and plural forms.
+
+<td>
+</tr>
+<!-- line 1664 -->
+<tr>
+<td><a name="C343-294">C343-294</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Orcs and gnomes do not respond to #chat when they should.
+
+<td>
+</tr>
+<!-- line 1668 -->
+<tr>
+<td><a name="C343-295">C343-295</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Casting stone-to-flesh on self while  wielding a figurine can cause the game
+to panic.
+
+<td>
+</tr>
+<!-- line 1673 -->
+<tr>
+<td><a name="C343-296">C343-296</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Sunsword doesn't work as expected against shades.
+
+<td>
+</tr>
+<!-- line 1677 -->
+<tr>
+<td><a name="C343-297">C343-297</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Lit potion may survive hero dying from splattered oil burning on the floor.
+
+<td>
+</tr>
+<!-- line 1681 -->
+<tr>
+<td><a name="C343-298">C343-298</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Kicking at "empty space" uses no time.
+
+<td>
+</tr>
+<!-- line 1685 -->
+<tr>
+<td><a name="C343-299">C343-299</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Killing tame engulfer from inside gives a warning message.
+
+<td>
+</tr>
+<!-- line 1690 -->
+<tr>
+<td><a name="C343-300">C343-300</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Amulet of strangulation may kill forms that can't be strangled.
+
+<td>
+</tr>
+<!-- line 1695 -->
+<tr>
+<td><a name="C343-301">C343-301</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Nymphs can steal things they can't pick up.
+
+<td>
+</tr>
+<!-- line 1699 -->
+<tr>
+<td><a name="C343-302">C343-302</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Amnesia of object discoveries may forget to forget one thing.
+
+<td>
+</tr>
+<!-- line 1703 -->
+<tr>
+<td><a name="C343-303">C343-303</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Gem probabilities are not reset properly on level revisit.
+
+<td>
+</tr>
+<!-- line 1707 -->
+<tr>
+<td><a name="C343-304">C343-304</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Message given when damaging a closed drawbridge may refer to a wall.
+
+<td>
+</tr>
+<!-- line 1711 -->
+<tr>
+<td><a name="C343-305">C343-305</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Attacking with an applied polearm ignores the "confirm" option.
+
+<td>
+</tr>
+<!-- line 1715 -->
+<tr>
+<td><a name="C343-306">C343-306</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Engulfer under influence of conflict or confusion can swallow a monster and
+not be affected by water/lava/trap under monster until next turn.
+
+<td>
+</tr>
+<!-- line 1720 -->
+<tr>
+<td><a name="C343-307">C343-307</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Unicorn horn interacts incorrectly with ring of sustain ability.
+
+<td>
+</tr>
+<!-- line 1724 -->
+<tr>
+<td><a name="C343-308">C343-308</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A hidden, dead monster can revive hidden under its own corpse.
+
+<td>
+</tr>
+<!-- line 1728 -->
+<tr>
+<td><a name="C343-309">C343-309</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Droppinng Heart of Ahriman may give odd message sequence.
+
+<td>
+</tr>
+<!-- line 1732 -->
+<tr>
+<td><a name="C343-310">C343-310</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Applying an unpaid stack of potions of oil forces hero to buy all of them.
+
+<td>
+</tr>
+<!-- line 1736 -->
+<tr>
+<td><a name="C343-311">C343-311</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Price of unpaid shop items may change when hero is forced to buy.
+
+<td>
+</tr>
+<!-- line 1740 -->
+<tr>
+<td><a name="C343-312">C343-312</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Monster can attack with a polearm it was unable to wield.
+
+<td>
+</tr>
+<!-- line 1744 -->
+<tr>
+<td><a name="C343-313">C343-313</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>"You trip over it" may appear even after you know what "it" is.
+
+<td>
+</tr>
+<!-- line 1748 -->
+<tr>
+<td><a name="C343-314">C343-314</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Drowning on the Plane of Water lists cause of death as "drowned in a moat."
+
+<td>
+</tr>
+<!-- line 1752 -->
+<tr>
+<td><a name="C343-315">C343-315</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Small monsters dropping items due to weight use the wrong weights.
+
+<td>
+</tr>
+<!-- line 1756 -->
+<tr>
+<td><a name="C343-316">C343-316</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Monsters who shouldn't will attack the Wizard to get the Amulet.
+
+<td>
+</tr>
+<!-- line 1761 -->
+<tr>
+<td><a name="C343-317">C343-317</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Bones data can contain odd characters from player's dogname, catname, or fruit
+options; this can cause odd terminal-dependent behavior.
+
+<td>
+</tr>
+<!-- line 1767 -->
+<tr>
+<td><a name="C343-318">C343-318</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Opening or closing the castle drawbridge using music takes no time.
+
+<td>
+</tr>
+<!-- line 1772 -->
+<tr>
+<td><a name="C343-319">C343-319</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Grid bugs can be forced to move diagonally.
+
+<td>
+</tr>
+<!-- line 1777 -->
+<tr>
+<td><a name="C343-320">C343-320</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Reading scroll of mail break illiterate conduct.
+
+<td>
+</tr>
+<!-- line 1782 -->
+<tr>
+<td><a name="C343-321">C343-321</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero and monsters can walk through a long worm's tail diagonally.
+
+<td>
+</tr>
+<!-- line 1785 -->
+<tr>
+<td><a name="C343-322">C343-322</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Forced attack on a boulder says "you attack thin air."
+
+<td>
+</tr>
+<!-- line 1789 -->
+<tr>
+<td><a name="C343-323">C343-323</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Objects dropped as a monster dies don't interact properly with the environment.
+
+<td>
+</tr>
+<!-- line 1794 -->
+<tr>
+<td><a name="C343-324">C343-324</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cutting a long worm in two will crash the game if the cut takes the worm to 1 HP
+or if long worms had become extinct.
+
+<td>
+</tr>
+<!-- line 1800 -->
+<tr>
+<td><a name="C343-325">C343-325</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hole in ice may be described as a "moat."
+
+<td>
+</tr>
+<!-- line 1804 -->
+<tr>
+<td><a name="C343-326">C343-326</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Open and close commands may give inappropriate feedback near a drawbridge.
+
+<td>
+</tr>
+<!-- line 1808 -->
+<tr>
+<td><a name="C343-327">C343-327</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Message "suddenly you cannot see the" monster can be displayed when the
+monster remains visible for some reason.
+
+<td>
+</tr>
+<!-- line 1813 -->
+<tr>
+<td><a name="C343-328">C343-328</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Messages when opening a tin may imply implausible timing.
+
+<td>
+</tr>
+<!-- line 1817 -->
+<tr>
+<td><a name="C343-329">C343-329</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A just-dead monster may still claim to be fleeing.
+
+<td>
+</tr>
+<!-- line 1821 -->
+<tr>
+<td><a name="C343-330">C343-330</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wrong message may be delivered when seeing a pet eating.
+
+<td>
+</tr>
+<!-- line 1826 -->
+<tr>
+<td><a name="C343-331">C343-331</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Sleeping monster reacts to a mirror.
+
+<td>
+</tr>
+<!-- line 1830 -->
+<tr>
+<td><a name="C343-332">C343-332</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The message given when multiple potions of acid explode refers to a single
+potion.
+
+<td>
+</tr>
+<!-- line 1836 -->
+<tr>
+<td><a name="C343-333">C343-333</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Vault guard asks hero's name while hero is engulfed.
+
+<td>
+</tr>
+<!-- line 1841 -->
+<tr>
+<td><a name="C343-334">C343-334</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Defining GOLDOBJ drops a slot from the inventory.
+
+<td>
+</tr>
+<!-- line 1850 -->
+<tr>
+<td><a name="C343-335">C343-335</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cloak of invisibility and blindness do not interact reasonably.
+
+<td>
+</tr>
+<!-- line 1861 -->
+<tr>
+<td><a name="C343-336">C343-336</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A shapechanger starting out in changed form gets incorrect inventory items.
+
+<td>
+</tr>
+<!-- line 1866 -->
+<tr>
+<td><a name="C343-337">C343-337</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>It's possible to create an object of 0 gold pieces.
+
+<td>
+</tr>
+<!-- line 1871 -->
+<tr>
+<td><a name="C343-338">C343-338</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wizard-mode command sanity_check misses nested containers and migrating
+monsters.
+
+<td>
+</tr>
+<!-- line 1876 -->
+<tr>
+<td><a name="C343-339">C343-339</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Screen and time are not always updated properly when opening or closing doors
+while blind.
+
+<td>
+</tr>
+<!-- line 1886 -->
+<tr>
+<td><a name="C343-340">C343-340</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Secret door detection does not interact properly with features of the
+Planes of Water and Air.
+
+<td>
+</tr>
+<!-- line 1896 -->
+<tr>
+<td><a name="C343-341">C343-341</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>In minetown, it's possible to teleport into a room that requires digging to
+escape from.
+
+<td>
+</tr>
+<!-- line 1908 -->
+<tr>
+<td><a name="C343-342">C343-342</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Potion thrown by monster which hits long worm's tail says it hit its tail.
+
+<td>
+</tr>
+<!-- line 1931 -->
+<tr>
+<td><a name="C343-343">C343-343</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Helm of Opposite alignment gives incorrect piety level.
+
+<td>
+</tr>
+<!-- line 1935 -->
+<tr>
+<td><a name="C343-344">C343-344</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>NetHack thinks jellyfish have heads.
+
+<td>
+</tr>
+<!-- line 1939 -->
+<tr>
+<td><a name="C343-345">C343-345</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Attempting to remove cursed lenses gives a message with poor grammar.
+
+<td>
+</tr>
+<!-- line 1943 -->
+<tr>
+<td><a name="C343-346">C343-346</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Attempting to put on some items when the item is already wielded or quivered
+and failing for a variety of reasons gives a message with poor grammar.
+
+<td>
+</tr>
+<!-- line 1948 -->
+<tr>
+<td><a name="C343-347">C343-347</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Picking up and wearing an unknown ring while blind sometimes gives out too
+much information.
+
+<td>
+</tr>
+<!-- line 1954 -->
+<tr>
+<td><a name="C343-348">C343-348</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Exercise before polymorph may affect polymorphed character.
+
+<td>
+</tr>
+<!-- line 1959 -->
+<tr>
+<td><a name="C343-349">C343-349</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>An identify scroll is wasted if space is typed and steps off the end of the
+inventory list.
+
+<td>
+</tr>
+<!-- line 1964 -->
+<tr>
+<td><a name="C343-350">C343-350</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Eels don't hide when they are supposed to.
+
+<td>
+</tr>
+<!-- line 1969 -->
+<tr>
+<td><a name="C343-351">C343-351</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Alchemy-caused explosions don't wake nearby monsters.
+
+<td>
+</tr>
+<!-- line 1973 -->
+<tr>
+<td><a name="C343-352">C343-352</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Secret doors in lit walls don't always display properly.
+
+<td>
+</tr>
+<!-- line 1977 -->
+<tr>
+<td><a name="C343-353">C343-353</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Aborting key or lock pick with escape uses a turn.
+
+<td>
+</tr>
+<!-- line 1981 -->
+<tr>
+<td><a name="C343-354">C343-354</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Probing while engulfed ignores the fact that the hero is in the monster.
+
+<td>
+</tr>
+<!-- line 1986 -->
+<tr>
+<td><a name="C343-355">C343-355</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Archeologists start out at basic skill level in sling.
+
+<td>
+</tr>
+<!-- line 1991 -->
+<tr>
+<td><a name="C343-356">C343-356</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wearing an amulet of restful sleep confuses internal sleep state bookkeeping.
+
+<td>
+</tr>
+<!-- line 1996 -->
+<tr>
+<td><a name="C343-357">C343-357</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Rust monsters may chew non-ferrous items.
+
+<td>
+</tr>
+<!-- line 2000 -->
+<tr>
+<td><a name="C343-358">C343-358</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If no co-aligned artifacts are available for gifting when required, gifting
+fails repeatedly.
+
+<td>
+</tr>
+<!-- line 2005 -->
+<tr>
+<td><a name="C343-359">C343-359</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Setting the fruit name fails if the new name is already known but happens to
+be not at the end of an internal list.
+
+<td>
+</tr>
+<!-- line 2010 -->
+<tr>
+<td><a name="C343-360">C343-360</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A monster wearing a suit can still put on a shirt.
+
+<td>
+</tr>
+<!-- line 2014 -->
+<tr>
+<td><a name="C343-361">C343-361</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The message "you feel shuddering vibrations" does not always get displayed
+when it should.
+
+<td>
+</tr>
+<!-- line 2019 -->
+<tr>
+<td><a name="C343-362">C343-362</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Objects dropped during polymorph may be incorrectly polymorphed.
+
+<td>
+</tr>
+<!-- line 2024 -->
+<tr>
+<td><a name="C343-363">C343-363</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The case of monsters eating green slime corpses is not handled correctly.
+
+<td>
+</tr>
+<!-- line 2029 -->
+<tr>
+<td><a name="C343-364">C343-364</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If player's hand slips while naming an object, 'z' is never picked as the
+new letter.
+
+<td>
+</tr>
+<!-- line 2035 -->
+<tr>
+<td><a name="C343-365">C343-365</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero may remove armor for nymph or succubus while asleep.
+
+<td>
+</tr>
+<!-- line 2040 -->
+<tr>
+<td><a name="C343-366">C343-366</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Concealed mimic not always revealed when it should be.
+
+<td>
+</tr>
+<!-- line 2045 -->
+<tr>
+<td><a name="C343-367">C343-367</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Fainting with a wielded cockatrice corpse doesn't behave as expected.
+
+<td>
+</tr>
+<!-- line 2050 -->
+<tr>
+<td><a name="C343-368">C343-368</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Blinded hero knows too much about a monster summoning insects.
+
+<td>
+</tr>
+<!-- line 2054 -->
+<tr>
+<td><a name="C343-369">C343-369</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Mounted hero on life-saved steed gets repeated warning messages until hero dismounts.
+
+<td>
+</tr>
+<!-- line 2062 -->
+<tr>
+<td><a name="C343-370">C343-370</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Travel (_) command can get stuck trying to plot a path past an interesting
+dungeon feature, for example, a trap or fountain.
+
+<td>
+</tr>
+<!-- line 2068 -->
+<tr>
+<td><a name="C343-371">C343-371</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Stethoscopes can sometimes be used more often than intended.
+
+<td>
+</tr>
+<!-- line 2073 -->
+<tr>
+<td><a name="C343-372">C343-372</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A fatal explosion can give the player messages in the wrong order if carried
+items are destroyed.
+
+<td>
+</tr>
+<!-- line 2079 -->
+<tr>
+<td><a name="C343-373">C343-373</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Shopkeepers can polymorph into forms that don't let them do their jobs.
+
+<td>
+</tr>
+<!-- line 2084 -->
+<tr>
+<td><a name="C343-374">C343-374</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>When ploymorphed into a grid bug, attempting to move in an illegal direction
+is handled ungracefully.
+
+<td>
+</tr>
+<!-- line 2089 -->
+<tr>
+<td><a name="C343-375">C343-375</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A mimic posing as a statue is not handled properly.
+
+<td>
+</tr>
+<!-- line 2094 -->
+<tr>
+<td><a name="C343-376">C343-376</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When trying to move down, Hero can be levitating and stuck in the floor at the
+same time.
+
+<td>
+</tr>
+<!-- line 2100 -->
+<tr>
+<td><a name="C343-377">C343-377</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero hidden from monster is still treated as a normal target for range attack.
+
+<td>
+</tr>
+<!-- line 2104 -->
+<tr>
+<td><a name="C343-378">C343-378</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero hiding as a small mimic can end up stuck to a monster after returning to
+human form.
+
+<td>
+</tr>
+<!-- line 2110 -->
+<tr>
+<td><a name="C343-379">C343-379</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Spelling errors "sprit" and "truely" in quest text.
+
+<td>
+</tr>
+<!-- line 2114 -->
+<tr>
+<td><a name="C343-380">C343-380</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Mimics pretending to be doors show up on the Rogue level.
+
+<td>
+</tr>
+<!-- line 2119 -->
+<tr>
+<td><a name="C343-381">C343-381</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Attacking by applying a polearm doesn't scuff engraving under hero.
+
+<td>
+</tr>
+<!-- line 2122 -->
+<tr>
+<td><a name="C343-382">C343-382</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Auto-wielding a polearm may take no time.
+
+<td>
+</tr>
+<!-- line 2125 -->
+<tr>
+<td><a name="C343-383">C343-383</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Applying a bullwhip while hero is at edge of map may cause a panic or crash.
+
+<td>
+</tr>
+<!-- line 2129 -->
+<tr>
+<td><a name="C343-384">C343-384</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Cutting a level 0 long worm in half may lead to a worm with 0 HP, which may
+cause a crash.
+
+<td>
+</tr>
+<!-- line 2135 -->
+<tr>
+<td><a name="C343-385">C343-385</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>D command doesn't handle u choice correctly if only unpaid items are
+inside containers.
+
+<td>
+</tr>
+<!-- line 2140 -->
+<tr>
+<td><a name="C343-386">C343-386</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Pearl rings can rust.
+
+<td>
+</tr>
+<!-- line 2145 -->
+<tr>
+<td><a name="C343-387">C343-387</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>T-shirts can be read when covered.
+
+<td>
+</tr>
+<!-- line 2149 -->
+<tr>
+<td><a name="C343-388">C343-388</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Spell damage and low intelligence interact incorrectly.
+
+<td>
+</tr>
+<!-- line 2154 -->
+<tr>
+<td><a name="C343-389">C343-389</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Dragon breath and certain other effects hitting a hidden secret door does not
+damage it.
+
+<td>
+</tr>
+<!-- line 2159 -->
+<tr>
+<td><a name="C343-390">C343-390</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Breaking a wand which may zap but not damage a door gives an odd message.
+
+<td>
+</tr>
+<!-- line 2168 -->
+<tr>
+<td><a name="C343-391">C343-391</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Hero polymorphed into a mimic with #monster and hiding as an object does not
+unhide when polymorphing into a non-mimic.
+
+<td>
+</tr>
+<!-- line 2174 -->
+<tr>
+<td><a name="C343-392">C343-392</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A stunned monster may both walk away from the hero and keep holding him.
+
+<td>
+</tr>
+<!-- line 2179 -->
+<tr>
+<td><a name="C343-393">C343-393</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>The messages produced when throwing a poisoned weapon which loses its
+poison are in a confusing order.
+
+<td>
+</tr>
+<!-- line 2185 -->
+<tr>
+<td><a name="C343-394">C343-394</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Throwing a potion of acid into water may panic the game.
+
+<td>
+</tr>
+<!-- line 2190 -->
+<tr>
+<td><a name="C343-395">C343-395</a>
+<td><a href="bugs.html#state_N">Not a bug</a>
+<td>Spelling errors at the genocide prompt may have unintended consequences.
+
+<td>
+</tr>
+<!-- line 2194 -->
+<tr>
+<td><a name="C343-396">C343-396</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Shopkeeper does not charge hero for an unsold boulder that is destroyed with
+a pick-axe.
+
+<td>
+</tr>
+<!-- line 2200 -->
+<tr>
+<td><a name="C343-397">C343-397</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>A badly formed message may be produced if a pick-axe is applied to a boulder and
+the boulder is removed by a monster.
+
+<td>
+</tr>
+<!-- line 2206 -->
+<tr>
+<td><a name="C343-398">C343-398</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The game may crash if a wielded potion of polymorph is drunk.
+
+<td>
+</tr>
+<!-- line 2230 -->
+<tr>
+<td><a name="C343-399">C343-399</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Messages referring to a named vault gaurd have grammatical errors.
+
+<td>
+</tr>
+<!-- line 2235 -->
+<tr>
+<td><a name="C343-400">C343-400</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wearing a cloak of displacement identifies it even if hero can't see.
+
+<td>
+</tr>
+<!-- line 2238 -->
+<tr>
+<td><a name="C343-401">C343-401</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Wearing an elven cloak identifies it even if hero is already stealthy.
+
+<td>
+</tr>
+<!-- line 2241 -->
+<tr>
+<td><a name="C343-402">C343-402</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Putting on a ring of stealth never identifies it.
+
+<td>
+</tr>
+<!-- line 2246 -->
+<tr>
+<td><a name="C343-403">C343-403</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero can write a scroll not sufficiently identified.
+
+<td>
+</tr>
+<!-- line 2250 -->
+<tr>
+<td><a name="C343-404">C343-404</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Writing a scroll can give a badly phrased message if the scroll is known
+by its appearance.
+
+<td>
+</tr>
+<!-- line 2255 -->
+<tr>
+<td><a name="C343-405">C343-405</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Some quest artifacts are too easily affected by stone-to-flesh.
+
+<td>
+</tr>
+<!-- line 2260 -->
+<tr>
+<td><a name="C343-406">C343-406</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>One of the coyote names is spelled wrong.
+
+<td>
+</tr>
+<!-- line 2265 -->
+<tr>
+<td><a name="C343-407">C343-407</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If reading an unknown scroll of teleport puts the hero on another scroll
+of teleport, the second one is still treated as unknown.
+
+<td>
+</tr>
+<!-- line 2271 -->
+<tr>
+<td><a name="C343-408">C343-408</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Being killed by a monster with a long name can send the game into an
+infinite loop.
+
+<td>
+</tr>
+<!-- line 2282 -->
+<tr>
+<td><a name="C343-409">C343-409</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Unlocking a mimic pretending to be a door is not handled properly.
+
+<td>
+</tr>
+<!-- line 2287 -->
+<tr>
+<td><a name="C343-410">C343-410</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Using an unlocking tool on a boulder that's really a mimic and located in
+a doorway is not handled properly.
+
+<td>
+</tr>
+<!-- line 2293 -->
+<tr>
+<td><a name="C343-411">C343-411</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A purple worm can end up in wall or rock when swallowing a ghost or xorn.
+
+<td>
+</tr>
+<!-- line 2298 -->
+<tr>
+<td><a name="C343-412">C343-412</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Unpaid shop items stolen from hero remain on hero's bill.
+
+<td>
+</tr>
+<!-- line 2312 -->
+<tr>
+<td><a name="C343-413">C343-413</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>While blind, some actions resulting in "Wait!  That's a monster!" for a mimic
+posing as a door do not update the display correctly.
+
+<td>
+</tr>
+<!-- line 2317 -->
+<tr>
+<td><a name="C343-414">C343-414</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>#untrap of a known trap location with a concealed mimic gives correct message
+but does not update the display.
+
+<td>
+</tr>
+<!-- line 2322 -->
+<tr>
+<td><a name="C343-415">C343-415</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Mail daemons can be created when populating special levels with demons.
+
+<td>
+</tr>
+<!-- line 2327 -->
+<tr>
+<td><a name="C343-416">C343-416</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Being disintegrated by divine wrath gives an inappropriate message.
+
+<td>
+</tr>
+<!-- line 2331 -->
+<tr>
+<td><a name="C343-417">C343-417</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Polymorphing into a human form may give a message with the wrong gender.
+
+<td>
+</tr>
+<!-- line 2336 -->
+<tr>
+<td><a name="C343-418">C343-418</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Weight of non-cursed bag of holding is sometimes off by one.
+
+<td>
+</tr>
+<!-- line 2341 -->
+<tr>
+<td><a name="C343-419">C343-419</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>With option number_pad set to 2, M-5 (or Alt-5 or Shift-Keypad5) does not
+work as the G movement prefix.
+
+<td>
+</tr>
+<!-- line 2347 -->
+<tr>
+<td><a name="C343-420">C343-420</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Kops may not be dismissed if the shopkeeper changes levels.
+
+<td>
+</tr>
+<!-- line 2352 -->
+<tr>
+<td><a name="C343-421">C343-421</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Object teleport in and around the Wizard's Tower doesn't work as intended.
+
+<td>
+</tr>
+<!-- line 2357 -->
+<tr>
+<td><a name="C343-422">C343-422</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>There are inconsistencies in damage applied to objects when encountering
+lava in different ways.
+
+<td>
+</tr>
+<!-- line 2363 -->
+<tr>
+<td><a name="C343-423">C343-423</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Under some circumstances player can tell if bones file is created.
+
+<td>
+</tr>
+<!-- line 2368 -->
+<tr>
+<td><a name="C343-424">C343-424</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Unlit candelabrum becomes unlightable if candles have exactly one turn
+of fuel left and it was applied in the wrong location.
+
+<td>
+</tr>
+<!-- line 2379 -->
+<tr>
+<td><a name="C343-425">C343-425</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>If a steed's legs are wounded while being ridden and the hero dismounts
+before the legs heal, the hero's dexterity will stay reduced.
+
+<td>
+</tr>
+<!-- line 2383 -->
+<tr>
+<td><a name="C343-426">C343-426</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>A polymorphed hero hiding on the ceiling may be forced to drop to an
+inappropriate position.
+
+<td>
+</tr>
+<!-- line 2389 -->
+<tr>
+<td><a name="C343-427">C343-427</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Inappropriate message claiming a paralyzed monster "turns to flee" may appear.
+
+<td>
+</tr>
+<!-- line 2394 -->
+<tr>
+<td><a name="C343-428">C343-428</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Statues in a cockatrice nest are wrong type if the score file is empty.
+
+<td>
+</tr>
+<!-- line 2398 -->
+<tr>
+<td><a name="C343-429">C343-429</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>When using a display that scrolls the map, teleporting hero may display
+off the map momentarily.
+
+<td>
+</tr>
+<!-- line 2403 -->
+<tr>
+<td><a name="C343-430">C343-430</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>It's too easy to open tins.
+
+<td>
+</tr>
+<!-- line 2407 -->
+<tr>
+<td><a name="C343-431">C343-431</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Killing a vault guard results in a message about "dropping minvent."
+
+<td>
+</tr>
+<!-- line 2411 -->
+<tr>
+<td><a name="C343-432">C343-432</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>In a vault corridor: some traps could be left lying around.
+
+<td>
+</tr>
+<!-- line 2414 -->
+<tr>
+<td><a name="C343-433">C343-433</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>In a vault corridor: you can end up with lighted rock.
+
+<td>
+</tr>
+<!-- line 2417 -->
+<tr>
+<td><a name="C343-434">C343-434</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>In a vault corridor: when blind, you can be stuck and not be told why.
+
+<td>
+</tr>
+<!-- line 2420 -->
+<tr>
+<td><a name="C343-435">C343-435</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>In a vault corridor: various kinds of problems may result from having an
+iron ball.
+
+<td>
+</tr>
+<!-- line 2426 -->
+<tr>
+<td><a name="C343-436">C343-436</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Hero can levitate and fly where it makes no sense.
+
+<td>
+</tr>
+<!-- line 2431 -->
+<tr>
+<td><a name="C343-437">C343-437</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Gremlins sometimes don't respond properly to light.
+
+<td>
+</tr>
+<!-- line 2436 -->
+<tr>
+<td><a name="C343-438">C343-438</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Typo "gold piecess" may occur when selling items in a container.
+
+<td>
+</tr>
+<!-- line 2441 -->
+<tr>
+<td><a name="C343-439">C343-439</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Running NetHack in a terminal window with more than 255 rows or columns
+produces display errors.
+
+<td>
+</tr>
+<!-- line 2447 -->
+<tr>
+<td><a name="C343-440">C343-440</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If the game panics with the hero underwater, the hero may be restored
+on top of the water.
+
+<td>
+</tr>
+<!-- line 2453 -->
+<tr>
+<td><a name="C343-441">C343-441</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Autosearching while blind doesn't update the map when it should.
+
+<td>
+</tr>
+<!-- line 2457 -->
+<tr>
+<td><a name="C343-442">C343-442</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Drain life shouldn't override drain resistance of objects.
+
+<td>
+</tr>
+<tr>
+<td>
+<td>
+<td><a href="spoiler.html#C">(related spoiler bugs)</a>
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="W">Windows-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 49 -->
+<tr>
+<td><a name="W341-13">W341-13</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>&quot;Lock Windows&quot; menu item has wrong checkmark at startup
+
+<td>
+</tr>
+<!-- line 53 -->
+<tr>
+<td><a name="W341-14">W341-14</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Message window does not update properly if resized.
+
+<td>
+</tr>
+<!-- line 107 -->
+<tr>
+<td><a name="W342-6">W342-6</a>
+<td><a href="bugs.html#state_N">Not a bug</a>
+<td>Checkboxes are drawn wrong.
+
+<td>This is a bug in Windows.  Try upgrading the common controls as
+<a href="ports/download-win.html#cc">suggested here</a>.
+
+</tr>
+<!-- line 164 -->
+<tr>
+<td><a name="W343-1">W343-1</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Redirecting score output through a pipe doesn't work.
+
+<td>
+</tr>
+<!-- line 208 -->
+<tr>
+<td><a name="W343-2">W343-2</a>
+<td><a href="bugs.html#state_N">Not a bug</a>
+<td>Windows 98 is unable to load tiles that are too large.  This is an OS issue.
+
+<td>
+</tr>
+<!-- line 213 -->
+<tr>
+<td><a name="W343-3">W343-3</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Under the Polish version of Windows 2000 SP4, screen output with a raster
+font shows wrong characters for many dungeon features.
+
+<td>This has also been reported with Russion Win2000.  Some workarounds for
+various versions of 
+Windows.<br>
+Workarounds:
+<ol>
+<li>Use a fullscreen console or true-type fonts.
+<li>Disable IBMgraphics in defaults.nh.
+<li>Select "US English" as the default language for non-Unicode programs.
+<li>Create a bat file with the following contents:
+ <br><dl><dt><dd>mode con cp select=1251
+ <dt><dd>nethack.exe
+ </dl>
+</ol>
+
+</tr>
+<!-- line 287 -->
+<tr>
+<td><a name="W343-4">W343-4</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Keyboard may stop responding after locking or unlocking a door when using
+altkeyhandler=nhraykey.dll
+
+<td>
+</tr>
+<!-- line 545 -->
+<tr>
+<td><a name="W343-5">W343-5</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Error messages early in the game startup sequence may flash by unreadably.
+
+<td>
+</tr>
+<!-- line 1092 -->
+<tr>
+<td><a name="W343-6">W343-6</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Attempting to start NetHack from within a zip utility doesn't work (this is
+not a bug) and gives a misleading error message <tt>panic Cannot open dungeon description - "dungeon"</tt> (this is the bug).
+
+<td>Go back to the <a href="ports/download-win.html"> installation instructions</a>
+and finish the install.
+
+</tr>
+<!-- line 2307 -->
+<tr>
+<td><a name="W343-7">W343-7</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Using both nethack.exe and nethackW.exe can cause nethackW.exe to display
+the top scores list in a series of windows.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="X">X11-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 451 -->
+<tr>
+<td><a name="X343-1">X343-1</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The scrollbar for a text window may be missing when needed.
+
+<td>This appears to be a bug with (at least) XFree86 4.0.2 through 4.3.0
+ignoring XawtextScrollWhenNeeded.
+
+</tr>
+<!-- line 602 -->
+<tr>
+<td><a name="X343-2">X343-2</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>use_inverse is broken in tty mode.
+
+<td>
+</tr>
+<!-- line 837 -->
+<tr>
+<td><a name="X343-3">X343-3</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Sanity check for mouse position after window resize is wrong.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="L">Linux-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 2374 -->
+<tr>
+<td><a name="L343-1">L343-1</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Window resize is not supported by default.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="M">Macintosh-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 415 -->
+<tr>
+<td><a name="M343-1">M343-1</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Release code does not build under Carbon.
+
+<td><a href="bugmore/src-diff-mac.txt">Source Patch</a>
+</tr>
+<!-- line 440 -->
+<tr>
+<td><a name="M343-2">M343-2</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>nethack-343-mac-term.pkg.sit only: "No write permission to lock perm!" error.
+Only happens on clean installs of 10.3.x (not upgraded systems).
+(See M343-3 for 10.4.)
+
+<td><a href="bugmore/perm-mac.txt">Details and workarounds</a>
+</tr>
+<!-- line 683 -->
+<tr>
+<td><a name="M343-3">M343-3</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>nethack-343-mac-term.pkg.sit only: "No write permission to lock perm!" error.
+Only happens on 10.4 (See M343-2 for 10.3.)
+
+<td><a href="bugmore/perm-mac104.txt">Details and workarounds</a>
+</tr>
+<!-- line 2163 -->
+<tr>
+<td><a name="M343-4">M343-4</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>In the Qt port, Command-Z crashes the game and prevents it from restarting.
+
+<td><a href="bugmore/qt-mac.txt">Recovery instructions.</a>
+</tr>
+</table>
+<hr>
+<h3><a name="Q">Qt-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 35 -->
+<tr>
+<td><a name="Q341-1">Q341-1</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Randomly generating characters doesn't always follow user requests.
+
+<td>
+</tr>
+<!-- line 43 -->
+<tr>
+<td><a name="Q341-3">Q341-3</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>[Mac only] q and / keys send additional characters when pressed.
+
+<td>Workaround: use the menus.
+
+</tr>
+<!-- line 191 -->
+<tr>
+<td><a name="Q343-1">Q343-1</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>Explore or debug mode only: ^X doesn't show the intrinsics screen.
+
+<td>
+</tr>
+<!-- line 966 -->
+<tr>
+<td><a name="Q343-2">Q343-2</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Saved games are not found if the game is built with the prefix option.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="CE">Windows-CE issues</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 936 -->
+<tr>
+<td><a name="CE343-1">CE343-1</a>
+<td><a href="bugs.html#state_N">Not a bug</a>
+<td>Attempting to load an alternative tile set fails.
+
+<td>Use the full path to the bitmap; this is a limitation of the underlying OS.
+Also be sure there is enough RAM to load the file.
+
+</tr>
+<!-- line 2211 -->
+<tr>
+<td><a name="CE343-2">CE343-2</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Help text windows close immediately.
+
+<td>
+</tr>
+<!-- line 2214 -->
+<tr>
+<td><a name="CE343-3">CE343-3</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Action button points to wrong screen location.
+
+<td>
+</tr>
+<!-- line 2217 -->
+<tr>
+<td><a name="CE343-4">CE343-4</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>pocketpc: menu window closes if scrolled off top or bottom
+
+<td>
+</tr>
+<!-- line 2221 -->
+<tr>
+<td><a name="CE343-5">CE343-5</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Input is translated when command helper is hidden.
+
+<td>
+</tr>
+<!-- line 2225 -->
+<tr>
+<td><a name="CE343-6">CE343-6</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Text window does not scroll left on left arrow.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="S">Build-from-source issues (all platforms)</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 160 -->
+<tr>
+<td><a name="S343-1">S343-1</a>
+<td><a href="bugs.html#state_O">Open</a>
+<td>gnome port refers to file t32-1024.xpm for large tiles that doesn't exist
+
+<td>
+</tr>
+<!-- line 931 -->
+<tr>
+<td><a name="S343-2">S343-2</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>1x1 room in special level can trigger impossible or divide by zero due to off
+by one error (does not affect official room set)
+
+<td>
+</tr>
+<!-- line 1185 -->
+<tr>
+<td><a name="S343-3">S343-3</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>makedefs may fail to compile if sizeof(time_t) != sizeof(long)
+
+<td>
+</tr>
+<!-- line 1189 -->
+<tr>
+<td><a name="S343-4">S343-4</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>NetHack does not compile under Microsoft VC2005.
+
+<td>Try this <a href="bugmore/vc2005">patch</a>.
+
+</tr>
+<!-- line 1473 -->
+<tr>
+<td><a name="S343-5">S343-5</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>The prototype and definition for finish_map don't match properly.
+
+<td>
+</tr>
+<!-- line 1560 -->
+<tr>
+<td><a name="S343-6">S343-6</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Game does not compile under FreeBSD 6.1.
+
+<td>Try deleting the declaration of tparm in termcap.c.
+
+</tr>
+<!-- line 1855 -->
+<tr>
+<td><a name="S343-7">S343-7</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>DLB doesn't work under VMS if a file used by NetHack and without a dot in its
+name matches a VMS logical name.
+
+<td>
+</tr>
+<!-- line 1901 -->
+<tr>
+<td><a name="S343-8">S343-8</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>NetHack does not compile under Microsoft VS2008 Express Edition.
+
+<td>Try this <a href="bugmore/vs2008.txt">patch</a>.
+
+</tr>
+<!-- line 1912 -->
+<tr>
+<td><a name="S343-9">S343-9</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>If time_t changes from 32- to 64-bits due to (e.g.) compiler upgrades, save
+files will not be compatible between old and new builds.
+
+<td>
+</tr>
+<!-- line 1917 -->
+<tr>
+<td><a name="S343-10">S343-10</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Windows 64-bit mode compile produces warnings in random.c.
+
+<td>
+</tr>
+<!-- line 1921 -->
+<tr>
+<td><a name="S343-11">S343-11</a>
+<td><a href="bugs.html#state_f">fixed</a>
+<td>Smartphone keyboard does not work.
+
+<td><a href="bugmore/phonefullkbd.txt">Source patch</a>
+and
+<a href="ports/download-wince.html#smpk">binary</a>
+versions are available.
+
+</tr>
+<!-- line 2302 -->
+<tr>
+<td><a name="S343-12">S343-12</a>
+<td><a href="bugs.html#state_F">Fixed</a>
+<td>Game may fail to compile or give warnings if sizeof(char *) != sizeof(int).
+
+<td>
+</tr>
+</table>
+<br><hr>
+<h3>Bug Status Key</h3>
+<table border>
+<tr><th>State<th>Meaning</tr>
+<tr><td><a name="state_O">Open</a><td>The bug is unresolved, but we know what we need to about it.</tr>
+<tr><td><a name="state_N">Not a bug</a><td>Sometimes people think this is a bug, but they're wrong.</tr>
+<tr><td><a name="state_f">fixed</a><td>The bug will be fixed in the next bug-fix release.</tr>
+<tr><td><a name="state_F">Fixed</a><td>The bug will be fixed in a future release.</tr>
+<tr><td><a name="state_H">Help</a><td>We don't know what is causing this - if you see it, please send a detailed bug report.  Thanks!</tr>
+<tr><td><a name="state_S">Superseded</a><td>See another entry for information on this bug.</tr>
+</table>
+<!--
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2012 by Kenneth Lorber, Kensington, Maryland.
+-->

@@ -6,12 +6,6 @@
 
 <meta charset="utf-8">
 
-{% comment %}
-    Find out if this is a version-specific page by checking if its path starts
-    with one of the version path prefixes.  This would be *much* simpler if
-    Liquid had a `startswith` operator...
-{% endcomment %}
-
 {% assign dummy = "||zx||" %}
 {% assign dummy_page_path = page.path | prepend: dummy %}
 {% for version in site.data.versions %}
@@ -22,17 +16,9 @@
     {% endif %}
 {% endfor %}
 
-{% assign latest_version = site.data.versions[0] %}
-
-<title>{% if page_version and page_version.current != true %}[OLD] {% endif %}{{ page.title }}{% if page.is_blog_page %} - Blog{% endif %} - {{ site.title }} {% if page_version %}{{ page_version.version }}{% else %}{{ latest_version.version }}{% endif %}</title>
-
-<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }} Blog - Feed" href="{{ site.baseurl }}/blog/feed.xml">
-<link rel="stylesheet" href="{{ site.baseurl }}/styles/style.css">
-<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
-{% if page.url contains "index.html" %}
-    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}">
-{% endif %}
+{% include html-title.html page_version=page_version %}
+{% include html-meta.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/default.css">
 
 </head>
 <body>
@@ -57,7 +43,7 @@
         Blog posts include their own headings which have their own titles.
     {% endcomment %}
     {% unless page.is_blog_post %}
-        <h1>{{ page.title }}{% if page.is_blog_page %} - Blog{% elsif page_version %} - {{ site.title }} {{ page_version.version }}{% endif %}</h1>
+        {% include page-title.html page_version=page_version %}
     {% endunless %}
 
     {{ content }}
