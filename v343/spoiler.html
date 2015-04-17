@@ -1,0 +1,305 @@
+---
+layout: legacy
+title: Spoiler Bugs
+legacy:
+  style: legacy-bugs.css
+  back_link:
+    text: NetHack 3.4.3 Release Notes
+    url: release.html
+---
+<dl>
+<dt><a href="spoiler.html#C">Core Bugs (common to all systems)</a>
+<dt><a href="spoiler.html#W">Windows-only bugs</a>
+<dt><a href="spoiler.html#X">X11-only bugs</a>
+<dt><a href="spoiler.html#L">Linux-only bugs</a>
+<dt><a href="spoiler.html#M">Macintosh-only bugs</a>
+<dt><a href="spoiler.html#Q">Qt-only bugs</a>
+<dt><a href="spoiler.html#CE">Windows-CE issues</a>
+<dt><a href="spoiler.html#S">Build-from-source issues (all platforms)</a>
+<dt><a href="bugs.html">Non-spoiler bugs</a>
+</dl>
+<hr>
+<h3><a name="C">Core Bugs (common to all systems)</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 83 -->
+<tr>
+<td><a name="SC342-3">SC342-3</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Hangup can be used to cheat.
+
+<td>
+</tr>
+<!-- line 245 -->
+<tr>
+<td><a name="SC343-1">SC343-1</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Monsters that can't blow can still use a whistle.
+
+<td>
+</tr>
+<!-- line 387 -->
+<tr>
+<td><a name="SC343-2">SC343-2</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>If you are poison resistant, potions of sickness can only kill you
+if they are blessed.
+
+<td>
+</tr>
+<!-- line 401 -->
+<tr>
+<td><a name="SC343-3">SC343-3</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Water walking boots are not handled properly on lava.
+
+<td>
+</tr>
+<!-- line 472 -->
+<tr>
+<td><a name="SC343-4">SC343-4</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Reviving corpses or reanimating statues in a shop does not get charged
+correctly.
+
+<td>
+</tr>
+<!-- line 498 -->
+<tr>
+<td><a name="SC343-5">SC343-5</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Breaking container contents in a shop doesn't always charge for them.
+
+<td>
+</tr>
+<!-- line 502 -->
+<tr>
+<td><a name="SC343-6">SC343-6</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Stealing a stack of items from a shop sometimes results in only being charged for one.
+
+<td>
+</tr>
+<!-- line 610 -->
+<tr>
+<td><a name="SC343-7">SC343-7</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Zapping an unknown wand while blind sometimes gives out too much information.
+
+<td>
+</tr>
+<!-- line 662 -->
+<tr>
+<td><a name="SC343-8">SC343-8</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Re-animating a statue containing gold produces too much gold.
+
+<td>
+</tr>
+<!-- line 736 -->
+<tr>
+<td><a name="SC343-9">SC343-9</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Medusa corpse from a level file behaves incorrectly.
+
+<td>
+</tr>
+<!-- line 775 -->
+<tr>
+<td><a name="SC343-10">SC343-10</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Player can raise HP and Pw by dancing with vampires.
+
+<td>
+</tr>
+<!-- line 908 -->
+<tr>
+<td><a name="SC343-11">SC343-11</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>It's possible to easily find the identity of a high priest on the Astral plane.
+
+<td>
+</tr>
+<!-- line 953 -->
+<tr>
+<td><a name="SC343-12">SC343-12</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Hero using telepathy can abuse Call on the Astral Plane.
+
+<td>
+</tr>
+<!-- line 1053 -->
+<tr>
+<td><a name="SC343-13">SC343-13</a>
+<td><a href="spoiler.html#state_O">Open</a>
+<td>While blind and levitating, too much information may be presented.
+
+<td>
+</tr>
+<!-- line 1225 -->
+<tr>
+<td><a name="SC343-14">SC343-14</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Shopkeepers and priests may be teleported out of their shop or temple too
+easily.
+
+<td>
+</tr>
+<!-- line 1311 -->
+<tr>
+<td><a name="SC343-15">SC343-15</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Nurses are not stoned by hero polymorphed into cockatrice.
+
+<td>
+</tr>
+<!-- line 1497 -->
+<tr>
+<td><a name="SC343-16">SC343-16</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Galatinous cubes can engulf Rider corpses.
+
+<td>
+</tr>
+<!-- line 1546 -->
+<tr>
+<td><a name="SC343-17">SC343-17</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Stethoscope may unhide hidden mimic.
+
+<td>
+</tr>
+<!-- line 1555 -->
+<tr>
+<td><a name="SC343-18">SC343-18</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Escaping from lava can leave hero outside of time.
+
+<td>
+</tr>
+<!-- line 1845 -->
+<tr>
+<td><a name="SC343-19">SC343-19</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>Monsters seeking the Amulet attack temple priests to get it.
+
+<td>
+</tr>
+<!-- line 1882 -->
+<tr>
+<td><a name="SC343-20">SC343-20</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Hangup save while picking up gold in a shop may duplicate the gold.
+
+<td>
+</tr>
+<!-- line 1891 -->
+<tr>
+<td><a name="SC343-21">SC343-21</a>
+<td><a href="spoiler.html#state_f">fixed</a>
+<td>Accounting is incorrect for containers dropped in a shop that does not sell
+them.
+
+<td>
+</tr>
+<!-- line 2277 -->
+<tr>
+<td><a name="SC343-22">SC343-22</a>
+<td><a href="spoiler.html#state_F">Fixed</a>
+<td>The travel command allows grid bugs to move one step diagonally.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="W">Windows-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<hr>
+<h3><a name="X">X11-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<hr>
+<h3><a name="L">Linux-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<hr>
+<h3><a name="M">Macintosh-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<hr>
+<h3><a name="Q">Qt-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<hr>
+<h3><a name="CE">Windows-CE issues</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<hr>
+<h3><a name="S">Build-from-source issues (all platforms)</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+</table>
+<br><hr>
+<h3>Bug Status Key</h3>
+<table border>
+<tr><th>State<th>Meaning</tr>
+<tr><td><a name="state_O">Open</a><td>The bug is unresolved, but we know what we need to about it.</tr>
+<tr><td><a name="state_N">Not a bug</a><td>Sometimes people think this is a bug, but they're wrong.</tr>
+<tr><td><a name="state_f">fixed</a><td>The bug will be fixed in the next bug-fix release.</tr>
+<tr><td><a name="state_F">Fixed</a><td>The bug will be fixed in a future release.</tr>
+<tr><td><a name="state_H">Help</a><td>We don't know what is causing this - if you see it, please send a detailed bug report.  Thanks!</tr>
+<tr><td><a name="state_S">Superseded</a><td>See another entry for information on this bug.</tr>
+</table>
+<!--
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2012 by Kenneth Lorber, Kensington, Maryland.
+-->
