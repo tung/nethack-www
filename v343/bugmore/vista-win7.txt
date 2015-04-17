@@ -1,0 +1,23 @@
+In Vista and Windows 7, the type of window NetHack.exe uses can no longer be
+expanded to fill the entire screen.  Here is what you can do about that:
+
+You can improve things somewhat by picking a bigger font so that the window
+gets bigger to hold the same number of lines and columns.  Click on the upper
+left corner of the window border and pick "properties" from the drop down
+menu.   [In Windows XP and earlier, you could pick "maximize" from that menu
+instead and get the result you want; that doesn't work now.]
+
+Then on the properties widget, pick the Font tab.  When I do that on Vista, I
+see the choice of two fonts:  Lucida Console and Raster Fonts.  For Raster
+Fonts, there's a choice of sizes 6x8, 8x12 and so forth.  None is particularly
+satisfactory, although one or two of the biggest ones are better than the
+default.  But Lucida Console gives better results.  The sizes there are in
+points or some such unit rather than pixel XxY grid amounts, and the best one
+to pick will depend upon your monitor size and the screen resolution it's set
+for.  In addition to maybe getting a better fit for you, Lucida Console is
+easier to read than raster font, at least for me.
+
+Once you find the best size, you can create a shortcut and apply the property
+changes to that and then save it.   Then run nethack via the shortcut rather
+than directly starting nethack.exe.  That way you won't have to reset the font
+every time you run nethack.

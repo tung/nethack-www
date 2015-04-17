@@ -1,0 +1,4 @@
+This workaround is reported to get nethack running on 10.4.1 (Tiger):
+     sudo chgrp staff /usr/games/nethack
+     sudo chmod g+s /usr/games/nethack
+(Note that you will need an admin password for this procedure.)

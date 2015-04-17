@@ -1,0 +1,27 @@
+Index: mhmain.c
+===================================================================
+RCS file: /usr/local/cvsroot/nethack/sys/wince/mhmain.c,v
+retrieving revision 1.5.2.1
+diff -c -r1.5.2.1 mhmain.c
+*** mhmain.c	1 Aug 2003 12:09:51 -0000	1.5.2.1
+--- mhmain.c	24 Feb 2007 04:39:36 -0000
+***************
+*** 413,419 ****
+  #endif
+  		/*-----------------------------------------------------------------------*/
+  
+- #if !defined(WIN_CE_SMARTPHONE)
+  		case WM_CHAR:
+  			if( wParam=='\n' || wParam=='\r' || wParam==C('M') ) return 0; /* we already processed VK_RETURN */
+  
+--- 413,418 ----
+***************
+*** 424,430 ****
+  				NHEVENT_KBD( (lParam & 1<<29)? M(tolower(wParam)) : wParam );
+  			}
+  		return 0;
+- #endif
+  
+  		/*-----------------------------------------------------------------------*/
+  
+--- 423,428 ----

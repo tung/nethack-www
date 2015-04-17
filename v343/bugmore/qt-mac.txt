@@ -1,0 +1,43 @@
+Recovery instructions for MacOS X Qt port - when the game refuses to start or
+has crashed.
+
+THESE INSTRUCTIONS ASSUME YOU HAVE INSTALLED THE DMG PACKAGE RELEASED IN
+OCTOBER 2009.  If you are running the older .tgz package, see the "MANUAL
+RECOVERY INSTRUCTIONS" farther down this page.
+
+1) Use the Finder to locate "NetHackQt", but DO NOT try to start the game.
+
+2) Hold down the control key and click on "NetHackQt" - select
+   "Show Package Contents"
+
+3) Double click on "nethackdir"
+
+4) Double click on "NetHackRecover" and follow the on-screen instructions.
+
+5) If recover was able to save the game that was in progress when NetHackQt
+   crashed or was Force Quit, the next time the game starts it will restore
+   the game.
+
+----
+MANUAL RECOVERY INSTRUCTIONS
+These instructions assume you are comfortable using Terminal.app and the
+command line.  If you are not, now might be a good time to reinstall the
+game using the new .dmg package instead.
+
+1) cd into NetHack.app.  The path depends on where you installed NetHack
+   originally.
+
+2) cd nethackdir
+
+3) rm perm_lock
+   This file may not exist; that is not a problem.
+
+4) See if there is a game to recover.  If there are files named with a number
+   (your uid) followed by your Unix user name, there is.  (Hint: use the "id"
+   command to find this information.)
+
+   To attempt recovery of the game, enter this command, substituting as
+   appropriate:
+	./recover -d . <UID><USERNAME>
+   for example:
+	./recover -d . 604shelly

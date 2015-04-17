@@ -1,0 +1,27 @@
+DETAILS:
+We are getting reports of permissions errors under the following
+circumstances:
+1.  OS version 10.3.x (i.e., not earlier versions)
+2.  The OS was "clean" installed, rather than "upgraded" from an
+    earlier version.
+3.  nethack-343-mac-term.pkg.sit is being used
+
+The root cause is that OS 10.3 changed the way groups are assigned
+during the process of adding new users.  The old way was to add
+all new users to the "staff" group.  In 10.3, each user is assigned
+its own unique group with the same id and name as the user (just
+as Linux does it).  That change by itself is not a problem, but
+for some reason they took out the code that also adds new users to
+"staff".  Now there is no longer any group that "automatically"
+contains all real users.
+
+WORKAROUND:
+An administrative user needs to run the following shell
+command once for each player:
+
+sudo niutil -appendprop . /groups/staff users FOO
+
+where FOO is the login name of the player's account.  More than
+one player can be specified by separating the login names by
+spaces.
+
