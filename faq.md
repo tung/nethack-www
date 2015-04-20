@@ -41,7 +41,7 @@ Your character is represented by the `@` (at sign) with the cursor over it.
 
 To discover what everything else is, press `;` (semicolon) to enter far-look mode, use the movement keys to position the cursor on what you want described, then press `.` (period) to get a brief description of the thing under the cursor.
 
-For a more detailed list of what letters and symbols mean, consult the [Guidebook](#TODO), and the in-game help that can be viewed by pressing `?` (question mark).
+For a more detailed list of what letters and symbols mean, consult the [Guidebook]({{ site.baseurl }}/{{ site.data.versions[0].path }}/guidebook.html), and the in-game help that can be viewed by pressing `?` (question mark).
 
 ### My character keeps picking up junk and getting burdened!
 
