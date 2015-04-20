@@ -15,7 +15,7 @@
     <h2 class="post-title">{% if page.is_blog_post %}{{ post_title }}{% else %}<a href="{{ site.baseurl }}{{ post_url }}">{{ post_title }}</a>{% endif %}</h2>
     <div class="post-meta">
         Posted by <a class="post-author" href="{{ site.baseurl }}/blog/authors/{{ post_author }}.html">{{ post_author }}</a>
-        on <a class="post-date" href="{{ site.baseurl }}{{ post_url }}">{{ post_date | date: "%B %-d, %Y" }}</a>
+        on <a class="post-date" href="{{ site.baseurl }}{{ post_url }}" title="permalink">{{ post_date | date: "%B %-d, %Y" }}</a>
         {% for tag in post_tags %}
             {% if forloop.first %}
                 under
