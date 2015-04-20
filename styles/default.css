@@ -217,3 +217,7 @@ span.pagination-older, span.pagination-newer {
     color: #333;
     margin: 0;
 }
+
+dt {
+    font-weight: bold;
+}
