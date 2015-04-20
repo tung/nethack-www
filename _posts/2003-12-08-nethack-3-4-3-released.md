@@ -10,4 +10,4 @@ NetHack 3.4.3 [released][version-343].
 TODO: It'd be nice if there were an excerpt from the 3.4.3 release notes here.
 {:/}
 
-[version-343]: #TODO
+[version-343]: {{site.baseurl}}/v343/release.html

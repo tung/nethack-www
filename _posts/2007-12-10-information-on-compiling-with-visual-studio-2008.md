@@ -6,4 +6,4 @@ tags: [windows, development, patch]
 ---
 Information on compiling with Microsoft Visual Studio now available [on the bugs page][S343-8]
 
-[S343-8]: #TODO
+[S343-8]: {{site.baseurl}}/v343/bugs.html#S343-8

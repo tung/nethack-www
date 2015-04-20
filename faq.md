@@ -98,7 +98,7 @@ Windows users should edit the `defaults.nh` file in their ***NetHack*** folder u
 
 Almost always no, but see the release information for each version to be sure.  These files contain information from the internal structures of the game, and these almost always change between versions.
 
-You *can* use save and bones files from 3.4.0, 3.4.1 and 3.4.2 with 3.4.3 (details are in the [release notes](#TODO)).  This also applies to 3.4.2 as well as 3.4.1 and 3.4.0.
+You *can* use save and bones files from 3.4.0, 3.4.1 and 3.4.2 with 3.4.3 (details are in the [release notes]({{ site.baseurl }}/v343/release.html)).  This also applies to 3.4.2 as well as 3.4.1 and 3.4.0.
 
 You *cannot* use save or bones files from any previous version with 3.4.x.
 
