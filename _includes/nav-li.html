@@ -1,21 +1,14 @@
 <li>
-    {% comment %}
-        Fetch the page matching the include.url and use its title,
-        unless an alternate include.title is given.
-    {% endcomment %}
     {% if include.title %}
         {% assign nav-li-title = include.title %}
+    {% elsif site.data.nav[include.url] %}
+        {% assign nav-li-title = site.data.nav[include.url] %}
     {% else %}
-        {% assign nav-li-page = site.pages | where: "url", include.url | first %}
-        {% assign nav-li-title = nav-li-page.title %}
+        {% assign nav-li-title = include.url %}
     {% endif %}
-
     {% if page.url == include.url %}
         <b>{{ nav-li-title }}</b>
     {% else %}
-        {% comment %}
-            Omit "index.html" from URLs as a matter of style.
-        {% endcomment %}
         <a href="{{ site.baseurl }}{{ include.url | replace: "index.html" }}">{{ nav-li-title }}</a>
     {% endif %}
 </li>

@@ -1,0 +1,44 @@
+#
+# Map of internal URLs to titles for navigation elements.
+#
+# Improves site generation speed by not forcing navigation links to
+# plough through an entire site's worth of pages to get the title of a
+# single page.
+#
+
+# NetHack
+/index.html: Welcome!
+/about.html: About NetHack
+/screenshots.html: Screenshots
+/references.html: NetHack References
+/faq.html: Frequently Asked Questions
+/contact-us.html: Contact Us
+
+# Blog
+/blog/index.html: Latest Posts
+/blog/archives.html: Archives
+/blog/tags.html: Tags
+/blog/authors.html: Authors
+
+# Play Online
+/how-to-play-online.html: How to Play Online
+
+# Development
+/how-to-contribute.html: How to Contribute
+
+# Community
+/links.html: Other Links
+
+# NetHack 3.4.3
+/v343/release.html: Release Notes
+/v343/downloads.html: Downloads
+/v343/guidebook.html: Guidebook
+/v343/bugs.html: Known Bugs
+/v343/spoiler.html: Spoiler Bugs
+
+# NetHack 3.4.2
+# NetHack 3.4.1
+# NetHack 3.4.0
+# NetHack 3.3.1
+# NetHack 3.3.0
+# NetHack 3.2.3

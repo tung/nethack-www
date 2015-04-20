@@ -4,8 +4,11 @@
     <ul>
         {% for version_page in latest_version.sub_nav %}
             {% assign version_page_url = "/" | append: latest_version.path | append: "/" | append: version_page %}
-            {% assign version_page_info = site.pages | where: "url", version_page_url | first %}
-            {% assign version_page_title = version_page_info.title | prepend: " " | prepend: latest_version.version %}
+            {% if site.data.nav[version_page_url] %}
+                {% assign version_page_title = site.data.nav[version_page_url] | prepend: " " | prepend: latest_version.version %}
+            {% else %}
+                {% assign version_page_title = version_page_url %}
+            {% endif %}
             {% include nav-li.html url=version_page_url title=version_page_title %}
         {% endfor %}
     </ul>
