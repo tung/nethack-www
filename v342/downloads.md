@@ -143,7 +143,7 @@ Alternatively, you can clone our [code repository]({{ site.code_repository_url }
 
 ## Large tiles (optional)
 
-[tiles32.zip](#TODO)
+[tiles32.zip](http://sourceforge.net/projects/nethack/files/nethack/3.4.0/tiles32.zip/download)
 : A set of 32 x 32 tiles (that is, larger than the default graphics set).
 
 To use this tileset, extract it to the same directory/folder as NetHack, then add the following line to your config file:
