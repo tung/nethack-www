@@ -10,4 +10,4 @@ NetHack 3.4.2 [released][version-342].
 TODO: It'd be nice if there were an extract from the 3.4.2 release notes here.
 {:/}
 
-[version-342]: #TODO
+[version-342]: {{site.baseurl}}/v342/release.html

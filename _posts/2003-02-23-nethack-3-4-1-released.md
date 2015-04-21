@@ -6,4 +6,4 @@ tags: [v341, releases]
 ---
 NetHack 3.4.1 [released][version-341].
 
-[version-341]: #TODO
+[version-341]: {{site.baseurl}}/v341/release.html

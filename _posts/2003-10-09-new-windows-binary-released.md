@@ -6,4 +6,4 @@ tags: [v342, windows, gui, packages]
 ---
 [New Windows binary released][342-download-windows] to address screen drawing slowness.
 
-[342-download-windows]: #TODO
+[342-download-windows]: {{site.baseurl}}/v342/ports/download-win.html
