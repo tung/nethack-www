@@ -4,10 +4,6 @@
     max-width: 1000px;
 }
 
-a[href="#"], a[href="#TODO"] {
-    color: #c00;
-}
-
 a:visited {
     color: #3f1367;
 }
