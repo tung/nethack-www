@@ -97,22 +97,22 @@ There is no real-mode overlaid binary distribution of NetHack 3.4.3.
 These installer packages must be downloaded to, and run on, a Microsoft Windows computer, not on the target Windows CE system.
 
 [nethack-343-ce-ppc.exe](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-ce-ppc.exe/download)
-: Nethack 3.4.3 installer package for *PocketPC* platform (Windows CE 3.0, PocketPC 2000 and PocketPC 2002).
+: NetHack 3.4.3 installer package for *PocketPC* platform (Windows CE 3.0, PocketPC 2000 and PocketPC 2002).
 
 [nethack-343-ppc.ARM.CAB](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-ppc.ARM.CAB/download)
 : Same as above in CAB format.
 
 [nethack-343-ce-hpc.exe](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-ce-hpc.exe/download)
-: Nethack 3.4.3 installer package for *Handheld PC Professional* running Windows 2.11 or higher.
+: NetHack 3.4.3 installer package for *Handheld PC Professional* running Windows 2.11 or higher.
 
 [nethack-343-ce-ps211.exe](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-ce-ps211.exe/download)
-: Nethack 3.4.3 installer package for the *Palm Size PC* running Windows CE 2.11.  Note: This has nothing to do with any PalmOS-based PDA.
+: NetHack 3.4.3 installer package for the *Palm Size PC* running Windows CE 2.11.  Note: This has nothing to do with any PalmOS-based PDA.
 
 [nethack-343-sph.ARM.CAB](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-sph.ARM.CAB/download)
-: Nethack 3.4.3 installer package for the *Smartphone 2002*.  This is an *unsigned* CAB so you will need an *unlocked* phone to install and run this (e.g. a *developer* version of the Orange SPV).  Use the `#` (hash) key on your phone to access different keypad layouts.
+: NetHack 3.4.3 installer package for the *Smartphone 2002*.  This is an *unsigned* CAB so you will need an *unlocked* phone to install and run this (e.g. a *developer* version of the Orange SPV).  Use the `#` (hash) key on your phone to access different keypad layouts.
 
 [nethack-343-sph-k.ARM.CAB](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-sph-k.ARM.CAB/download)
-: Nethack 3.4.3 installer package for the *Smartphone 2002* with full keyboard support enabled.  This is an *unsigned* CAB so you will need an *unlocked* phone to install and run this (e.g. a *developer* version of the Orange SPV).
+: NetHack 3.4.3 installer package for the *Smartphone 2002* with full keyboard support enabled.  This is an *unsigned* CAB so you will need an *unlocked* phone to install and run this (e.g. a *developer* version of the Orange SPV).
 
 The installer packages above were created with [EZSetup by Scott Ludwig](http://www.scottlu.com/Content/EZSetup.html).
 
