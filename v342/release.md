@@ -15,9 +15,9 @@ A more complete list of changes for this release can be found in the file `doc/f
 
 The NetHack 3.4.2 source code supports many different platforms including most Unix versions.  In addition to source code support, we expect to supply binaries for Windows, DOS, Linux (tm), Apple Macintosh (tm), Apple Macintosh OS X (tm), OS/2 (tm), Atari (tm), Amiga (tm), Handheld PC Professional devices running Windows 2.11 or higher, PocketPC platform devices (Windows CE 3.0, PocketPC 2000 and PocketPC 2002), and Palm Size PC 1.1 devices running Windows CE 2.11.
 
-To download the game, go to the NetHack website and download from the downloads page at: <http://www.nethack.org/v342/downloads.html>.  Mirrors may be available in your area, or if your software doesn't get along with the primary site(s).
+To download the game, go to <strike>the NetHack website and download from</strike> the [downloads page](downloads.html) <strike>at: <http://www.nethack.org/v342/downloads.html></strike>.  <strike>Mirrors may be available in your area, or if your software doesn't get along with the primary site(s).</strike>
 
-See the following web page for a current list of mirrors: <http://www.nethack.org/common/links.html#mirror>
+<strike>See the following web page for a current list of mirrors: <http://www.nethack.org/common/links.html#mirror></strike>
 
 Binaries for a given platform may take a day or so to become available.  Please be patient and don't log a problem report if a specific binary release isn't immediately available.
 
@@ -29,9 +29,9 @@ Official 3.4.2 binaries (those obtained from www.nethack.org or one of its mirro
 
 If you're compiling yourself, you need to guard against clobbering existing save and/or bones files when using `make install`.
 
-As with all releases of the game, we appreciate your feedback.  Please submit any bugs using the problem report sheet at <http://www.nethack.org/common/contact.html>.
+As with all releases of the game, we appreciate your feedback.  Please submit any bugs <strike>using the problem report sheet at <http://www.nethack.org/common/contact.html></strike> [via email]({{ site.baseurl }}/contact-us.html).
 
-Also, please check the "known bugs" list at <http://www.nethack.org/v342/bugs.html> before you log a problem - somebody else may have already found it, after all.
+Also, please check the ["known bugs" list](bugs.html) <strike>at <http://www.nethack.org/v342/bugs.html></strike> before you log a problem - somebody else may have already found it, after all.
 
 Happy NetHacking!
 
