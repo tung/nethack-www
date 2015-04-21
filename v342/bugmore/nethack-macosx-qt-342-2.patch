@@ -1,0 +1,535 @@
+diff -ru ../nethack-3.4.2/include/config.h ./include/config.h
+--- ../nethack-3.4.2/include/config.h	Sat Aug 30 10:07:15 2003
++++ ./include/config.h	Thu Sep 11 11:01:38 2003
+@@ -42,9 +42,9 @@
+  * Define all of those you want supported in your binary.
+  * Some combinations make no sense.  See the installation document.
+  */
+-#define TTY_GRAPHICS	/* good old tty based graphics */
++/* #define TTY_GRAPHICS */	/* good old tty based graphics */
+ /* #define X11_GRAPHICS */	/* X11 interface */
+-/* #define QT_GRAPHICS */	/* Qt interface */
++#define QT_GRAPHICS	/* Qt interface */
+ /* #define GNOME_GRAPHICS */	/* Gnome interface */
+ /* #define MSWIN_GRAPHICS */	/* Windows NT, CE, Graphics */
+ 
+@@ -85,7 +85,9 @@
+ #ifdef QT_GRAPHICS
+ # define DEFAULT_WC_TILED_MAP   /* Default to tiles if users doesn't say wc_ascii_map */
+ # define USER_SOUNDS		/* Use sounds */
+-# define USER_SOUNDS_REGEX
++# ifndef __APPLE__
++#  define USER_SOUNDS_REGEX
++# endif
+ # define USE_XPM		/* Use XPM format for images (required) */
+ # define GRAPHIC_TOMBSTONE	/* Use graphical tombstone (rip.ppm) */
+ # ifndef DEFAULT_WINDOW_SYS
+@@ -167,11 +169,11 @@
+ 
+ #ifdef UNIX
+ /* path and file name extension for compression program */
+-#define COMPRESS "/usr/bin/compress"	/* Lempel-Ziv compression */
+-#define COMPRESS_EXTENSION ".Z"		/* compress's extension */
++/* #define COMPRESS "/usr/bin/compress"	*/ /* Lempel-Ziv compression */
++/* #define COMPRESS_EXTENSION ".Z"		*/ /* compress's extension */
+ /* An example of one alternative you might want to use: */
+-/* #define COMPRESS "/usr/local/bin/gzip" */	/* FSF gzip compression */
+-/* #define COMPRESS_EXTENSION ".gz" */		/* normal gzip extension */
++#define COMPRESS "/usr/bin/gzip" 	/* FSF gzip compression */
++#define COMPRESS_EXTENSION ".gz" 		/* normal gzip extension */
+ #endif
+ 
+ #ifndef COMPRESS
+diff -ru ../nethack-3.4.2/include/unixconf.h ./include/unixconf.h
+--- ../nethack-3.4.2/include/unixconf.h	Sat Aug 30 10:07:24 2003
++++ ./include/unixconf.h	Thu Sep 11 11:26:53 2003
+@@ -32,7 +32,7 @@
+ 
+ 
+ /* define any of the following that are appropriate */
+-#define SVR4		/* use in addition to SYSV for System V Release 4 */
++/* #define SVR4		use in addition to SYSV for System V Release 4 */
+ 			/* including Solaris 2+ */
+ #define NETWORK		/* if running on a networked system */
+ 			/* e.g. Suns sharing a playground through NFS */
+@@ -132,7 +132,7 @@
+  * "extra output" method is used, but not all systems provide access to
+  * a fine-grained timer.
+  */
+-/* #define TIMED_DELAY */	/* usleep() */
++#define TIMED_DELAY 	/* usleep() */
+ #endif
+ 
+ /*
+@@ -209,6 +209,10 @@
+ 
+ #define FCMASK	0660	/* file creation mask */
+ 
++#ifdef __APPLE__
++/* Mac users don't want to run command line programs to recover */
++#define SELF_RECOVER
++#endif
+ 
+ /*
+  * The remainder of the file should not need to be changed.
+diff -ru ../nethack-3.4.2/src/files.c ./src/files.c
+--- ../nethack-3.4.2/src/files.c	Sat Aug 30 10:07:31 2003
++++ ./src/files.c	Thu Sep 11 12:11:21 2003
+@@ -1554,6 +1554,9 @@
+ 		Sprintf(tmp_config, "%s/%s", envp, "Library/Preferences/NetHack Defaults");
+ 		if ((fp = fopenp(tmp_config, "r")) != (FILE *)0)
+ 			return(fp);
++		Sprintf(tmp_config, "%s/%s", envp, "Library/Preferences/NetHack Defaults.txt");
++		if ((fp = fopenp(tmp_config, "r")) != (FILE *)0)
++			return(fp);
+ 	}
+ # endif
+ 	if (errno != ENOENT) {
+diff -ru ../nethack-3.4.2/src/sounds.c ./src/sounds.c
+--- ../nethack-3.4.2/src/sounds.c	Sat Aug 30 10:07:40 2003
++++ ./src/sounds.c	Mon Sep  1 14:34:24 2003
+@@ -6,6 +6,7 @@
+ #include "edog.h"
+ #ifdef USER_SOUNDS
+ # ifdef USER_SOUNDS_REGEX
++#include <sys/types.h>
+ #include <regex.h>
+ # endif
+ #endif
+diff -ru ../nethack-3.4.2/sys/unix/Makefile.src ./sys/unix/Makefile.src
+--- ../nethack-3.4.2/sys/unix/Makefile.src	Sat Aug 30 10:08:04 2003
++++ ./sys/unix/Makefile.src	Mon Sep  1 18:12:13 2003
+@@ -124,7 +124,7 @@
+ 
+ # flags for Linux
+ #   compile normally
+-# CFLAGS = -O2 -fomit-frame-pointer -I../include
++CFLAGS = -O2 -fomit-frame-pointer -I../include
+ # LFLAGS = -L/usr/X11R6/lib
+ #   OR compile backwards compatible a.out format
+ # CFLAGS = -O2 -b i486-linuxaout -fomit-frame-pointer -I../include
+@@ -151,15 +151,15 @@
+ # flags for debugging:
+ # CFLAGS = -g -I../include
+ 
+-CFLAGS = -O -I../include
+-LFLAGS = 
++#CFLAGS = -O -I../include
++#LFLAGS = 
+ 
+ # The Qt and Be window systems are written in C++, while the rest of
+ # NetHack is standard C.  If using Qt, uncomment the LINK line here to get
+ # the C++ libraries linked in.
+ CXXFLAGS = $(CFLAGS) -I. -I$(QTDIR)/include
+ CXX=g++
+-#LINK=g++
++LINK=g++
+ #	For cross-compiling, eg. with gcc on Linux (see also CC further up):
+ #CXX=arm-linux-g++
+ #LINK=arm-linux-gcc
+@@ -214,8 +214,8 @@
+ 
+ #
+ #
+-WINSRC = $(WINTTYSRC)
+-WINOBJ = $(WINTTYOBJ)
++WINSRC = $(WINQTSRC)
++WINOBJ = $(WINQTOBJ)
+ 
+ # on some systems the termcap library is in -ltermcap or -lcurses
+ # on 386 Xenix, the -ltermlib tputs() seems not to work; use -lcurses instead
+@@ -241,7 +241,7 @@
+ # WINX11LIB = -lXaw -lXmu -lXpm -lXext -lXt -lX11 -lSM -lICE -lm # BSD/OS 2.0
+ #
+ # libraries for Qt
+-WINQTLIB = -L$(QTDIR)/lib -lqt
++WINQTLIB = -L$(QTDIR)/lib -lqt-mt
+ #
+ # libraries for KDE (with Qt)
+ WINKDELIB = -lkdecore -lkdeui -lXext
+@@ -255,7 +255,7 @@
+ # libraries for BeOS 
+ WINBELIB = -lbe
+ 
+-WINLIB = $(WINTTYLIB)
++WINLIB = $(WINQTLIB)
+ 
+ # any other strange libraries your system needs (for Sysunix only -- the more
+ # specialized targets should already be right)
+diff -ru ../nethack-3.4.2/sys/unix/Makefile.top ./sys/unix/Makefile.top
+--- ../nethack-3.4.2/sys/unix/Makefile.top	Sat Aug 30 10:08:04 2003
++++ ./sys/unix/Makefile.top	Thu Sep 11 11:37:10 2003
+@@ -14,15 +14,15 @@
+ # MAKE = make
+ 
+ # make NetHack
+-PREFIX	 = /usr
+-GAME     = nethack
++PREFIX	 = $(HOME)/NetHack/NetHack.app
++GAME     = Contents/MacOS/NetHack
+ # GAME     = nethack.prg
+ GAMEUID  = games
+ GAMEGRP  = bin
+ 
+ # Permissions - some places use setgid instead of setuid, for instance
+ # See also the option "SECURE" in include/config.h
+-GAMEPERM = 04755
++GAMEPERM = 0755
+ FILEPERM = 0644
+ EXEPERM  = 0755
+ DIRPERM  = 0755
+@@ -35,12 +35,12 @@
+ # therefore there should not be anything in GAMEDIR that you want to keep
+ # (if there is, you'll have to do the installation by hand or modify the
+ # instructions)
+-GAMEDIR  = $(PREFIX)/games/lib/$(GAME)dir
++GAMEDIR  = $(PREFIX)/nethackdir
+ VARDIR  = $(GAMEDIR)
+-SHELLDIR = $(PREFIX)/games
++SHELLDIR = $(GAMEDIR)
+ 
+ # per discussion in Install.X11 and Install.Qt
+-VARDATND = 
++VARDATND = nhtiles.bmp rip.xpm nhsplash.xpm
+ # VARDATND = x11tiles NetHack.ad pet_mark.xbm
+ # VARDATND = x11tiles NetHack.ad pet_mark.xbm rip.xpm
+ # for Atari/Gem
+@@ -183,36 +183,21 @@
+ 		-e '}' 					\
+ 	  	-e '$$s/.*/nodlb/p' < dat/options` ;	\
+ 	$(MAKE) dofiles-$${target-nodlb}
+-	cp src/$(GAME) $(GAMEDIR)
+-	cp util/recover $(GAMEDIR)
+-	-rm -f $(SHELLDIR)/$(GAME)
+-	sed -e 's;/usr/games/lib/nethackdir;$(GAMEDIR);' \
+-		-e 's;HACKDIR/nethack;HACKDIR/$(GAME);' \
+-		< sys/unix/nethack.sh \
+-		> $(SHELLDIR)/$(GAME)
++	$(MAKE) dofiles-$${target-nodlb}
++	mkdir -p $(PREFIX)/Contents/MacOS       
++	mkdir -p $(PREFIX)/Contents/Resources
++	cp win/Qt/Info.plist $(PREFIX)/Contents
++	(cd $(PREFIX)/Contents/Resources; uudecode; ) < win/Qt/nhicns.uu
++	cp src/nethack $(PREFIX)/$(GAME)
+ # set up their permissions
+-	-( cd $(GAMEDIR) ; $(CHOWN) $(GAMEUID) $(GAME) recover ; \
+-			$(CHGRP) $(GAMEGRP) $(GAME) recover )
+-	chmod $(GAMEPERM) $(GAMEDIR)/$(GAME)
+-	chmod $(EXEPERM) $(GAMEDIR)/recover
+-	-$(CHOWN) $(GAMEUID) $(SHELLDIR)/$(GAME)
+-	$(CHGRP) $(GAMEGRP) $(SHELLDIR)/$(GAME)
+-	chmod $(EXEPERM) $(SHELLDIR)/$(GAME)
++	chmod $(GAMEPERM) $(PREFIX)/$(GAME)
+ 
+ dofiles-dlb: check-dlb
+ 	( cd dat ; cp nhdat $(DATNODLB) $(GAMEDIR) )
+-# set up their permissions
+-	-( cd $(GAMEDIR) ; $(CHOWN) $(GAMEUID) nhdat $(DATNODLB) ; \
+-			$(CHGRP) $(GAMEGRP) nhdat $(DATNODLB) ; \
+-			chmod $(FILEPERM) nhdat $(DATNODLB) )
+ 
+ dofiles-nodlb:
+ # copy over the game files
+ 	( cd dat ; cp $(DAT) $(GAMEDIR) )
+-# set up their permissions
+-	-( cd $(GAMEDIR) ; $(CHOWN) $(GAMEUID) $(DAT) ; \
+-			$(CHGRP) $(GAMEGRP) $(DAT) ; \
+-			chmod $(FILEPERM) $(DAT) )
+ 
+ update: $(GAME) recover $(VARDAT) dungeon spec_levs
+ #	(don't yank the old version out from under people who're playing it)
+@@ -237,8 +222,6 @@
+ 	-rm -rf $(GAMEDIR) $(VARDIR)
+ 	-mkdir -p $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+ 	-rmdir ./-p
+-	-$(CHOWN) $(GAMEUID) $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+-	$(CHGRP) $(GAMEGRP) $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+ 	chmod $(DIRPERM) $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+ # set up the game files
+ 	( $(MAKE) dofiles )
+diff -ru ../nethack-3.4.2/sys/unix/Makefile.utl ./sys/unix/Makefile.utl
+--- ../nethack-3.4.2/sys/unix/Makefile.utl	Sat Aug 30 10:08:04 2003
++++ ./sys/unix/Makefile.utl	Mon Sep  1 14:24:46 2003
+@@ -335,6 +335,9 @@
+ ppmwrite.o: ../win/share/ppmwrite.c $(CONFIG_H) ../include/tile.h
+ 	$(CC) $(CFLAGS) -c ../win/share/ppmwrite.c
+ 
++tile2bmp.o: ../win/share/tile2bmp.c $(HACK_H) ../include/tile.h
++	$(CC) $(CFLAGS) -c ../win/share/tile2bmp.c
++
+ tile2x11.o: ../win/X11/tile2x11.c $(HACK_H) ../include/tile.h \
+ 						../include/tile2x11.h
+ 	$(CC) $(CFLAGS) -c ../win/X11/tile2x11.c
+diff -ru ../nethack-3.4.2/sys/unix/unixmain.c ./sys/unix/unixmain.c
+--- ../nethack-3.4.2/sys/unix/unixmain.c	Sat Aug 30 10:08:04 2003
++++ ./sys/unix/unixmain.c	Thu Sep 11 11:13:30 2003
+@@ -479,12 +479,17 @@
+ 	register char *s;
+ 
+ 	if (*plname) return FALSE;
++#if defined(__APPLE__)
++	/* Unixisms just confuse the user */
++	(void) strncpy(plname, "player", sizeof(plname)-1);
++#else
+ 	if(/* !*plname && */ (s = nh_getenv("USER")))
+ 		(void) strncpy(plname, s, sizeof(plname)-1);
+ 	if(!*plname && (s = nh_getenv("LOGNAME")))
+ 		(void) strncpy(plname, s, sizeof(plname)-1);
+ 	if(!*plname && (s = getlogin()))
+ 		(void) strncpy(plname, s, sizeof(plname)-1);
++#endif
+ 	return TRUE;
+ }
+ 
+diff -ru ../nethack-3.4.2/sys/unix/unixunix.c ./sys/unix/unixunix.c
+--- ../nethack-3.4.2/sys/unix/unixunix.c	Sat Aug 30 10:08:05 2003
++++ ./sys/unix/unixunix.c	Thu Sep 11 11:17:21 2003
+@@ -197,7 +197,7 @@
+ 
+ 	while((lp=index(s, '.')) || (lp=index(s, '/')) || (lp=index(s,' ')))
+ 		*lp = '_';
+-#if defined(SYSV) && !defined(AIX_31) && !defined(SVR4) && !defined(LINUX)
++#if defined(SYSV) && !defined(AIX_31) && !defined(SVR4) && !defined(LINUX) && !defined(__APPLE__)
+ 	/* avoid problems with 14 character file name limit */
+ # ifdef COMPRESS
+ 	/* leave room for .e from error and .Z from compress appended to
+diff -ru ../nethack-3.4.2/win/Qt/qt_win.cpp ./win/Qt/qt_win.cpp
+--- ../nethack-3.4.2/win/Qt/qt_win.cpp	Sat Aug 30 10:08:23 2003
++++ ./win/Qt/qt_win.cpp	Thu Sep 11 12:46:42 2003
+@@ -57,6 +57,7 @@
+ #include "dlb.h"
+ #include "patchlevel.h"
+ #include "tile2x11.h"
++#undef Invisible
+ #undef Warning
+ #undef red
+ #undef green
+@@ -69,6 +70,7 @@
+ #undef max
+ #undef alloc
+ #undef lock
++#undef yn
+ 
+ }
+ #ifdef yn
+@@ -979,7 +981,7 @@
+ };
+ 
+ NetHackQtPlayerSelector::NetHackQtPlayerSelector(NetHackQtKeyBuffer& ks) :
+-    QDialog(0,"plsel",TRUE),
++    QDialog(qApp->mainWidget(),"plsel",TRUE),
+     keysource(ks),
+     fully_specified_role(TRUE)
+ {
+@@ -1148,7 +1150,7 @@
+ 	a = rn2(ROLE_ALIGNS);
+     }
+     alignment[a]->setChecked(TRUE);
+-    selectAlignment(g);
++    selectAlignment(a);
+ 
+     QListViewItem* li;
+ 
+@@ -1159,6 +1161,9 @@
+     li = race->firstChild();
+     while (ra--) li=li->nextSibling();
+     race->setSelected(li,TRUE);
++
++    flags.initrace = race->selectedItemNumber();
++    flags.initrole = role->selectedItemNumber();
+ }
+ 
+ 
+@@ -1329,7 +1334,7 @@
+ 
+ 
+ NetHackQtStringRequestor::NetHackQtStringRequestor(NetHackQtKeyBuffer& ks, const char* p, const char* cancelstr) :
+-    QDialog(0,"string",FALSE),
++    QDialog(qApp->mainWidget(),"string",FALSE),
+     prompt(p,this,"prompt"),
+     input(this,"input"),
+     keysource(ks)
+@@ -2538,7 +2543,7 @@
+     name.setLabel(buf,NetHackQtLabelledIcon::NoNum,u.ulevel);
+ 
+     if (describe_level(buf)) {
+-	dlevel.setLabel(buf,TRUE);
++	dlevel.setLabel(buf,(bool)TRUE);
+     } else {
+ 	Sprintf(buf, "%s, level ", dungeons[u.uz.dnum].dname);
+ 	dlevel.setLabel(buf,(long)depth(&u.uz));
+@@ -2641,7 +2646,7 @@
+ 
+ 
+ NetHackQtMenuDialog::NetHackQtMenuDialog() :
+-    QDialog(0,0,FALSE)
++    QDialog(qApp->mainWidget(),0,FALSE)
+ {
+ }
+ 
+@@ -3218,7 +3223,7 @@
+ }
+ 
+ NetHackQtTextWindow::NetHackQtTextWindow(NetHackQtKeyBuffer& ks) :
+-    QDialog(0,0,FALSE),
++    QDialog(qApp->mainWidget(),0,FALSE),
+     keysource(ks),
+     use_rip(FALSE),
+     str_fixed(FALSE),
+@@ -3628,6 +3633,7 @@
+ 	{ act2,	"Search\ts",            "s", 3},
+ 	{ act2,	"Sit\tAlt+S",             "\363", 3},
+ 	{ act2,	"Throw\tt",             "t", 2},
++	{ act2,	"Untrap\t#u",                "#u", 3},
+ 	{ act2,	"Up\t<",                "<", 3},
+ 	{ act2,	"Wipe face\tAlt+W",       "\367", 3},
+ 
+@@ -4078,7 +4084,7 @@
+ 
+ 
+ NetHackQtYnDialog::NetHackQtYnDialog(NetHackQtKeyBuffer& keysrc,const char* q,const char* ch,char df) :
+-    QDialog(0,0,FALSE),
++    QDialog(qApp->mainWidget(),0,FALSE),
+     keysource(keysrc),
+     question(q), choices(ch), def(df)
+ {
+@@ -4549,7 +4555,7 @@
+ }
+ 
+ NetHackQtSavedGameSelector::NetHackQtSavedGameSelector(const char** saved) :
+-    QDialog(0,"sgsel",TRUE)
++    QDialog(qApp->mainWidget(),"sgsel",TRUE)
+ {
+     QVBoxLayout *vbl = new QVBoxLayout(this,6);
+     QHBox* hb;
+@@ -5001,7 +5007,7 @@
+ }
+ 
+ NetHackQtExtCmdRequestor::NetHackQtExtCmdRequestor(NetHackQtKeyBuffer& ks) :
+-    QDialog(0, "ext-cmd", FALSE),
++    QDialog(qApp->mainWidget(), "ext-cmd", FALSE),
+     keysource(ks)
+ {
+     int marg=4;
+@@ -5155,8 +5161,12 @@
+ 		}
+ 	    }
+ 	    char ch=key_event->ascii();
++	    if ( !ch && (key_event->state() & Qt::ControlButton) ) {
++		// On Mac, it aint-ncessarily-control
++		if ( k>=Qt::Key_A && k<=Qt::Key_Z )
++		    ch = k - Qt::Key_A + 1;
++	    }
+ 	    if (!macro && ch) {
+-		int k = key_event->key();
+ 		bool alt = (key_event->state()&AltButton) ||
+ 		   (k >= Key_0 && k <= Key_9 && (key_event->state()&ControlButton));
+ 		keybuffer.Put(key_event->key(),ch + (alt ? 128 : 0),
+diff -ru ../nethack-3.4.2/win/share/tile2bmp.c ./win/share/tile2bmp.c
+--- ../nethack-3.4.2/win/share/tile2bmp.c	Sat Aug 30 10:08:25 2003
++++ ./win/share/tile2bmp.c	Mon Sep  1 18:43:26 2003
+@@ -48,6 +48,25 @@
+ #define PACK
+ #endif 
+ 
++static short leshort(short x)
++{
++#ifdef __ppc__
++    return ((x&0xff)<<8)|((x>>8)&0xff);
++#else
++    return x;
++#endif
++}
++
++
++static long lelong(long x)
++{
++#ifdef __ppc__
++    return ((x&0xff)<<24)|((x&0xff00)<<8)|((x>>8)&0xff00)|((x>>24)&0xff);
++#else
++    return x;
++#endif
++}
++
+ #ifdef __GNUC__
+ typedef struct tagBMIH {
+         unsigned long   biSize;
+@@ -231,12 +250,12 @@
+ build_bmfh(pbmfh)
+ BITMAPFILEHEADER *pbmfh;
+ {
+-	pbmfh->bfType = (UINT)0x4D42;
+-	pbmfh->bfSize = (DWORD)BMPFILESIZE;
++	pbmfh->bfType = leshort(0x4D42);
++	pbmfh->bfSize = lelong(BMPFILESIZE);
+ 	pbmfh->bfReserved1 = (UINT)0;
+ 	pbmfh->bfReserved2 = (UINT)0;
+-	pbmfh->bfOffBits = sizeof(bmp.bmfh) + sizeof(bmp.bmih) +
+-			   (RGBQUAD_COUNT * sizeof(RGBQUAD));
++	pbmfh->bfOffBits = lelong(sizeof(bmp.bmfh) + sizeof(bmp.bmih) +
++			   (RGBQUAD_COUNT * sizeof(RGBQUAD)));
+ }
+ 
+ static void
+@@ -244,20 +263,22 @@
+ BITMAPINFOHEADER *pbmih;
+ {
+ 	WORD cClrBits;
+-	pbmih->biSize = (DWORD) sizeof(bmp.bmih);
++	int w,h;
++	pbmih->biSize = lelong(sizeof(bmp.bmih));
+ #if BITCOUNT==4
+-	pbmih->biWidth = (LONG) MAX_X * 2;
++	pbmih->biWidth = lelong(w = MAX_X * 2);
+ #else
+-	pbmih->biWidth = (LONG) MAX_X;
++	pbmih->biWidth = lelong(w = MAX_X);
+ #endif
+-	pbmih->biHeight = (LONG) MAX_Y;
+-	pbmih->biPlanes = (WORD) 1;
++	pbmih->biHeight = lelong(h = MAX_Y);
++	pbmih->biPlanes = leshort(1);
+ #if BITCOUNT==4
+-	pbmih->biBitCount = (WORD) 4;
++	pbmih->biBitCount = leshort(4);
++	cClrBits = 4;
+ #else
+-	pbmih->biBitCount = (WORD) 8;
++	pbmih->biBitCount = leshort(8);
++	cClrBits = 8;
+ #endif
+-	cClrBits = (WORD)(pbmih->biPlanes * pbmih->biBitCount); 
+ 	if (cClrBits == 1) 
+ 	        cClrBits = 1; 
+ 	else if (cClrBits <= 4) 
+@@ -269,21 +290,20 @@
+ 	else if (cClrBits <= 24) 
+ 		cClrBits = 24; 
+ 	else cClrBits = 32; 
+-	pbmih->biCompression = (DWORD) BI_RGB;
+-	pbmih->biXPelsPerMeter = (LONG)0;
+-	pbmih->biYPelsPerMeter = (LONG)0;
++	pbmih->biCompression = lelong(BI_RGB);
++	pbmih->biXPelsPerMeter = lelong(0);
++	pbmih->biYPelsPerMeter = lelong(0);
+ #if (TILE_X==32)
+ 	if (cClrBits < 24) 
+-        	pbmih->biClrUsed = (1<<cClrBits);
++        	pbmih->biClrUsed = lelong(1<<cClrBits);
+ #else
+-	pbmih->biClrUsed = (DWORD)RGBQUAD_COUNT; 
++	pbmih->biClrUsed = lelong(RGBQUAD_COUNT); 
+ #endif
+ 
+ #if (TILE_X==16)
+-	pbmih->biSizeImage = 0;
++	pbmih->biSizeImage = lelong(0);
+ #else
+-	pbmih->biSizeImage = ((pbmih->biWidth * cClrBits +31) & ~31) /8
+-                              * pbmih->biHeight;
++	pbmih->biSizeImage = lelong(((w * cClrBits +31) & ~31) /8 * h);
+ #endif
+  	pbmih->biClrImportant = (DWORD)0;
+ }
+
+
