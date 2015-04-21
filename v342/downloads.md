@@ -69,6 +69,8 @@ Note: There is no real-mode overlaid binary distribution of NetHack 3.4.2.
 
 ## Windows CE
 
+These installer packages must be downloaded to, and run on, a Microsoft Windows computer, not on the target Windows CE system.
+
 [nh342ce-ppc.exe](http://sourceforge.net/projects/nethack/files/nethack/3.4.2/nh342ce-ppc.exe/download)
 : NetHack 3.4.2 installer package for *PocketPC* platform (Windows CE 3.0, PocketPC 2000 and PocketPC 2002).
 
