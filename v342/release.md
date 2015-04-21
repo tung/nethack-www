@@ -36,3 +36,5 @@ Also, please check the "known bugs" list at <http://www.nethack.org/v342/bugs.ht
 Happy NetHacking!
 
 For the DevTeam...
+
+Mike Stephenson
