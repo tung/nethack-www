@@ -39,7 +39,7 @@ Sorry, these binaries will not run on 68K-based Macs.
 
 ## Linux
 
-If you have problems running these binaries due to missing libraries, check the System information in the [README.linux](#TODO) file for a list of dependencies.
+If you have problems running these binaries due to missing libraries, check the System information in the [README.linux](README.linux.txt) file for a list of dependencies.
 
 [nh342lin.tgz](http://sourceforge.net/projects/nethack/files/nethack/3.4.2/nh342lin.tgz/download)
 : NetHack 3.4.2 Linux Elf with TTY and Athena-widget-based (traditional X11) graphics interfaces (including tiles).  This version requires glibc-2.3 and X11 libraries.
