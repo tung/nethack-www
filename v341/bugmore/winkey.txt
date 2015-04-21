@@ -1,0 +1,204 @@
+*** nethack-3.4.1/include/ntconf.h	Wed Feb 05 22:00:16 2003
+--- include/ntconf.h	Sat Mar 01 09:59:34 2003
+***************
+*** 132,137 ****
+--- 132,138 ----
+  #ifdef WIN32CON
+  extern void FDECL(nttty_preference_update, (const char *));
+  extern void NDECL(toggle_mouse_support);
++ extern void FDECL(map_subkeyvalue, (char *));
+  #endif
+  
+  #include <fcntl.h>
+*** nethack-3.4.1/src/options.c	Wed Feb 12 23:25:09 2003
+--- src/options.c	Sat Mar 01 09:51:22 2003
+***************
+*** 317,322 ****
+--- 317,325 ----
+  	{ "videoshades", "gray shades to map to black/gray/white",
+  						32, DISP_IN_GAME },
+  #endif
++ #ifdef WIN32CON
++ 	{"subkeyvalue", "override keystroke value", 7, SET_IN_FILE},
++ #endif
+  	{ "windowcolors",  "the foreground/background colors of windows",	/*WC*/
+  						80, DISP_IN_GAME },
+  	{ "windowtype", "windowing system to use", WINTYPELEN, DISP_IN_GAME },
+***************
+*** 981,986 ****
+--- 984,990 ----
+  	if (match_optname(opts, "colour", 5, FALSE))
+  		Strcpy(opts, "color");	/* fortunately this isn't longer */
+  
++ 	if (!match_optname(opts, "subkeyvalue", 11, TRUE)) /* allow multiple */
+  	duplicate_opt_detection(opts, 1);	/* 1 means compound opts */
+  
+  	/* special boolean options */
+***************
+*** 1889,1894 ****
+--- 1893,1909 ----
+  		} else if (negated) bad_negation(fullname, TRUE);
+  		return;
+  	}
++ 	fullname = "subkeyvalue";
++ 	if (match_optname(opts, fullname, 5, TRUE)) {
++ 		if (negated) bad_negation(fullname, FALSE);
++ 		else {
++ #if defined(WIN32CON)
++ 			op = string_for_opt(opts, 0);
++ 			map_subkeyvalue(op);
++ #endif
++ 		}
++ 		return;
++ 	}
+  	/* WINCAP
+  	 * tile_width:nn */
+  	fullname = "tile_width";
+***************
+*** 1930,1936 ****
+  		} else if (negated) bad_negation(fullname, TRUE);
+  		return;
+  	}
+- 
+  	fullname = "windowtype";
+  	if (match_optname(opts, fullname, 3, TRUE)) {
+  	    if (negated) {
+--- 1945,1950 ----
+*** nethack-3.4.1/sys/winnt/defaults.nh	Mon Aug 12 19:48:14 2002
+--- sys/winnt/defaults.nh	Sat Mar 01 18:32:34 2003
+***************
+*** 106,111 ****
+--- 106,120 ----
+  # The location that a record of game aborts and self-diagnosed game problems
+  # is kept (default=HACKDIR, writeable)
+  #TROUBLEDIR=c:\nethack\trouble
++ 
++ # Finnish keyboards might need these modifications uncommented. 
++ # For  \, @, $, [, |
++ #OPTIONS=subkeyvalue:171/92
++ #OPTIONS=subkeyvalue:178/64
++ #OPTIONS=subkeyvalue:180/36
++ #OPTIONS=subkeyvalue:184/91
++ #OPTIONS=subkeyvalue:188/124
++ 
+  #
+  # *** CHARACTER GRAPHICS ***
+  #
+***************
+*** 164,168 ****
+  #          048 035 064 042                         \
+  #          047 045 092 058 058 092 045 047         \
+  #          047 045 092 058 032 058 092 045 047
+- 
+  
+--- 173,176 ----
+*** nethack-3.4.1/sys/winnt/nttty.c	Wed Feb 05 22:04:37 2003
+--- sys/winnt/nttty.c	Sat Mar 01 16:45:54 2003
+***************
+*** 61,66 ****
+--- 61,69 ----
+  static void NDECL(init_ttycolor);
+  # endif
+  
++ #define MAX_OVERRIDES	256
++ unsigned char key_overrides[MAX_OVERRIDES];
++ 
+  #define DEFTEXTCOLOR  ttycolors[7]
+  #ifdef TEXTCOLOR
+  #define DEFGLYPHBGRND (0)
+***************
+*** 331,339 ****
+  boolean *valid;
+  int portdebug;
+  {
+! 	int metaflags = 0, k;
+  	int keycode, vk;
+! 	unsigned char ch, pre_ch;
+  	unsigned short int scan;
+  	unsigned long shiftstate;
+  	int altseq = 0;
+--- 334,342 ----
+  boolean *valid;
+  int portdebug;
+  {
+! 	int metaflags = 0, k = 0;
+  	int keycode, vk;
+! 	unsigned char ch, pre_ch, mk = 0;
+  	unsigned short int scan;
+  	unsigned long shiftstate;
+  	int altseq = 0;
+***************
+*** 406,418 ****
+  				*valid = FALSE;
+  		    }
+  	}
+  	if (ch == '\r') ch = '\n';
+  #ifdef PORT_DEBUG
+  	if (portdebug) {
+  		char buf[BUFSZ];
+  		Sprintf(buf,
+! 	"PORTDEBUG: ch=%u, scan=%u, vk=%d, pre=%d, shiftstate=0x%X (ESC to end)\n",
+! 			ch, scan, vk, pre_ch, shiftstate);
+  		xputs(buf);
+  	}
+  #endif
+--- 409,428 ----
+  				*valid = FALSE;
+  		    }
+  	}
++ 	/* check for override */
++ 	if (ch && ch < MAX_OVERRIDES && key_overrides[ch]) {
++ 		mk = ch;
++ 		ch = key_overrides[ch];
++ 		*valid = TRUE;
++ 	}
++ 
+  	if (ch == '\r') ch = '\n';
+  #ifdef PORT_DEBUG
+  	if (portdebug) {
+  		char buf[BUFSZ];
+  		Sprintf(buf,
+! 	"PORTDEBUG: ch=%u, sc=%u, vk=%d, pre=%d, sh=0x%X, ta=%d, mk=%d (ESC to end)\n",
+! 			ch, scan, vk, pre_ch, shiftstate, k, mk);
+  		xputs(buf);
+  	}
+  #endif
+***************
+*** 936,939 ****
+--- 946,980 ----
+  	(void)doredraw();
+  }
+  #endif
++ 
++ void
++ map_subkeyvalue(op)
++ register char *op;
++ {
++ 	char digits[] = "0123456789";
++ 	int length, i, idx, val;
++ 	char *kp;
++ 
++ 	idx = -1;
++ 	val = -1;
++ 	kp = index(op, '/');
++ 	if (kp) {
++ 		*kp = '\0';
++ 		kp++;
++ 		length = strlen(kp);
++ 		if (length < 1 || length > 3) return;
++ 		for (i = 0; i < length; i++)
++ 			if (!index(digits, kp[i])) return;
++ 		val = atoi(kp);
++ 		length = strlen(op);
++ 		if (length < 1 || length > 3) return;
++ 		for (i = 0; i < length; i++)
++ 			if (!index(digits, op[i])) return;
++ 		idx = atoi(op);
++ 	}
++ 	if (idx >= MAX_OVERRIDES || idx < 0 || val >= MAX_OVERRIDES || val < 1)
++ 		return;
++ 	key_overrides[idx] = val;
++ }
++ 
+  #endif /* WIN32CON */
+
