@@ -22,9 +22,9 @@ A fuller list of changes for this release can be found in the file `doc/fixes34.
 
 The NetHack 3.4.1 source code supports many different platforms including most Unix versions.  In addition to source code support, we expect to supply binaries for Windows, DOS, Linux (tm), Apple Macintosh (tm), Apple Macintosh OS X (tm), OS/2 (tm), Atari (tm), Amiga (tm), Handheld PC Professional devices running Windows 2.11 or higher, PocketPC platform devices (Windows CE 3.0, PocketPC 2000 and PocketPC 2002), and Palm Size PC 1.1 devices running Windows CE 2.11.
 
-To download the game, go to the NetHack website and download from the downloads page at <http://www.nethack.org>
-Mirrors may be available in your area, or if your software doesn't get along with the primary site(s).
-See the following web page for a current list of mirrors: <http://www.nethack.org/common/links.html#mirror>
+To download the game, go to <strike>the NetHack website and download from</strike> the [downloads page](downloads.html) <strike>at <http://www.nethack.org></strike>
+<strike>Mirrors may be available in your area, or if your software doesn't get along with the primary site(s).</strike>
+<strike>See the following web page for a current list of mirrors: <http://www.nethack.org/common/links.html#mirror></strike>
 
 Also, note that the Gnome toolkit interface is still considered an experimental option.  While we have not enhanced the port much ourselves, we have included some contributions from Dylan Alex Simon.
 
