@@ -1,0 +1,49 @@
+---
+layout: legacy
+title: Atari Downloads
+legacy:
+  back_link:
+    text: NetHack 3.3.1 Downloads
+    url: ../downloads.html
+---
+This binary runs on Ataris running TOS, MiNT or MagiC.
+This is a GEM (tiles) and TTY (plain text only) port of NetHack.
+It requires at least 2MB free memory and at least 3MB of
+              free hard drive space.
+<ul>
+<li><h3>Step 1: download.</h3>
+Click on the link below to download.
+<p>
+Depending on your browser, you may need to
+right-click so that the file is saved to disk and not displayed.
+<dl>
+<dt><a href="ftp://ftp.sourceforge.net/pub/sourceforge/nethack/nh331/binaries/atari/nh331gt.lzh">nh331gt.lzh</a>(about 1.1M)
+<dd>NetHack3.3.1 for Atari
+</dl>
+<li><h3>Step 2: unpack.</h3>
+These files can be unpacked with any standard lharc utility, which
+should be used when you have set your current directory to the location
+where you want to place NetHack.<br>
+Make sure you create the subdirectories by applying the /x switch,
+i.e.: lha e /x nh331gt.lzh.
+<li><h3>Step 3: install.</h3>
+Read the Guidebook for a general description of what NetHack is and how to play.
+<br>Edit nethack.cnf to adjust your settings preferences.  The default settings 
+use a 16 colour tiled display.
+<br>If you prefer the tty-display ensure that the line
+<tt>OPTIONS=windowtype=tty,rawio,BIOS</tt>
+is not commented with a <tt>#</tt>.
+<li><h3>Step 4: run.</h3>
+Run nethack.prg.
+<p>
+Refer to the file readme, the comments in nethack.cnf and the GuideBook within 
+the lha-archive file for further instructions. 
+</ul>
+<!--
+NetHack Copyright
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.
+Site Copyright
+This site is Copyright 1999-2003 by Kenneth Lorber, Kensington, Maryland.
+-->

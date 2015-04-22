@@ -1,0 +1,90 @@
+---
+layout: legacy
+title: Redhat Linux 6.x Downloads
+legacy:
+  back_link:
+    text: NetHack 3.3.1 Downloads
+    url: ../downloads.html
+---
+If you are running Redhat Linux 7.x, you will have to build from
+<a href="../download-src.html">source</a>, these
+binaries will <em>not</em> work.  Note that the Redhat-supplied binary
+for 7.2 was built incorrectly and can't save and restore properly.
+<br>
+<ul>
+<li><h3>Step 1: download.</h3>
+Click on the links below to download.
+Depending on your browser, you may need to
+right-click so that the file is saved to disk and not displayed.
+<dl>
+
+<dt><a href="ftp://ftp.sourceforge.net/pub/sourceforge/nethack/nh331/binaries/linux/nh331lin.tgz">
+nh331lin.tgz</a>(about 1.0M)
+
+<!--
+<dt><a href="http://members.aol.com/NetHackDotOrg/v331/nh331lin.tgz">
+nh331lin.tgz (by HTTP)</a>(about 1.0M)
+<dt><a href="ftp://members.aol.com/NetHackDotOrg/v331/nh331lin.tgz">
+nh331lin.tgz (by FTP)</a>(about 1.0M)
+-->
+<dd>
+NetHack 3.3.1 Linux Elf
+<br>
+This binary has support for tty and X11 windowing systems, but not Qt.
+This means you will need to have X11 libraries installed on your system
+to run this binary, even in its tty flavor.
+
+<dt><a href="ftp://ftp.sourceforge.net/pub/sourceforge/nethack/nh331/binaries/linux/nh331linQt.tgz">
+nh331linQt.tgz</a>(about 1.0M)
+
+<!--
+<dt><a href="http://members.aol.com/NetHackOrgDot/v331/nh331linQt.tgz">
+nh331linQt.tgz (by HTTP)</a>(about 1.0M)
+<dt><a href="ftp://members.aol.com/NetHackOrgDot/v331/nh331linQt.tgz">
+nh331linQt.tgz (by FTP)</a>(about 1.0M)
+-->
+<dd>NetHack3.3.1 with Qt interface
+<dt><a href="ftp://ftp.sourceforge.net/pub/sourceforge/nethack/nh331/binaries/linux/README.linux">
+README.linux</a>
+<dd>
+Additional details about the Linux binary.  If you are not running Redhat,
+check the <it>System</it> information in this file to see if you need to build
+from
+<a href="../download-src.html">source</a>,
+instead of using these binaries.
+</dl>
+(See our <a href="../../common/links.html">links</a> page for other (unofficial) Linux
+binaries.)
+<li><h3>Step 2: unpack.</h3>
+gunzip and untar (use -p to preserve ownerships and permissions) the
+package from / to put the NetHack files in
+/usr/games/nethack and /usr/games/lib/nethackdir.
+<p>
+(If you have old record and logfile entries from a previous NetHack
+version, you might want to save copies before they get overwritten by the
+new empty files; old saved games and bones files won't work with 3.3.1.)
+<li><h3>Step 3: install.</h3>
+In addition to data files for running the game, you will find other useful
+things in /usr/games/lib/nethackdir (such as a copy of this README :-).
+<p>
+The general documentation Guidebook.txt and the processed man pages
+nethack.txt and recover.txt should provide an introduction to the game.
+<p>
+The sample config file called dot.nethackrc can be used by copying
+it to your home directory as .nethackrc and modifying it to your liking.
+<p>
+If you are running X11 copy the nh10.pcf and ibm.pcf font files from
+/usr/games/lib/nethackdir to a X11 fonts directory (such as
+/usr/X11/lib/X11/fonts/misc) and run "mkfontdir", then restart X
+windows to load them.  Also consider putting NetHack.ad in
+/usr/X11/lib/X11/app-defaults or its contents in your .Xdefaults or
+.Xresources.
+</ul>
+<!--
+NetHack Copyright
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.
+Site Copyright
+This site is Copyright 1999-2003 by Kenneth Lorber, Kensington, Maryland.
+-->
