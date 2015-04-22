@@ -1,0 +1,28 @@
+---
+title: Downloads
+---
+Don't forget to read the [NetHack 3.3.0 release notes](release.html)!
+
+* table of contents
+{:toc}
+
+---
+
+## Source code
+
+[nethack-330.tgz](http://sourceforge.net/projects/nethack/files/nethack/3.3.0/nethack-330.tgz/download)
+: NetHack 3.3.0 source release.
+
+([Source code download instructions.](download-src.html))
+
+---
+
+## Platforms with missing downloads
+
+The download links for these platforms no longer work.  The pages below are provided for historical reasons.
+
+* [Windows 95/98/NT](ports/download-win.html)
+* [Macintosh](ports/download-mac.html)
+* [Linux](ports/download-linux.html)
+* [MS-DOS](ports/download-msdos.html)
+* [OS/2](ports/download-os2.html)
