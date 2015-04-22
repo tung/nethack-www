@@ -1,0 +1,10 @@
+Annotation C331-2.1 August 11 2000
+
+The XXX_player_selection() routine was determining that information
+was missing, so it prompted "Shall I pick a character for you?". 
+Later processing ruled out all possible selections except one, so
+no further prompting for the missing information took place. In
+the reported situation, the missing information was race and 
+alignment, but Knights can only be Human and Lawful.
+
+

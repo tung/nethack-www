@@ -1,0 +1,8 @@
+We have received several reports of NetHack crashing after the installation of
+Windows 2000 Service Pack 2 (SP2).  The fix is to reinstall NetHack.
+
+Previously saved games will still work.
+
+The crash is caused by an interaction between the OS and the code
+produced by the compiler used to produce the NetHack executable;
+no changes to the NetHack source are involved.

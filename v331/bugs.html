@@ -1,0 +1,1711 @@
+---
+layout: legacy
+title: Known Bugs
+legacy:
+  style: legacy-bugs.css
+  back_link:
+    text: NetHack 3.3.1 Release Notes
+    url: release.html
+---
+<ul>
+<li><a href="bugs.html#Core">Bugs common to all systems</a>
+<li><a href="bugs.html#PC">PC-only bugs</a>
+<li><a href="bugs.html#Mac">Macintosh-only bugs</a>
+<!--
+<li><a href="#Linux">Linux-only bugs</a>
+-->
+<li><a href="bugs.html#win32">Win32-only bugs</a>
+<li><a href="bugs.html#Source">Build-from-source issues (all platforms)</a>
+<li><a href="bugs.html#X11">X11 bugs</a>
+<li><a href="bugs.html#Gnome">Gnome bugs</a>
+<li><a href="bugs.html#Amiga">Amiga bugs</a>
+<li><a href="bugs.html#Qt">Qt bugs</a>
+<li><a href="bugs.html#Atari">Atari bugs</a>
+<li><a href="spoiler.html">Spoiler bugs</a>
+(These are bugs that merely reading about may spoil your enjoyment of the
+game or give away answers to puzzles that should be solved.  They are on
+a different page to keep you from seeing them by accident in the main lists.)
+</ul>
+
+<hr>
+<h2>Bugs lists for previous versions</h2>
+<ul>
+<li><a href="../v330/bugs.html">3.3.0 bugs list</a>
+<li><a href="../v330/spoiler.html">3.3.0 spoiler bugs list</a>
+</ul>
+
+<hr>
+<a name="Core"><h3>Bugs common to all systems</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>C331-1
+<td>D[a produces odd message sequence in (c)ombination mode
+<td>fixed in 3.4.0
+<td>set the menustyle option to (t)raditional, (p)artial, or (f)ull
+</tr>
+
+<tr>
+<td><a href="bugmore/C331-2.txt">C331-2</a>
+<td>"Shall I pick a character for you?" may appear even if the character info
+ is specified at startup for Knights.
+<td>fixed in 3.4.0
+<td>Specify all or none of alignment, race, and gender for Knights.
+</tr>
+
+<tr>
+<td><a href="bugmore/C331-3.txt">C331-3</a>
+<td>Where did Valkyrie go when choosing a role?
+<td>Not a bug
+<td>3.3.1 resticts the choices it offers you to fit the choices you've already
+made.  Remove OPTIONS=gender:male from the config file if you want to
+play a Valkyrie.
+</tr>
+
+<tr>
+<td>C331-4
+<td>Excalibur blasts lawful characters except Knights
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-5
+<td>When falling into a moat while heavily loaded the quiver and the alternate
+weapon are not handled correctly.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-6
+<td>stone-to-flesh on a boulder causes a crash
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-7
+<td>restoring a game produces "Placing steed onto map?"
+<td>fixed in 3.4.0
+<td>ignore - harmless
+</tr>
+
+<tr>
+<td>C331-8
+<td>pits and webs can affect the rider without affecting the steed
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-9
+<td>dismounting next to (and falling into) a pit you get the message twice
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-10
+<td>fumbling when riding causes *you* to trip and fall
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-11
+<td>Message "How pitiful." appears inappropriately.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-12
+<td>Character killed by eating a poisonous first meal listed as "strict vegan."
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-13
+<td>amulet of change malfunctions when polymorphed into succubus/incubus
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-14
+<td>entering a non-numeric amount to bribe results in a random amount
+<td>fixed in 3.4.0
+<td>always enter a valid number
+</tr>
+
+<tr>
+<td>C331-15
+<td>in some cases being restricted in a skill is worse than being unskilled
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-16
+<td>When trying to shatter a monster's weapon, the wrong resistance check is done.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-17
+<td>When a steed dies in a shop, you get charged for the saddle.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-18
+<td>"Slimed" on status bar cleared too slowly after "Burned away" message.
+<td>fixed in 3.4.0
+<td>wait for screen to refresh, or force refresh with ^R
+</tr>
+
+<tr>
+<td>C331-19
+<td>Displace pet onto polymorph trap.  Message uses new form instead of old.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-20
+<td>bogus message "You drop the Wizard of Yendor's corpse into Wizard of Yendor's interior"
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-21
+<td>Player killed by ghoul turns into one in bones file
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-22
+<td>Slings are not suppsed to be made of wood - should be leather.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-23
+<td>Messages about levels looking familiar are wrong after a mindflayer
+causes player to forget what levels look like.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-24
+<td>wumpus interaction with pits on Sokoban level is wrong
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-25
+<td>When polymorphed into an herbivorous monster, you should prefer vegan "corpses"
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-26
+<td>When plomorphed into a hider, stop hiding when there's nothing left on a space to hide behind
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-27
+<td>throwing a wielded, returning weapon should not disable two-weapon mode
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-28
+<td>monsters should not wield cockatrice corpses without gloves on
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-29
+<td>Inappropriate message when praying character with telepathy is attacked.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-30
+<td>Wielding some weapons (usually Stormbringer) in two-weapon mode can give a "program in disorder" warning.
+<td>fixed in 3.4.0
+<td>avoid 2-weapon mode
+</tr>
+
+<tr>
+<td>C331-31
+<td>missing a cockatrice when polymorphed into a weapon-using monster but 
+fighting hand-to-hand stones the player
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-32
+<td>falling into a sink doesn't cause player to touch wielded cockatrice corpse
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-33
+<td>stinking cloud can cause crash
+<td>fixed in 3.4.0
+<td>don't cast stinking cloud near a staircase
+</tr>
+
+<tr>
+<td>C331-34
+<td>messages about monster using weapon against another monster displayed inappropriately
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-35
+<td>Eye of Aethiopica counted twice in final score
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-36
+<td>Inappropriate message when shopkeeper takes payment after killing adjacent
+character if character has sufficient money to pay.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-37
+<td>when polymorphed into a centaur, don't keep kicking monsters after they die
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-38
+<td>Inappropriate usage of "it" when throwing at a monster seen with infravision
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-39
+<td>#sit while water walking over a submerged object should sit on the water's
+surface and not on the unreachable object
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-40
+<td>"The invisible Jon the Kokushu hits!" - too many "the"s
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-41
+<td>Guidebook description of Platinum Yendorian Express Card says it reduces
+physical damage; it should refer to spell damage.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-42
+<td>trap detection misses most trapped doors
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-43
+<td>After choking and vomiting, you get useless message about being done eating.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-44
+<td>Monsters should not eat green slime as a cure for stoning.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-45
+<td>lighting of arboreal levels should not be stopped by trees
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-46
+<td>Messages after a monster blinds the player may use specifics instead of "it".
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-47
+<td>monsters shouldn't be able to see through walls because player wears Eyes of the Overworld
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-48
+<td>nymphs can steal fainting player's armor without waking the player
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-49
+<td>status line may not update after run command if run stopped by interesting dungeon feature
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-50
+<td>doors to shops do not get repaired when a hole is zapped in the doorway
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-51
+<td>Crash occurs when sleeping steeds attempt to climb stairs/ladders.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-52
+<td>hilite_pet uses color even if color is off
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-53
+<td>grammar error when dipping in more than one potion
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-54
+<td>blank scrolls should not fade when hitting rust monsters
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-55
+<td>eating or #offering food you can't get to shouldn't be allowed
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-56
+<td>If frozen by a gelatinous cube while eating, messages about eating may be confusing.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-57
+<td>Odd message results when several weapons slip from your hands at the same time.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-58
+<td>Rangers may arrive on the wrong part of a quest level.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-59
+<td>While praying, a rock mole eats the ball; when the prayer is granted the game crashes.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-60
+<td>Missle that misses a concealed mimic names it but leaves it concealed.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-61
+<td>Helm of Telepathy gives unnecessary "Wait! There's something there!" message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-62
+<td>one line selection menus don't get erased all the time
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-63
+<td>praying and failing to get help leaves you agnostic
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-64
+<td>after being drained by a mind flayer, get messages like "the sliver bell"
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-65
+<td>after polymorph, told both weapons are dropped but one isn't
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-66
+<td>-p and -r don't work with -s
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-67
+<td>list of discoveries lists "Book of the Dead" as "spellbook of Book of the Dead"
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-68
+<td>very long "killed by" messages may be truncated
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-69
+<td>Selection of seduction messages isn't quite right.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-70
+<td>You can still hear your dog after it's been displaced onto a level teleport trap.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-71
+<td>Save/Restore fails after genociding @.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-72
+<td>Throwing a weapon while in two-weapon mode uses the wrong skill.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-73
+<td>looking up trapdoor gives the info for door instead
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-74
+<td>Genocide self.  The record entry should start with "killed by".
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-75
+<td>While playing a Monk, throw the artifact to the quest leader - get "Program in disorder" message.
+<td>fixed in 3.4.0
+<td>Don't throw the artifact to the quest leader.
+</tr>
+
+<tr>
+<td>C331-76
+<td>Shouldn't print gas spore's name if you can't see it explode.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-77
+<td>Sensing monsters (e.g. blessed potion of monster detection) interferes with hilite_pet.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-78
+<td>If armor the hero is donning is stolen, attributes can be misadjusted.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-79
+<td>Fleeing monsters sometimes do so without telling you.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-80
+<td>Monster holding you may flee without telling you that you have been released.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-81
+<td>Sometimes monsters may claim to flee but not actually do so.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-82
+<td>Do trap detection: find a moat.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-83
+<td>Ecucalyptus trees never get generated.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-84
+<td>gaining levitation over a sink doesn't cause a fall
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-85
+<td>quest leader may leave quest start level voluntarily
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-86
+<td>dipping attached iron ball or embedded dragon scales into potion of polymorph gets the game confused
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-87
+<td>Drinking from a fountain in town is bad, but damaging the town isn't.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-88
+<td>Sometimes permanent inventory window doesn't update immediately.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-89
+<td>martial attacks can free monsters from pits
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-90
+<td>shopkeeper polymorphed into limbless form still "leaps" and "grabs"
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-91
+<td>Going downstairs while riding and punished causes panic.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-92
+<td>Bones file creation can cause spurious "placing steed on map" warning.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-93
+<td>While blindfolded and telepathic, search.  Appear to "find" monsters you are already aware of.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-94
+<td>Wishing for statue (or figurine or corpse) of long worm tail gives a partially functioning object.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-95
+<td>Animating a wish-created shopkeeper statue gives a partially functioning object.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-96
+<td>Yeenoghu's confusion attack should not be a touch of death
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-97
+<td>an eating steed should not be able to go up or down stairs, etc.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-98
+<td>Blind.  Eat unidentified cursed tin of spinach.  Find out it's green.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-99
+<td>You can "feel great" while turning to slime or having lycanthropy.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-100
+<td>When a seducing monster attacks another monster, the "smiles" message is printed twice.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-101
+<td>Polymorph into an erinys, wield no weapon, hit _lots_ of monsters.  Panic.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-102
+<td>Boulders (and other large things) can be thrown through iron bars.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-103
+<td>Praying can often result in a spellbook the player can't use.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-104
+<td>message from rust trap refers to cloak, even when it's a robe.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-105
+<td>If polymorphed and caught in gas spore explosion, human hit points still
+ affected.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-106
+<td>Attack a land based creature from the water. If the creature moves and you
+ try to attack where it was, you get "you attack empty water."
+<td>fixed in 3.4.0
+<td>
+<tr>
+
+<tr>
+<td>C331-107
+<td>Remove amulet of magic breathing while in water, may get spurious message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-108
+<td>While wielding two (or more) cursed, mergeable weapons, if a monster attacks with a bullwhip, you get "They is welded to your hands!"
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-109
+<td>Camera flash stops at invisible monster
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-110
+<td>monsters inside a stinking cloud should be blinded, just like the hero is
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-111
+<td>vault guard starts conversation with you even if you are hidden
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-112
+<td>Adult wolves are not small, but lynxes are.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-113
+<td>Saving deep in a game can cause an error message to appear; displaying that
+error can cause the game to crash.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-114
+<td>Put a boulder in a shop.  From outside, throw pick-axe or mattock at the boulder.  Game crashes.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-115
+<td>Fumbling a pick-axe while riding gives a misleading message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-116
+<td>Self-genocide while sitting on a throne should not refer to scroll of genocide.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-117
+<td>Eating dogfood or fixing a squeaky board conveys experience but doesn't
+check for gaining a new level.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-118
+<td>Demon bribes are 4x larger than they should be for co-aligned players.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-119
+<td>Objects that fall from a monster's inventory when monster is polymorphed
+ disappear.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-120
+<td>Quaffing a potion of gain ability while wearing ring of sustain ability
+ displays no message and identifies the potion
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-121
+<td>Player should stop waiting when a monster uses a polearm from a distance.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-122
+<td>When zapping ice with stone-to-flesh, should not treat ice as stone.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-123
+<td>When polymorphed into a silent creature, should not "pronounce" scroll formula.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-124
+<td>The hilite on a pet may not turn off immediately when the pet stops being tame.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-125
+<td>Missing wildly with (e.g.) Vorpal Blade counts as a hit for conduct.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-126
+<td>Pets eating just out of sight give inappropriate message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-127
+<td>shapechangers restored from disk no longer change shape
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-128
+<td>water elementals can burn
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-129
+<td>seeing an obviously trapped monster should disclose the trap
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-130
+<td>asking for information on "dwarf zombie" or "dwarf mummy" should not show the dwarf entry
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-131
+<td>sometimes you skip the first message from the quest nemesis
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-132
+<td>spider webs should be affected by nearby flames
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-133
+<td>Lighting an unpaid potion of oil gives a confusing message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-134
+<td>When finding a physically trapped, visible monster, you don't see the trap.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-135
+<td>Throwing/dropping cockatrice corpse while swallowed doesn't work as expected.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-136
+<td>Steeds often don't respond when attacked.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-137
+<td>Breaking an unpaid wand is not charged for correctly.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-138
+<td>In "combo" menu mode, cancelled A command gives a strange message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-139
+<td>Stormbringer in two-weapon mode can cause too many attacks.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-140
+<td>After stepping in a polymorph trap, a monster may end up with the wrong items.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-141
+<td>Booby-trapped doors make you stagger - even if you are riding.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-142
+<td>Sometimes you die during polymorph - even if you shouldn't.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-143
+<td>Steeds don't have feet (they generally have hooves), but that's what gets caught in a bear trap.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-144
+<td>While polymorphed into a small monster and riding you still escape bear
+traps.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-145
+<td>You get a "held" message instead of a "swallowed" message when engulfed and climbing stairs.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-146
+<td>If your inventory is full and you are eating in a shop, the shopkeeper may try to buy what you are eating.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-147
+<td>Weight of a merged pet food item not updated correctly when eaten.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-148
+<td>Tame monsters holding you due to conflict do not release you when conflict ends.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-149
+<td>engraving Elbereth doesn't show wisdom; engraving anything else does
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-150
+<td>Monkeys can steal cursed worn items.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-151
+<td>some messages refer to mummy wrappings as cloaks
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-152
+<td>monsters with gaze attacks should not try to blind the hero with potions
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-153
+<td>If blind, the throne doesn't disappear when message says it is gone
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-154
+<td>When a monster uses up a a partially eaten food item, cleanup was not performed.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-155
+<td>Temple preists can be created with two robes.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-156
+<td>Mis-engraving "X" or "x" violates illiterate conduct
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-157
+<td>^X command not listed in ?a and ?b help
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-158
+<td>Wizard mode command wmode doesn't show player location
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-159
+<td>player polymorphed into monster that loses hp out of water should lose hp too
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-160
+<td>leashed monsters saved in bones files may come back still leashed
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-161
+<td>eating a ring of levitation doesn't work quite right
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-162
+<td>silver-hating monster shouldn't take and keep silver weapons with a bullwhip
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-163
+<td>Destroying one of several boulders in one place unblocks vision
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-164
+<td>Stairs may be hidden by spider webs.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-165
+<td>If alignment is low, messages in co-aligned temples may be misleading.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-166
+<td>rediscovering forgotten object types  behaves differently depending
+ upon whether or not the playter had assigned names at the time of amnesia
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-167
+<td>Putting partly eaten food into a sack can change its weight.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-168
+<td>Breathing a potion of water abuses constitution.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-169
+<td>Monster with cursed and non-cursed weapon forgets wielded weapon is cursed.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-170
+<td>offering & tinning corpses on altars fails while riding
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-171
+<td>after eating a fortune cookie, you can faint and read the message while unconscious
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-172
+<td>vortex interaction with pits on Sokoban level is wrong
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-173
+<td>"The gold pieces hits it" is poor grammar.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-174
+<td>accidentaly dropping quivered or secondary weapon can cause crash
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-175
+<td>while standing on a scroll of scare monster, waiting is not interrupted by gaze attack
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-176
+<td>pets get stuck trying to go after food that they can't reach
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-177
+<td>monsters and objects usually seem to be immune to damage from lava
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-178
+<td>If you get interrupted while reading a spellbook, change levels (or the
+book gets destroyed), and then try another spellbook, the game can get
+confused.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-179
+<td>Spells cast by very wimpy monsters can do negative damage.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-180
+<td>A tin eaten in a shop while hungry costs the wrong amount.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-181
+<td>Wand of secret door detection may be identified even if it doesn't find
+anything.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-182
+<td>Polymorph into a demon.  Summon help.  If no help is available, the game will panic.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-183
+<td>If you float down on a trap after it's got you, you get stuck too long.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-184
+<td>applying whip toward hidden mimic displays mimic name before "Wait!" message<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-185
+<td>Warning may not show monsters hiding underwater.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-186
+<td>Monster killed by wand/spell of turning may not stay dead.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-187
+<td>Some monsters on the Astral plane can't use equipment they may start with.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-188
+<td>Killing a vault guard off his original level gives wrong message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-189
+<td>Corner walls don't display properly next to iron bars.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-190
+<td>Eating while riding can cause you to "slap against the floor" without
+falling off the mount.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>C331-191
+<td>Engraving on the floor while in fog gives an odd message.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+</table>
+
+<hr>
+<a name="PC"><h3>PC-only bugs</h3></a>
+<table border>
+
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>P331-1
+<td>?e help info shows odd end-of-line symbol
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+</table>
+
+<!--
+<hr>
+<a name="Linux"><h3>Linux-only bugs</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>L331-1
+<td>
+<td>
+<td>
+</tr>
+
+</table>
+-->
+<hr>
+<a name="Source"><h3>Build-from-source issues (all platforms)</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>S331-1
+<td>level compiler: ''' doesn't specify a golem
+<td>fixed in 3.4.0
+<td>use three single quotes in a row (no escapes)
+</tr>
+
+</table>
+<hr>
+<a name="win32"><h3>Win32-only bugs</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>N331-1
+<td>screen clears are incomplete on consoles wider than 80 characters
+<td>fixed in 3.4.0
+<td>Invoke game by preceeding nethack command with "start" to ensure 80x25 console
+</tr>
+
+<tr>
+<td>N331-2
+<td>menus don't take full advantage of screens with more than 25 rows
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td><a href="bugmore/N331-3.txt" name="N331-3">N331-3</a>
+<td>nh331pm.zip version crashes after installing SP2 on Win2000 and on WinXP
+<td>fixed
+<td>download nh331pm2.zip <a href="ports/download-msdos.html">here</a>.
+</tr>
+
+</table>
+
+<hr>
+<a name="Mac"><h3>Macintosh-only bugs</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td><a href="bugmore/M331-1.txt">M331-1</a>
+<td>Type -108 error under MacOS 9.
+<td><a href="bugmore/M331-1.txt">Fixed</a>
+<td>Use the Finder's Get Info command to double the application's memory allocation.
+</tr>
+
+<tr>
+<td><a href="bugmore/M331-1.txt">M331-2</a>
+<td>"Get info" reports 3.3.0 instead of 3.3.1
+<td><a href="bugmore/M331-1.txt">Fixed</a>
+<td>Annoying, but not important.  To verify version number:
+Run the game and check the 'v' and '#version' commands.
+</tr>
+
+<tr>
+<td>M331-3
+<td>System error 41 (can't load Finder) when program is started on a 68K Mac.
+<td>
+<td>
+</tr>
+
+<tr>
+<td>M331-4
+<td>When trying to restart a saved game, it starts a new one instead.
+<td>
+<td>Set a name in the NetHack Defaults file (or type the same name as the
+saved character in the "Who are you?" dialog.
+</tr>
+
+</table>
+<hr>
+<a name="X11"><h3>X11</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>X331-1
+<td>Resizing the inventory window may not work right.
+<td>
+<td>
+</tr>
+
+<tr>
+<td>X331-2
+<td>map not displayed in color when using X11 without tiles
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>X331-3
+<td>Resizing the map window may not work right.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>X331-4
+<td>font height not calculated properly when run on some X11 implementations
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+</table>
+<hr>
+<a name="Gnome"><h3>Gnome</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>G331-1
+<td>Gnome interface integration is not stable.
+<td>Integration with NetHack is ongoing.
+<td>
+</tr>
+
+</table>
+<hr>
+<a name="Amiga"><h3>Amiga</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>A331-1
+<td>In fontmode: random crashes when opening menu window.
+<td>fixed in 3.4.0
+<td>Use tile mode, or use recover on a crashed game.
+</tr>
+
+<tr>
+<td>A331-2
+<td>closewindow broken on menuwindow
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>A331-3
+<td>#/altmeta broken on some keymaps
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>A331-4
+<td>tilemode tombstone broken on cybergfx screen
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>A331-5
+<td>sometimes graphics appear outside window boundary
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<tr>
+<td>A331-6
+<td>Quitting very early can leave junk level files lying around.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+<!--
+<tr>
+<td>A331-7
+</tr>
+-->
+
+<tr>
+<td>A331-8
+<td>Shouldn't try to execute aborted/canceled empty shell command.
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+</table>
+
+<a name="Qt"><h3>Qt</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>Q331-1
+<td>user preferences are not honored in startup dialog
+<td>fixed in 3.4.0
+<td>
+</tr>
+
+</table>
+<a name="Atari"><h3>Atari</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>T331-1
+<td>GEM only.  Selecting an item with the mouse in some menu windows causes
+the game to crash on the next input.
+<td>fixed in 3.4.0
+<td>choose with the keyboard; if already chosen with mouse, click on desktop
+</tr>
+
+</table>
+<!--
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2009 by Kenneth Lorber, Kensington, Maryland.
+-->

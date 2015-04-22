@@ -1,0 +1,20 @@
+Annotation M331-1.1 August 13 2000
+    Some Macintosh users were getting type -108 (out of memory)
+    errors (bug M331-1).  The new 3.3.1 packaging of the Macintosh
+    binaries, released on August 13, 2000, fixes this problem by
+    doubling the application's memory allocation.  It also corrects
+    the version number reported by the Finder's Get Info command
+    (bug M331-2).  These are the ONLY changes in the new package.
+
+    If you have already downloaded the original package, you should
+    fix this problem yourself.  Select the application program in
+    the Finder, select "Get Info" from the File menu, and replace
+    the Memory Requirements with double their values.  Please do
+    this rather than wasting your time and our bandwidth downloading
+    the new package.  Be considerate or else we will not make these
+    types of updates available in the future.
+
+    Note that the game is known to work just fine on some Macs,
+    even with the smaller memory allocation.  So if you have an
+    older Mac with limited memory, you probably can get away with
+    the smaller memory allocation.

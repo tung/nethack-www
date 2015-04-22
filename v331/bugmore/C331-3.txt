@@ -1,0 +1,21 @@
+Annotation C331-3.1 August 14 2000
+
+In the previous version, 3.3.0, the selection routines would prompt
+you for information that conflicted with some of the other selections
+that you had made.  In some cases it silently ignored some 
+information.  That drew a fair bit of feedback. 
+
+In 3.3.1, each attribute chosen filters the choices for the next selection 
+so that there are no conflicts.  For instance, if you have chosen
+OPTIONS=gender:male in your config file, Valkyrie won't be present
+on the role selection menu.  That's because Valkyries can only be
+female.  You can override the setting in the config file by specifying
+	-p Valkyrie
+on the command line to choose a Valkyrie explicitly.  
+Alternatively, you can remove the OPTIONS=gender:male from your 
+config file, so that it does not limit your startup selection choices.
+	
+(Note that OPTIONS=gender:male in the config file could also 
+be enabled by the deprecated OPTIONS=male, or 
+OPTIONS=!female.  You should use the OPTIONS=gender
+method for choosing your gender in NetHack 3.3.x)
