@@ -1,0 +1,70 @@
+---
+layout: legacy
+title: Source Code Download
+legacy:
+  back_link:
+    text: NetHack 3.3.0 Downloads
+    url: downloads.html
+---
+<ul>
+<li><h3>Step 1: download.</h3>
+<p>
+Click on the
+<NOSCRIPT>
+link
+</NOSCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write("button");
+// -->
+</SCRIPT>
+below to start the download system.
+Depending on your browser you may need to
+right-click so that the file is saved to disk and not displayed.
+<NOSCRIPT>
+When the download is complete, return to this page and continue below.
+</NOSCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write("When the download is complete, close the download window and continue with the instructions on this page.");
+// -->
+</SCRIPT>
+Problems?  Check our list of
+<a href="../common/links.html#mirror">
+additional mirrors
+</a>.
+<p>
+<big>nethack-330.tgz</big>&nbsp;&nbsp;&nbsp;(2.8M bytes)&nbsp;&nbsp;&nbsp
+<br>
+
+NetHack 3.3.0 source release.
+<br><table>
+<tr><td><NOSCRIPT><a href="http://prdownloads.sourceforge.net/nethack/nethack-330.tgz?download">Start download system</a></NOSCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write('<form><input type="button" value="Start download system" onClick="window.open(\'http://prdownloads.sourceforge.net/nethack/nethack-330.tgz?download\');"></form>');
+// -->
+</SCRIPT>
+
+<li><h3>Step 2: unpack.</h3>
+<br>
+NetHack is shipped in a single archive created with tar and then
+shrunk with gzip.  To unpack under Unix, the following commands
+should be executed in an empty directory:
+<pre>
+	gzcat nethack-330.tgz &gt; nethack-3.3.0.tar
+	tar xf nethack-3.3.0.tar
+</pre>
+The gzip package (containing gzip, gunzip, and gzcat) may be obtained from the
+<a href="http://www.fsf.org">Free Software Foundation</a>.  A version
+of tar is also available from the same site.
+<li><h3>Step 3: build.</h3>
+See the file README in the top level directory unpacked in Step 2 for
+build instructions for the various operating systems.
+</ul>
+<!--
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2009 by Kenneth Lorber, Kensington, Maryland.
+-->
