@@ -41,7 +41,7 @@ Work-around for kramdown formatting quirk.
 
 ## Unofficial Ports, Packages and Interfaces
 
-* [Vulture's Eye](http://www.darkarts.co.za/vulture-for-nethack), NetHack with a unique isometric view
+* [Vulture](http://www.darkarts.co.za/vulture-for-nethack), NetHack with a unique isometric view
 * [noeGNUd](https://bitbucket.org/clivecrous/noegnud), alternate UI system for NetHack ([more info](http://nethackwiki.com/wiki/Noegnud)).
 * [NetHack for the gtk2 window system](http://gtk2hack.sourceforge.net)
 
