@@ -152,7 +152,7 @@ Read the [old Windows CE download instructions](ports/download-wince.html) for c
 
 ---
 
-## Source Code
+## Source code
 
 Instructions on how to compile the source code are included in the source release.
 

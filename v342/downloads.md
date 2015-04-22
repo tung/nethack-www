@@ -124,7 +124,7 @@ Official NetHack 3.4.2 binaries for Intel 386 compatible machines running OS/2.
 
 ---
 
-## Source Code
+## Source code
 
 Alternatively, you can clone our [code repository]({{ site.code_repository_url }}) for the latest version of NetHack, or any other version by its tag; see [How to Contribute]({{ site.baseurl }}/how-to-contribute.html#editing-the-source-code) for more details.
 
