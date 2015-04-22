@@ -21,5 +21,5 @@ Don't forget to read the [NetHack 3.2.3 release notes](release.html)!
 
 The download links for these platforms no longer work.  The pages below are provided for historical reasons.
 
-* [MS-DOS, Windows 3.1](ports/download-msdos.html)
-* [OS/2](ports/download-os2.html)
+* [MS-DOS, Windows 3.1](download-msdos.html)
+* [OS/2](download-os2.html)
