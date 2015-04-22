@@ -1,0 +1,1005 @@
+---
+layout: legacy
+title: Known Bugs
+legacy:
+  style: legacy-bugs.css
+  back_link:
+    text: NetHack 3.3.0 Release Notes
+    url: release.html
+---
+<ul>
+<li><a href="bugs.html#Core">Bugs common to all systems</a>
+<li><a href="bugs.html#PC">PC-only bugs</a>
+<li><a href="bugs.html#Mac">Macintosh-only bugs</a>
+<li><a href="bugs.html#Linux">Linux-only bugs</a>
+<li><a href="bugs.html#NT">NT-only bugs</a>
+<li><a href="bugs.html#Source">Build-from-source issues (all platforms)</a>
+<li><a href="spoiler.html">Spoiler bugs</a>
+(These are bugs that merely reading about may spoil your enjoyment of the
+game or give away answers to puzzles that should be solved.  They are on
+a different page to keep you from seeing them by accident in the main lists.)
+</ul>
+<hr>
+<a name="Core"><h3>Bugs common to all systems</h3></a>
+<table border>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>C1
+<td>using 'C' to name a steed produces a "pony tail" and a crash
+<td>fixed in 3.3.1
+<td>Dismount before naming a steed.
+</tr>
+
+<tr>
+<td>C2
+<td>spellbooks that are "too much to comprehend" act oddly on game restore
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C3
+<td>score recorded as "killed by the [master] mind flayer"
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C4
+<td>traps display incorrectly after hallucination ends
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C5
+<td>don't select gems--aside from rocks and known glass or flint--via autoquiver<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C6
+<td>applying weapon or wieldable tool gives spurious two-weapon messages
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C7
+<td>W lets you wear odd items (which you may not be able to take off)
+<td>fixed in 3.3.1
+<td>A may allow you to remove such items.
+</tr>
+
+<tr>
+<td>C8
+<td>put some of a group of items from quiver or secondary weapon slot to container - things get wierd
+<td>fixed in 3.3.1
+<td>move items in and out of quiver in full sets
+</tr>
+
+<tr>
+<td>C9
+<td>W may give an inappropriate list of things to wear
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C10
+<td>crash on restore if riding or stuck when game saved
+<td>fixed in 3.3.1
+<td>dismount/get unstuck before saving game
+</tr>
+
+<tr>
+<td>C11
+<td>I (invisible monster) characters left showing when there is no monster there
+<td>
+<td>This is not a bug.  Just because you can see there is no monster there, it
+doesn't mean you can see that an invisible monster has left.
+</tr>
+
+<tr>
+<td>C12
+<td>dying while hallucinating and mounting a steed is reported incorrectly
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C13
+<td>potion or wand of invisibility should not print message if already invisible even if you can see invisible
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C14
+<td>polymorphing into current form not handled properly
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C15
+<td>reviving tame monsters are tame but not peaceful
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C16
+<td>Genociding T while there are T corpses causes a crash
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C17
+<td>setting perm_invent for tty mode (which is NOT supported) crashes on i
+<td>fixed in 3.3.1
+<td>Don't set perm_invent for window systems that don't support it.
+</tr>
+
+<tr>
+<td>C18
+<td>when wielding two weapons, ) only shows one
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C19
+<td>artifacts inside bags don't get scored properly
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C20
+<td>score files from 3.2.x may report the wrong location of death under 3.3
+<td>
+<td>
+</tr>
+
+<tr>
+<td>C21
+<td>message when killed by a gas spore is incorrect
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C22
+<td>default dogname can end up on a cat
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C23
+<td>#chat with succubus (etc) which teleports - leaves I behind
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C24
+<td>probe at I with no monster there - I remains
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C25
+<td>pets get killed by gas spores too often
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C26
+<td>stinking cloud too close to edge causes crash
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C27
+<td>kicked monster moving out of view leaves I
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C28
+<td>black pudding attacks confuse type of armor
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C29
+<td>crash when unseen monster engulfs items
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C30
+<td>object shattered by wand uses singular verb when it shouldn't
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C31
+<td>initial inventory can contain spellbooks for restricted skills
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C32
+<td>nymphs can steal saddle while you are riding - and you keep riding
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C33
+<td>monster killing other monster with acid credited to player
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C34
+<td>wield two weapons - one gets stolen, game thinks you still have both
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C35
+<td>rock mole can eat the prize for the Sokoban levels
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C36
+<td>When polymorphed from weak race to strong monster, gain ability malfunctions
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C37
+<td>stone-to-flesh gives odd messages on some special levels when cast up or down
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C38
+<td>probing self (or using a stethoscope) doesn't show sliming
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C39
+<td>there is no way to remove a saddle from a steed
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C40
+<td>converting secondary weapon into artifact fails to stop two-weapon mode
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C41
+<td>one of the Sokoban levels can't be solved without "creative nethacking"
+<td>fixed in 3.3.1
+<td>Be creative.
+</tr>
+
+<tr>
+<td>C42
+<td>polymorphing an object via #dip in a shop may anger the shopkeeper when it shouldn't
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C43
+<td>eating amulet of restful sleep behaves oddly
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C44
+<td>being hit by potion of sleep doesn't work
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C45
+<td>detect unseen doesn't show "I" properly
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C46
+<td>secret door detection doesn't show "I" properly
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C47
+<td>javelin skill progress broken
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C48
+<td>#dip weapon in oil doesn't work right
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C49
+<td>riding a centaur doesn't work
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C50
+<td>blessed detect monster runs for wrong length of time
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C51
+<td>magic mapping while engulfed leaves display junk
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<!--
+<tr>
+<td>C52
+<td>leave a T corpse.  Change levels.  Genocide T.  Return. Crash.
+<td>fixed in 3.3.1
+<td>
+</tr>
+-->
+
+<tr>
+<td>C53
+<td>Drain a troll to 0hp with (eg) Stormbringer.  Game crashes when T revives.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<!-- dup of 32
+<tr>
+<td>C54
+<td>Saddle stole, but player still riding.
+<td>fixed in 3.3.1
+<td>
+</tr>
+-->
+
+<tr>
+<td>C55
+<td>Stinking cloud goes off - and things die twice.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C56
+<td>Player movement rates are broken - encumbrance doesn't use up turns.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C57
+<td>Player can die from lava while praying successfully.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C58
+<td>If blind, final score doesn't display gems correctly.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C59
+<td>Knight can only do "L" jump with jump spell.  Non-knight can't jump at all.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C60
+<td>animating statue of pet gives a wild animal
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C61
+<td>Sting & Orcrist should get bonus against orcs
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C62
+<td>monsters seen by infrared can be seen after you walk around a corner
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C63
+<td>breaking create monster wands can put monster in rock
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C64
+<td>Why do I get "What wierd role is this? (E)"
+<td>fixed in 3.3.1
+<td>Ignore it - it's complaining about record file entries for Elves from
+previous versions of NetHack.
+</tr>
+
+<tr>
+<td>C65
+<td>"reading" a blank scroll/spellbook shouldn't spoil "illiterate" conduct
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C66
+<td>typo in message for destroying a drawbridge with a monster on it while
+you are confused
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C67
+<td>chaotic sacrificing on a chaotic alter may crash if deamon creation fails
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C68
+<td>casting fireball while engulfed or near map edge may cause a crash
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C69
+<td>monk kicking a shade without blessed boots kills game
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C70
+<td>If low on hp and (e.g.) wearing amulet of unchanging, warning messages are missing
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+
+<tr>
+<td>C72
+<td>level teleport high in the air while lifesaved results in game confusion
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C73
+<td>after failing to stone a monster due to (his) lifesaving, next monster gets stoned
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C74
+<td>Standing on stairway down when mail daemon or vault guard shows up.  Go down. Crash.
+<td>fixed in 3.3.1
+<td>Wait until monsters move at least once before changing levels if mail daemon or vault guard has just disappeared.
+</tr>
+
+<tr>
+<td>C75
+<td>monsters seem to take no time to change armor when you can't see them
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C76
+<td>Lay an egg.  Wield it.  When it hatches, the game will crash.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C77
+<td>Wooden harps shouldn't be magic.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C78
+<td>Messages about damage to non-metal helmets always refer to leather.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C79
+<td>monsters can transport on levels where transport is disallowed
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C80
+<td>stone-to-flesh on a stone golem creates a flesh golem - even if they have been genocided
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C81
+<td>mistreating a pet angel can cause a crash
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C82
+<td>closing a door on an invisible monster reveals the I
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C83
+<td>stethoscope or wand of probing aimed at self says "very fast" when just "fast"
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C84
+<td>gold detection doesn't detect gold golems
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C85
+<td>silver bell looks gold (tile systems only)
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C86
+<td>hero can hear while asleep
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C87
+<td>combat message may refer to wrong combatant's helmet
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C88
+<td>If the hero kills himself and a shopkeeper with the same explosion,
+the shopkeeper gets the hero's possessions.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C89
+<td>some inventory changes don't show up immediately with perm_invent set
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C90
+<td>multiple gas spores exploding at the same time can cause a crash
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C91
+<td>praying with very few hit points can cause repeated "You feel much better" messages.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C92
+<td>Crash may occur when a neutral wizard who knows finger of death but isn't
+carrying the spellbook is crowned.
+<td>fixed in 3.3.1
+<td>unwield weapon before praying or carry a FOD spellbook
+</tr>
+
+<tr>
+<td>C93
+<td>pythons should have infravision
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C94
+<td>similar greased and non-greased items will merge
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C95
+<td>monster reading scrol of earth may get an extra attack
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C96
+<td>thrown weapons fire one at a time regardless of skill
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C97
+<td>don't use "lungs" when referring to creatures that don't have any
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C98
+<td>monk characters kick like monsters instead of humans
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C99
+<td>kicking a shade when polymorphed can cause crash
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C100
+<td>some of the articles in message on the Sokoban level are wrong
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C101
+<td>online help (dat/opthelp) default for dungeon is out of date
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C102
+<td>Being engulfed while riding may result in bogus tail-like things.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C103
+<td>Engravings may refer to fortune cookies.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C104
+<td>saddle on knight's initial horse should be known
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C105
+<td>breaking a wielded wand doesn't leave it wielded
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C106
+<td>if a nymph hits a monster then teleports away, she still gets a second attack
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C107
+<td>attempt (and fail) to polymorph into genocided dragon while wearing its scales - get redundent messages
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C108
+<td>polymorphing while a were-beast makes you human
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>C109
+<td>luck broken for certain times
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+</table>
+<hr>
+<table border>
+<a name="PC"><h3>PC-only bugs</h3></a>
+
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>P1
+<td>informative messages stop showing up after hitting ESC key
+<td>fixed in 3.3.1
+<td>Try taking inventory (i command).
+</tr>
+
+</table>
+
+<hr>
+<table border>
+<a name="Linux"><h3>Linux-only bugs</h3></a>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>L1
+<td>MAILPATH is wrong
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>L2
+<td>colors are wrong on some terminals
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>L3
+<td>display is wierd on the Rogue level
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+</table>
+<hr>
+<table border>
+<a name="Source"><h3>Build-from-source issues (all platforms)</h3></a>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>S1
+<td>Qt: remove intermediate files on 'make spotless'
+<td>fixed in 3.3.1
+<td>on failed build, remove *.moc before restarting
+</tr>
+
+<tr>
+<td>S2
+<td>level files not removed properly for real mode overlay with MFLOPPY
+<td>fixed in 3.3.1
+<td>If building real mode with overlays, don't use MFLOPPY.
+</tr>
+
+<tr>
+<td>S3
+<td>DEC Unix: fix MAILPATH, lex function types, curses conflicts
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>S4
+<td>lev_comp doesn't notice when it can't write successfully
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>S5
+<td>OS/2: region.c not compiled; sokoban levels not compiled
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+</table>
+<table border>
+<a name="NT"><h3>NT-only bugs</h3></a>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>N1
+<td>Start game on console >80x25. Save. Restore on 80x25 console.  Boom.
+<td>fixed in 3.3.1
+<td>Restore on same size console as game was started on.
+</tr>
+
+
+</table>
+<table border>
+<a name="Mac"><h3>Macintosh-only bugs</h3></a>
+
+<tr>
+<td>ID
+<td>Description
+<td>Status
+<td>Workaround (if any)
+</tr>
+
+<tr>
+<td>M1
+<td>"Can't create record file"
+<td>fixed in 3.3.1
+<td>Create text file "record" in the same folder as the executable
+</tr>
+
+<tr>
+<td>M2
+<td>Colors change when window moved to bottom right.
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>M3
+<td>Random crashes on 68K
+<td>
+<td>Possible workaround: don't use optimizer when compiling.
+</tr>
+
+<tr>
+<td>M4
+<td>Using tty mode crashes or hangs.
+<td>Need more user reports.
+<td>
+</tr>
+
+<tr>
+<td>M5
+<td>Errors in "NetHack Defaults" file cause crash.
+<td>fixed in 3.3.1
+<td>Edit file by hand to remove bad options.
+</tr>
+
+<tr>
+<td>M6
+<td>Window placement not remembered in tty mode.
+<td>fixed in 3.3.1
+<td>Start game in mac mode, move window, quit.
+</tr>
+
+<!--
+<tr>
+<td>M7
+<td>use_stone creates display artifacts
+<td>
+<td>Turn use_stone off or ignore.
+</tr>
+-->
+
+<tr>
+<td>M9
+<td>Hunger status may not be updated correctly
+<td>fixed in 3.3.1
+<td>Command-R
+</tr>
+
+<tr>
+<td>M10
+<td>Initial quest message truncated
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+<tr>
+<td>M11
+<td>duplicate lines appear in some descriptions (e.g. grid bug)
+<td>fixed in 3.3.1
+<td>
+</tr>
+
+</table>
+<!--
+NetHack is Copyright 1985-2003 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2009 by Kenneth Lorber, Kensington, Maryland.
+-->
