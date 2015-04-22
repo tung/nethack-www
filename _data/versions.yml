@@ -72,3 +72,9 @@
   sub_nav:
     - release.html
     - downloads.html
+-
+  version: 3.2.2
+  release_date: 1990-01-01 00:00:00 +0000 #TODO
+  path: v322
+  sub_nav:
+    - downloads.html
