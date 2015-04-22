@@ -39,7 +39,7 @@ Don't forget to read the [NetHack 3.3.1 release notes](release.html)!
 
 The download links for these platforms no longer work.  The pages below are provided for historical reasons.
 
-* [Windows 95/98/NT/2000](ports/download-win.html)
+* [Windows 95/98/NT/2000](ports/download-nt.html)
 * [Linux](ports/download-linux.html)
 * [OS/2](ports/download-os2.html)
 * [Amiga](ports/download-amiga.html)
