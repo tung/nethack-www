@@ -26,10 +26,10 @@ Don't forget to read the [NetHack 3.3.0 release notes](release.html)!
 
 ## Platforms with missing downloads
 
-The download links for these platforms no longer work.  The pages below are provided for historical reasons.
+Downloads and installation instructions for the following systems used to be offered, but no longer exist.
 
-* [Windows 95/98/NT](ports/download-win.html)
-* [Macintosh](ports/download-mac.html)
-* [Linux](ports/download-linux.html)
-* [MS-DOS](ports/download-msdos.html)
-* [OS/2](ports/download-os2.html)
+* Windows 95/98/NT -- `ports/download-nt.html`
+* Macintosh -- `ports/download-mac.html`
+* Linux -- `ports/download-linux.html`
+* MS-DOS -- `ports/download-msdos.html`
+* OS/2 -- `ports/download-os2.html`
