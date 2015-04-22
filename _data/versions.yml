@@ -62,6 +62,7 @@
   sub_nav:
     - release.html
     - downloads.html
+    - guidebook.html
     - bugs.html
     - spoiler.html
 -
