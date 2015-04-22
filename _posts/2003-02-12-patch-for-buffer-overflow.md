@@ -6,4 +6,4 @@ tags: [v340, patch, bugfix]
 ---
 [Source patch][340-buffer-overflow-patch] for buffer overflow available.
 
-[340-buffer-overflow-patch]: #TODO
+[340-buffer-overflow-patch]: {{site.baseurl}}/v340/bugmore/secpatch.txt

@@ -6,4 +6,4 @@ tags: [v340, releases]
 ---
 NetHack 3.4.0 [released][version-340].
 
-[version-340]: #TODO
+[version-340]: {{site.baseurl}}/v340/release.html
