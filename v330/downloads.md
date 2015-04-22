@@ -8,6 +8,13 @@ Don't forget to read the [NetHack 3.3.0 release notes](release.html)!
 
 ---
 
+## Port news
+
+* **Amiga** (July 5, 1999): The Amiga port of NetHack is not currently being maintained, and will probably be dropped.
+* **Atari**: This platform is no longer supported.  There are now no team members with the equipment/time to support Atari porting.
+
+---
+
 ## Source code
 
 [nethack-330.tgz](http://sourceforge.net/projects/nethack/files/nethack/3.3.0/nethack-330.tgz/download)
