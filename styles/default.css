@@ -175,6 +175,13 @@ ol#copying-policies li {
     font-size: small;
 }
 
+.post-date {
+    background-color: #fed;
+    border: 1px solid #888;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
 .pagination {
     margin: 2em 0;
     text-align: center;
