@@ -12,7 +12,7 @@ a[href="#"], a[href="#TODO"] {
     color: #c00;
 }
 
-a[href^="http"]::after {
+a[href^="http"]::after, a[href^="ftp"]::after {
     content: "*";
     font-size: smaller;
     vertical-align: top;
