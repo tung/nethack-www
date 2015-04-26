@@ -28,9 +28,9 @@ If you're offering a new encyclopedia entry that comes from a source, please inc
 
 ## New tiles and tilesets
 
-Monitor sizes have grown tremendously since our default tileset was conceived, but the tileset itself has not.  If you have what it takes to make a new large tileset, send it to our bug tracker or email us.  If you're emailing, don't attach the tileset image directly unless we ask, host the image somewhere else and link to it instead.
+If you have what it takes to make a new tileset, or even just touch up a tile or two in a current tileset, send it to our bug tracker or email us.
 
-Even if the tileset isn't bigger than our current default tileset, we may still want to see it.  Consider also sharing it with the greater NetHack community; virtually all graphical tiles ports of NetHack support custom tilesets, so people can try yours right away!
+Consider also sharing your creations with the greater NetHack community; virtually all graphical tiles ports of NetHack support custom tilesets, so people can try yours right away!
 
 If you find tiles that are missing or seem off, or have improvements to some existing tiles, let us know about those as well.
 
