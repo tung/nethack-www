@@ -12,6 +12,12 @@ a[href="#"], a[href="#TODO"] {
     color: #c00;
 }
 
+a[href^="http"]::after {
+    content: "*";
+    font-size: small;
+    vertical-align: top;
+}
+
 #version-date {
     padding: 0 1em;
     text-align: center;
