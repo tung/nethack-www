@@ -11,8 +11,10 @@
     {% assign post_date = post.date %}
     {% assign post_tags = post.tags %}
 {% endif %}
+{% capture post_h %}{% if include.content != true and include.h %}{{ include.h }}{% else %}h2{% endif %}{% endcapture %}
+{% capture post_title_full %}{% if page.is_blog_post %}{{ post_title }}{% else %}<a href="{{ site.baseurl }}{{ post_url }}">{{ post_title }}</a>{% endif %}{% endcapture %}
 <article class="{% if include.excerpt %}post-excerpt{% else %}post{% endif %}">
-    <h2 class="post-title">{% if page.is_blog_post %}{{ post_title }}{% else %}<a href="{{ site.baseurl }}{{ post_url }}">{{ post_title }}</a>{% endif %}</h2>
+    <{{ post_h }} class="post-title">{{ post_title_full }}</{{ post_h }}>
     <div class="post-meta">
         Posted by <a class="post-author" href="{{ site.baseurl }}/blog/authors/{{ post_author }}.html">{{ post_author }}</a>
         on <a class="post-date" href="{{ site.baseurl }}{{ post_url }}" title="permalink">{{ post_date | date: "%B %-d, %Y" }}</a>

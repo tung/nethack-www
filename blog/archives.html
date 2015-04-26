@@ -1,6 +1,13 @@
 ---
 title: Archives
 ---
+{% assign archive_year = "" %}
 {% for post in site.posts %}
-    {% include blog-post.html %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% if archive_year != post_year %}
+        {% if archive_year != "" %}<hr>{% endif %}
+        {% assign archive_year = post_year %}
+        <h2>{{ post_year }}</h2>
+    {% endif %}
+    {% include blog-post.html h='h3' %}
 {% endfor %}
