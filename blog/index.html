@@ -5,6 +5,7 @@ title: Latest Posts
     {% include pagination.html %}
 {% endif %}
 {% for post in paginator.posts %}
+    {% unless forloop.first %}<hr>{% endunless %}
     {% include blog-post.html content=true %}
 {% endfor %}
 {% include pagination.html %}
