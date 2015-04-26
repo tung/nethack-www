@@ -3,7 +3,7 @@ title: Welcome!
 ---
 <p>
 Congratulations adventurer!
-Your quest is at an end, for you have reached the home of NetHack.
+Your quest is at an end, for you have reached the home of <b><i>NetHack</i></b>.
 Here, the Wizard of Yendor has no power, the Oracle speaks with utmost clarity. and the grid bugs do not bite.
 </p>
 
@@ -17,6 +17,21 @@ Here, the Wizard of Yendor has no power, the Oracle speaks with utmost clarity. 
 
 <p>
 Find out more at the <a href="{{ site.baseurl }}/blog/">NetHack blog</a>!
+</p>
+
+<hr>
+
+<h2>Download NetHack {{ site.data.versions[0].version }}</h2>
+
+<p>
+Play the latest version of NetHack on <b>Windows</b>, <b>OS X</b>, <b>Linux</b> and many other platforms!
+</p>
+
+{% assign latest_version = site.data.versions[0] %}
+{% include version-date.html version=latest_version %}
+
+<p>
+... or find out <a href="{{ site.baseurl }}/how-to-play-online.html">how to play and watch others play online</a>!
 </p>
 
 <hr>
@@ -45,8 +60,3 @@ Check out more screenshots on <a href="{{ site.baseurl }}/screenshots.html">our 
 <p>
 Find what others have said about NetHack at <a href="{{ site.baseurl }}/references.html">our collection of references</a>!
 </p>
-
-<h2>Download NetHack {{ site.data.versions[0].version }}</h2>
-
-{% assign latest_version = site.data.versions[0] %}
-{% include version-date.html version=latest_version %}

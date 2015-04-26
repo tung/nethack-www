@@ -1,5 +1,5 @@
 {% capture version_date %}
-{{ site.title }} {{ include.version.version }} released on {{ include.version.release_date | date: "%B %d, %Y" }}.
+{{ site.title }} <b>{{ include.version.version }}</b> released on <b>{{ include.version.release_date | date: "%B %-d, %Y" }}</b>.
 {% endcapture %}
 {% if include.version.current == true %}
     <div id="version-date" class="version-new">
