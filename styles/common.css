@@ -14,7 +14,7 @@ a[href="#"], a[href="#TODO"] {
 
 a[href^="http"]::after {
     content: "*";
-    font-size: small;
+    font-size: smaller;
     vertical-align: top;
 }
 
