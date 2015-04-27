@@ -4,8 +4,6 @@ author: keni
 date: 2002-03-20 00:00:00 +0000
 tags: [v340, releases]
 ---
-[**Download NetHack 3.4.0 now!**][340-downloads]
-
 The NetHack DevTeam is pleased to announce the release of NetHack 3.4.0.
 
 NetHack 3.4 is an enhancement to the dungeon exploration game NetHack.  It is a distant descendent of Rogue and Hack, and a direct descendent of NetHack 3.3.
@@ -28,6 +26,8 @@ There are a great number of bug fixes in this release, as well as many changes a
 * Win32: new graphical interface contributed by Alex Kompel
 
 Read the [release notes][340-release] for more information.
+
+[**Download NetHack 3.4.0 now!**][340-downloads]
 
 [340-downloads]: {{site.baseurl}}/v340/downloads.html
 [340-release]: {{site.baseurl}}/v340/release.html

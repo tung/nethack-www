@@ -4,8 +4,6 @@ author: keni
 date: 2003-02-23 00:00:00 +0000
 tags: [v341, releases]
 ---
-[**Download NetHack 3.4.1 now!**][341-downloads]
-
 The NetHack DevTeam is pleased to announce the release of NetHack 3.4.1.
 
 NetHack 3.4 is an enhancement to the dungeon exploration game NetHack.  It is a distant descendent of Rogue and Hack, and a direct descendent of NetHack 3.3.
@@ -24,6 +22,8 @@ NetHack 3.4.1 is a bugfix release for 3.4.0.
 * Windows CE port included (by Alex Kompel)
 
 Read the [release notes][341-release] for more information.
+
+[**Download NetHack 3.4.1 now!**][341-downloads]
 
 [341-downloads]: {{site.baseurl}}/v341/downloads.html
 [341-release]: {{site.baseurl}}/v341/release.html
