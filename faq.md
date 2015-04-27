@@ -194,3 +194,5 @@ It isn't feasible to track everything that could possibly be tracked in the game
 ### Hey, how about a first-person mode?
 
 As it so happens, there is an unofficial port of NetHack that goes by the name of [NetHack3D](http://www.sbrain.org/nethack3d/) that offers exactly this kind of mode, but it only runs on Mac OS X 10.4 and higher.
+
+If you don't have OS X, you can try running NetHack through the [Necklace of the Eye (or NotEye) roguelike front-end](http://www.roguetemple.com/z/noteye/), which provides a first-person view mode and has rudimentary NetHack support.
