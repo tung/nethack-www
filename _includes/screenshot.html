@@ -1,13 +1,23 @@
-{% assign screenshot_meta_path = include.file | replace: ".png" | append: ".md" | prepend: "_screenshots/" %}
-{% assign screenshot_meta = site.collections.screenshots.docs | where: "relative_path", screenshot_meta_path | first %}
-{% assign preview_path = include.file | prepend: "/images/screenshots/preview/" %}
-{% assign preview = site.static_files | where: "path", preview_path | first %}
 {% if include.markdown %}
 {::nomarkdown}
 {% endif %}
+
+{% assign screenshot_base = include.file | replace: ".png" | replace: ".jpg" %}
+
+{% assign full_path = include.file | prepend: "/images/screenshots/full/" %}
+{% assign screenshot_meta_path = screenshot_base | append: ".md" | prepend: "_screenshots/" %}
+{% assign screenshot_meta = site.collections.screenshots.docs | where: "relative_path", screenshot_meta_path | first %}
+
+{% assign preview_path = screenshot_base | append: ".jpg" | prepend: "/images/screenshots/preview/" %}
+{% assign preview = site.static_files | where: "path", preview_path | first %}
+{% unless preview %}
+    {% assign preview_path = screenshot_base | append: ".png" | prepend: "/images/screenshots/preview/" %}
+    {% assign preview = site.static_files | where: "path", preview_path | first %}
+{% endunless %}
+
 <div class="screenshot">
     <div>
-        <a href="{{ site.baseurl }}/images/screenshots/full/{{ include.file }}"><img src="{{ site.baseurl }}/images/screenshots/{% if preview %}preview{% else %}full{% endif %}/{{ include.file }}" alt="{{ include.file }}"></a>
+        <a href="{{ site.baseurl }}{{ full_path }}"><img src="{{ site.baseurl }}{% if preview %}{{ preview_path }}{% else %}{{ full_path }}{% endif %}" alt="{{ include.file }}"></a>
         {{ screenshot_meta.content }}
         <!-- license: {{ screenshot_meta.license }}; source: {{ screenshot_meta.source }} -->
     </div>
