@@ -98,7 +98,7 @@ Windows users should edit the `defaults.nh` file in their ***NetHack*** folder u
 
 Almost always no, but see the release information for each version to be sure.  These files contain information from the internal structures of the game, and these almost always change between versions.
 
-You *can* use save and bones files from 3.4.0, 3.4.1 and 3.4.2 with 3.4.3 (details are in the [release notes]({{ site.baseurl }}/v343/release.html)).  This also applies to 3.4.2 as well as 3.4.1 and 3.4.0.
+You *can* use save and bones files from 3.4.0, 3.4.1 and 3.4.2 with 3.4.3 (details are in the [NetHack 3.4.3 release notes]({{ site.baseurl }}/v343/release.html)).  This also applies to 3.4.2 as well as 3.4.1 and 3.4.0.
 
 You *cannot* use save or bones files from any previous version with 3.4.x.
 
@@ -106,22 +106,11 @@ You *cannot* use save or bones files from any previous version with 3.4.x.
 
 Maybe.  If you are using the same version of ***NetHack***, compiled with the same options, on the same kind of operating system, with the same compiler, it will probably work; if any of these differ, it definitely won't.
 
-{::comment}
-TODO:
-
-* This should probably mention Hearse, an online service that could share bones
-  amongst players across the Internet if they ran its client program.
-{:/}
+If you want to share bones with complete strangers, check out [Hearse](http://hearse.krollmark.com/), a program that lets you share your bones files with other Hearse users.
 
 ### My game crashed and I've got all these files ending in a number lying around.  Can I get my game back?
 
-Maybe.  See the documentation for your version and look for either a `recover` program or a recover option to ***NetHack***.
-
-{::comment}
-TODO:
-
-* Link to the page on how to use the recover program on the NetHack Wiki.
-{:/}
+Maybe.  See the documentation for your version and look for either a `recover` program or a recover option to ***NetHack***.  You can also learn [how to use the recover utility](http://nethackwiki.com/wiki/Recover) on the NetHack Wiki.
 
 ### Why is it called NetHack if it's a single player game that doesn't use the net?
 
@@ -163,23 +152,11 @@ TODO:
 
 ### Has anyone ever thought that multiplayer NetHack would be a neat idea?
 
-(Sigh.)  Yes, at least a couple hundred people.  We think you can't do that in a playable way without compromising the basic idea of being able to think as long as you want about what you're doing, but many people have made many different suggestions as to the one obvious way to handle things.  If you still like the idea, you can try ***Crossfire***, a multiplayer roguelike for UNIX/X11.  Other games to check out are ***MAngband*** and ***Diablo***.
+(Sigh.)  Yes, at least a couple hundred people.  We think you can't do that in a playable way without compromising the basic idea of being able to think as long as you want about what you're doing, but many people have made many different suggestions as to the one obvious way to handle things.
 
-{::comment}
-TODO:
+However, there was one variant of NetHack that tried to make it happen anyway: [AceHack](http://nethackwiki.com/wiki/AceHack).  Specifically, AceHack implemented a mode where multiple players could venture through the same dungeon at the same time, playing independently when on different dungeon levels and alternating moves when on the same dungeon level.  This multiplayer mode was highly experimental and somewhat unstable, but it was hosted on the (now defunct) acehack.eu server for a time; a record of the very first multiplayer ascension can be found [on the NetHack Wiki](http://nethackwiki.com/wiki/Notable_ascensions#Other).
 
-* Instead of mentioning other roguelikes, this answer could at least talk about
-  AceHack, which *did* have experimental multiplayer support, assuming it was
-  compiled with the feature enabled and was specially hosted in a
-  dgamelaunch-style server setting.  The nethack.xd,cm server, back when it was
-  acehack.de, used to host a version of AceHack that could be played like this,
-  but it was dropped in the server move due to general lack of interest in
-  AceHack.
-
-* Should probably also mention that one of the far distant goals of NetHack 4
-  is to reimplement AceHack's multiplayer support, which should not be a
-  surprise given that both variants are from the same person: ais523.
-{:/}
+AceHack is no longer under development.
 
 ### Why don't you add Glamdring/Mournblade/etc.?  After all, you have Orcrist/Stormbringer/etc., so you must have just overlooked the others!
 
@@ -214,17 +191,6 @@ TODO:
 
 It isn't feasible to track everything that could possibly be tracked in the game.  You are quite free to engage in the conduct you desire, but we are not planning on rolling too many more conducts into the official sources.
 
-### Hey, how about a first-person shooter version (like Doom)?
+### Hey, how about a first-person mode?
 
-Sorry, that would be a very different game, and we like working on this one.
-
-{::comment}
-TODO:
-
-* Of what I've seen, people ask more often for a first-person *view* for
-  NetHack, which in fact has two alternatives, neither of which are that good.
-  First is a Japanese-only window port that was only made for Mac OS whatever.
-  The other would be to run the TTY version of NetHack through a roguelike
-  front-end program called NotEye, which requires some configuration and
-  doesn't look very nice anyway.
-{:/}
+As it so happens, there is an unofficial port of NetHack that goes by the name of [NetHack3D](http://www.sbrain.org/nethack3d/) that offers exactly this kind of mode, but it only runs on Mac OS X 10.4 and higher.
