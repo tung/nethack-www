@@ -15,7 +15,7 @@ Don't forget to read the [NetHack 3.4.3 release notes](release.html)!
 
 **You must EXTRACT ALL FILES from the ZIP archive before running the game, otherwise you will get this error: Cannot open dungeon description - "dungeon"!**
 
-**Do not copy the EXE files to your desktop; create shortcuts instead.**
+**Do not move or copy the EXE files out of the game folder; create shortcuts instead.**
 
 See our [info for setting the window/font size](bugmore/vista-win7.txt) if running `NetHack.exe` under Windows newer than XP.
 
