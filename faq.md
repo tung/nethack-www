@@ -84,7 +84,7 @@ OPTIONS=numpad:1
 # Disable autopickup (the "!" in front means disable the option).
 OPTIONS=!autopickup
 
-# Set the character used for boulders to "0" instead of "`".
+# Display boulders as "0" in tty mode instead of "`".
 OPTIONS=boulder:0
 ```
 
