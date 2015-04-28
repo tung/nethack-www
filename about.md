@@ -1,5 +1,6 @@
 ---
 title: About NetHack
+redirect_from: /common/nethackis.html
 ---
 ***NetHack*** is a single player dungeon exploration roguelike game that runs on a wide variety of computer systems, with a variety of graphical and text interfaces all using the same game engine.
 

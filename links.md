@@ -1,5 +1,6 @@
 ---
 title: Other Links
+redirect_from: /common/links.html
 ---
 If you find a broken or out-of-date link, [let us know]({{ site.baseurl }}/contact-us.html#website-issues)!
 

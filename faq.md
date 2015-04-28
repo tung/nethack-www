@@ -1,5 +1,8 @@
 ---
 title: Frequently Asked Questions
+redirect_from:
+  - /common/info.html
+  - /common/trex.html
 ---
 * table of contents
 {:toc}

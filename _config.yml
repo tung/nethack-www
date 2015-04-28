@@ -26,6 +26,9 @@ paginate_path: "/blog/page:num"
 
 exclude: [Gemfile, Gemfile.lock]
 
+gems:
+  - jekyll-redirect-from
+
 collections:
   screenshots:
   authors:

@@ -1,5 +1,6 @@
 ---
 title: Contact Us
+redirect_from: /common/contact.html
 ---
 To contact the NetHack DevTeam, send an email to **<devteam@nethack.org>**.  Please do not send save/bones/core files (or other large things) unless they are specifically requested.
 
