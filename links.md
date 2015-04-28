@@ -35,12 +35,14 @@ Work-around for kramdown formatting quirk.
 
 ## Unofficial NetHack Extras
 
+* [Hearse](http://hearse.krollmark.com/), a program that lets you share bones files with other Hearse users online.
 * [NetHack Patch Database](http://bilious.alt.org/)
 * [Leon "L" Arnott's NetHack Patches](http://l.j-factor.com/nethack/)
 * [Big X11 NetHack Font](http://hea-www.harvard.edu/~fine/Fun/nethack.html)
 
 ## Unofficial Ports, Packages and Interfaces
 
+* [NetHack3D](http://www.sbrain.org/nethack3d/), a first-person view port of NetHack for OS X.
 * [Vulture](http://www.darkarts.co.za/vulture-for-nethack), NetHack with a unique isometric view
 * [noeGNUd](https://bitbucket.org/clivecrous/noegnud), alternate UI system for NetHack ([more info](http://nethackwiki.com/wiki/Noegnud)).
 * [NetHack for the gtk2 window system](http://gtk2hack.sourceforge.net)
