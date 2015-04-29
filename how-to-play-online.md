@@ -75,10 +75,18 @@ A few caveats:
 
 ---
 
+## Join the IRC channel of the server
+
+Connecting to a server via telnet or SSH will let you play and spectate games, but to see live announcements of deaths, ascensions and in-game accomplishments you will need to connect to the server's IRC channel using an **IRC client** such as [HexChat](https://hexchat.github.io/) or [ChatZilla](http://chatzilla.hacksrus.com/).
+
+The IRC channel for **nethack.alt.org** is `#nethack` on the freenode IRC server.  If your IRC client doesn't already list freenode amongst its servers, connect it to `chat.freenode.net`.  Once connected, type `/join #nethack` to enter the `#nethack` channel.
+
+To learn the IRC channels of other NetHack servers, visit their respective websites or check out [the list of IRC channels on the NetHack Wiki](http://nethackwiki.com/wiki/Freenode).
+
+---
+
 ## Remember to check the website of the server
 
 Most NetHack servers have an associated website, e.g. **nethack.alt.org** can be found at <http://alt.org/nethack/>.  This website will tell you how to connect to watch or play online, whether telnet and/or SSH is supported, as well as grant access to player dump logs, configuration files and past game recordings in the form of [ttyrecs](http://nethackwiki.com/wiki/Ttyrec).
 
 **nethack.alt.org** allows you to view your game statistics and compare your scores to other players.  For other servers, check out the [online NetHack scoreboard](https://voyager.lupomesky.cz/nh/).
-
-Finally, remember to join the IRC channel of the server for live announcements of deaths, ascensions and in-game accomplishments.  Using an **IRC client** such as [HexChat](https://hexchat.github.io/) or [ChatZilla](http://chatzilla.hacksrus.com/), you can connect to the IRC channel provided on the website of the server, or check out [the list of IRC channels on the NetHack Wiki](http://nethackwiki.com/wiki/Freenode).
