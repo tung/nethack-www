@@ -1,3 +1,11 @@
+{% comment %}
+    Advice when using headings:
+
+    1. Use h3 (or ### in markdown) and lower for sub-headings in posts.
+    2. Use only h1 or h2 when including a post with full content.
+
+    This will preserve the semantic heading level structure.
+{% endcomment %}
 {% if page.is_blog_post %}
     {% assign post_title = page.title %}
     {% assign post_url = page.url %}
@@ -11,7 +19,7 @@
     {% assign post_date = post.date %}
     {% assign post_tags = post.tags %}
 {% endif %}
-{% capture post_h %}{% if include.content != true and include.h %}{{ include.h }}{% else %}h2{% endif %}{% endcapture %}
+{% capture post_h %}{% if include.h %}{{ include.h }}{% else %}h2{% endif %}{% endcapture %}
 {% capture post_title_full %}{% if page.is_blog_post %}{{ post_title }}{% else %}<a href="{{ site.baseurl }}{{ post_url }}">{{ post_title }}</a>{% endif %}{% endcapture %}
 <article class="{% if include.excerpt %}post-excerpt{% else %}post{% endif %}">
     <{{ post_h }} class="post-title">{{ post_title_full }}</{{ post_h }}>
