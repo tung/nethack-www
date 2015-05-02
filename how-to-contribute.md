@@ -38,29 +38,7 @@ If you find tiles that are missing or seem off, or have improvements to some exi
 
 ## Editing the source code
 
-If you're a developer, check out our [code repository]({{ site.code_repository_url }}), where the latest NetHack development happens.
-
-If you want to make changes to the NetHack source code, first clone our [git](http://git-scm.com/) repo:
-
-{::comment}
-TODO: Change this to the REAL git clone url once it's online.
-{:/}
-
-```
-$ git clone https://dev.nethack.org/nethack.git
-$ cd nethack
-```
-
-Create a new branch and check it out:
-
-```
-$ git branch my-cool-new-change
-$ git checkout my-cool-new-change
-```
-
-Now you can make your changes, commit them and make them publicly available on a git hosting service such as [GitHub](https://github.com/).
-
-Avoid making changes directly to the `master` branch; you'll want to keep it clean so you can use it to stay up-to-date with the main NetHack repo.
+If you're a developer, the most direct way of contributing to NetHack is by editing the source code.  Changes can range from typo fixes to full-blown new features; see [Using Git with NetHack]({{ site.baseurl }}/using-git-with-nethack.html) for more details.
 
 If you need ideas on what to work on once you have a clone of our repo, check the bug tracker.
 
