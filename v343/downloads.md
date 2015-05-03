@@ -156,7 +156,7 @@ Read the [old Windows CE download instructions](ports/download-wince.html) for c
 
 Instructions on how to compile the source code are included in the source release.
 
-Alternatively, you can clone our [code repository]({{ site.code_repository_url }}) for the latest version of NetHack, or any other version by its tag; see [How to Contribute]({{ site.baseurl }}/how-to-contribute.html#editing-the-source-code) for more details.
+Alternatively, you can clone our [code repository]({{ site.repo.site_url }}) for the latest version of NetHack, or any other version by its tag; see [How to Contribute]({{ site.baseurl }}/how-to-contribute.html#editing-the-source-code) for more details.
 
 [nethack-343-src.tgz](http://sourceforge.net/projects/nethack/files/nethack/3.4.3/nethack-343-src.tgz/download)
 : NetHack 3.4.3 source release.

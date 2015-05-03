@@ -126,7 +126,7 @@ Official NetHack 3.4.2 binaries for Intel 386 compatible machines running OS/2.
 
 ## Source code
 
-Alternatively, you can clone our [code repository]({{ site.code_repository_url }}) for the latest version of NetHack, or any other version by its tag; see [How to Contribute]({{ site.baseurl }}/how-to-contribute.html#editing-the-source-code) for more details.
+Alternatively, you can clone our [code repository]({{ site.repo.site_url }}) for the latest version of NetHack, or any other version by its tag; see [How to Contribute]({{ site.baseurl }}/how-to-contribute.html#editing-the-source-code) for more details.
 
 [nethack-342.tgz](http://sourceforge.net/projects/nethack/files/nethack/3.4.2/nethack-342.tgz/download)
 : NetHack 3.4.2 source release.

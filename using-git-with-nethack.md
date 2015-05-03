@@ -3,7 +3,7 @@ title: Using Git with NetHack
 ---
 NetHack is developed using a system called [**Git**](https://git-scm.com/), which records and coordinates all changes made to the NetHack source code.  You will need to use Git if you want to get the latest development version of the NetHack source code, and contribute your own changes to it.
 
-The NetHack source code and development history can be found on the [NetHack project page on GitHub]({{ site.code_repository_url }}).
+The NetHack source code and development history can be found on the [NetHack project page on GitHub]({{ site.repo.site_url }}).
 
 The following is a crash course on using Git to get a copy of the NetHack source code that can be used to keep up-to-date with NetHack development, as well as make changes that can be considered by the DevTeam for inclusion.
 
@@ -69,7 +69,7 @@ This is the info that is recorded with the changes that you make to your fork, a
 
 ### 3.2. Create your fork of the NetHack repo
 
-Visit the [NetHack project page on GitHub]({{ site.code_repository_url }}) and click the "Fork" button at the top-right.  If you do not have a GitHub account you will be prompted to create one.
+Visit the [NetHack project page on GitHub]({{ site.repo.site_url }}) and click the "Fork" button at the top-right.  If you do not have a GitHub account you will be prompted to create one.
 
 If all goes well, you will be looking at a new page.  This page shows your brand new public repo of NetHack.  Congratulations!
 
@@ -278,7 +278,7 @@ This "origin" remote is your private repo's reference to your public repo, which
 To conveniently get updates from upstream NetHack, you want to create a new "upstream" remote:
 
 ```
-$ git remote add upstream https://github.com/nethack-devteam/nethack.git
+$ git remote add upstream {{ site.repo.clone_url }}
 ```
 
 Now check to confirm that the "upstream" remote was successfully created:
@@ -287,8 +287,8 @@ Now check to confirm that the "upstream" remote was successfully created:
 $ git remote --verbose
 origin    https://github.com/YOUR-GITHUB-USERNAME/nethack.git (fetch)
 origin    https://github.com/YOUR-GITHUB-USERNAME/nethack.git (push)
-upstream  https://github.com/nethack-devteam/nethack.git (fetch)
-upstream  https://github.com/nethack-devteam/nethack.git (push)
+upstream  {{ site.repo.clone_url }} (fetch)
+upstream  {{ site.repo.clone_url }} (push)
 ```
 
 Your private repo is now ready to conveniently receive updates for the latest in NetHack development.  You only need to set this up once.
