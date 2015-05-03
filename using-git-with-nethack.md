@@ -124,13 +124,17 @@ If you've had a fork for a while, follow the steps in the "[Staying up-to-date w
 
 ### 4.2. Create a new branch for your change
 
-Once you've confirmed that you have the latest version of the NetHack source code, switch to the "master" branch so you can use it as the basis of your new branch:
+Once you've confirmed that you have the latest version of the NetHack source code, you'll want to base your new change off of it.  To do this you'll need to start by switching to the "master" branch if you're not on it already.  A **branch** is Git's way of tracking separate lines of development, and the master branch in your private repo will always (and only) be used to get development updates.
+
+Switch to the master branch now:
 
 ```
 $ git checkout master
 ```
 
-Now create your new branch (based on the current "master" branch) with a descriptive name and switch to it:
+You will either get `Already on 'master'` or a message saying that you've switched branches.  Switching branches will cause Git to change the contents of files in the private repo, or abort if there are any changes in those files that have not yet been recorded with Git.
+
+Now create your new branch with a descriptive name and switch to it:
 
 ```
 $ git branch my-cool-new-feature
@@ -145,7 +149,7 @@ $ git branch
 * my-cool-new-feature
 ```
 
-This means that your private repo has a "master" branch and a "my-cool-new-feature" branch, and you're currently on the "my-cool-new-feature" branch (marked with an asterisk).  A branch made for the purpose of making a specific change is sometimes known as a "topic branch" in Git terms.
+This means that your private repo has a "master" branch and a "my-cool-new-feature" branch, and you're currently on the "my-cool-new-feature" branch (marked with an asterisk).
 
 ### 4.3. Make your changes
 
@@ -299,15 +303,13 @@ First, fetch the changes from upstream into your private repo:
 $ git fetch upstream
 ```
 
-Once the changes have been downloaded, you want to make sure you're in the "master" branch before applying the changes; a branch being Git's way of representing separate lines of on-going development in a repo.  Your private repo's "master" branch will always (and only) be used to get development updates.
-
-Switch to the "master" branch now:
+Once the changes are downloaded, make sure you're in the "master" branch by switching to it:
 
 ```
 $ git checkout master
 ```
 
-You will either get `Already on 'master'` or a message saying that you've switched branches.  Git will prevent you from switching branches like this if you have changes that you have not yet recorded with it; avoid updating if you have not yet committed your changes.
+This may change the contents of files in your private repo; Git will prevent you from switching branches like this if you have changes that you have not yet recorded with it, so avoid updating if you have changes that have not yet been committed.
 
 Now that you're on the "master" branch, you can apply your fetched changes to it:
 
