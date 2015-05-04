@@ -47,7 +47,7 @@ title: NetHack References
 
 2003: ***BBspot*** on ***NetHack***: [*New ATI Card Pushes Limits in ASCII Gaming*](http://www.bbspot.com/News/2003/02/ati_ascii.html).
 
-2002: ***NetHack*** makes [***TechTV***](http://www.techtv.com/)'s list of [*Best Internet Games*](https://web.archive.org/web/20020604185956/http://www.techtv.com/extendedplay/story/0,24330,3310903,00.html).
+2002: ***NetHack*** makes [***TechTV***](http://www.techtv.com)'s list of [*Best Internet Games*](https://web.archive.org/web/20020604185956/http://www.techtv.com/extendedplay/story/0,24330,3310903,00.html).
 
 2001: Backhanded compliment of the month award: ***IGN***'s review of [***Darkstone***](http://ign.com/articles/2001/02/14/darkstone):
 
@@ -60,7 +60,7 @@ title: NetHack References
 
 ### The Internet Oracle
 
-[***The Internet Oracle***](http://internetoracle.org/) contemplates:
+[***The Internet Oracle***](http://internetoracle.org) contemplates:
 
 * [encountering a woodchuck](http://internetoracle.org/digest.cgi?N=1366#1366-01)
 * [the Amulet of Yendor](http://internetoracle.org/digest.cgi?N=1382#1382-02)
@@ -73,7 +73,7 @@ title: NetHack References
 
 ### User Friendly
 
-***NetHack*** in the comics at [***User Friendly***](http://ars.userfriendly.org/):
+***NetHack*** in the comics at [***User Friendly***](http://ars.userfriendly.org):
 
 * **2008**
   * [July 31, 2008](http://ars.userfriendly.org/cartoons/?id=20080731&mode=classic)

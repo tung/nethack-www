@@ -22,8 +22,8 @@ Work-around for kramdown formatting quirk.
 {:/}
 
 * [Dudley's (New, Improved) Dungeon](http://alt.org/nethack/dudley/), a user-submitted web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
-* [@Play](http://rodneylives.blogspot.com/), a roguelike column by John Harris that often covers NetHack.  ([Archive of articles](http://www.gamesetwatch.com/column_at_play/), [article list](http://nethackwiki.com/wiki/@Play).)
-* [NetHack: The Greatest Game You Will Ever Play](http://www.thegreatestgameyouwilleverplay.com/)
+* [@Play](http://rodneylives.blogspot.com), a roguelike column by John Harris that often covers NetHack.  ([Archive of articles](http://www.gamesetwatch.com/column_at_play/), [article list](http://nethackwiki.com/wiki/@Play).)
+* [NetHack: The Greatest Game You Will Ever Play](http://www.thegreatestgameyouwilleverplay.com)
 
 ## Information and Spoilers
 
@@ -36,8 +36,8 @@ Work-around for kramdown formatting quirk.
 
 ## Unofficial NetHack Extras
 
-* [Hearse](http://hearse.krollmark.com/), a program that lets you share bones files with other Hearse users online.
-* [NetHack Patch Database](http://bilious.alt.org/)
+* [Hearse](http://hearse.krollmark.com), a program that lets you share bones files with other Hearse users online.
+* [NetHack Patch Database](http://bilious.alt.org)
 * [Leon "L" Arnott's NetHack Patches](http://l.j-factor.com/nethack/)
 * [Big X11 NetHack Font](http://hea-www.harvard.edu/~fine/Fun/nethack.html)
 
@@ -54,8 +54,8 @@ Work-around for kramdown formatting quirk.
 
 * [NetHack in Japanese.](http://jnethack.sourceforge.jp)  Based on NetHack 3.4.3.
 * NetHack in German:
-  * [NetHack-De](http://nethack-de.sourceforge.net/)
-  * [NetzHack](http://www.netzhack.de/)
+  * [NetHack-De](http://nethack-de.sourceforge.net)
+  * [NetzHack](http://www.netzhack.de)
 * [NetHack in Spanish](http://spanish-nethack.sourceforge.net)
 
 {::comment}
@@ -81,7 +81,7 @@ Not worth putting on the page proper.  Try them at your own risk.
 * [NetHack server](http://www.pp.fishpool.fi/~nethack/) and list of other servers and IRC channels
 * Jaakko Tapani Peltonen's [Falcon's Eye](http://www.hut.fi/~jtpelto2/nethack.html)
 * [Debian GNU/Linux packages](http://nausicaa.interq.or.jp/nethack)
-* [Sascha Wostmann's NetHack Page](http://www.nethack.de/)
+* [Sascha Wostmann's NetHack Page](http://www.nethack.de)
 * [Atari Binaries](http://www.cs.tu-berlin.de/~gaston/nethack)
 * [Qt Binaries](http://trolls.troll.no/warwick/nethack)
 * [NetBSD packages](ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/games/README.html)

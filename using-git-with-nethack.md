@@ -1,7 +1,7 @@
 ---
 title: Using Git with NetHack
 ---
-NetHack is developed using a system called [**Git**](https://git-scm.com/), which records and coordinates all changes made to the NetHack source code.  You will need to use Git if you want to get the latest development version of the NetHack source code, and contribute your own changes to it.
+NetHack is developed using a system called [**Git**](https://git-scm.com), which records and coordinates all changes made to the NetHack source code.  You will need to use Git if you want to get the latest development version of the NetHack source code, and contribute your own changes to it.
 
 The NetHack source code and development history can be found on the [NetHack project page on GitHub]({{ site.repo.site_url }}).
 
@@ -44,7 +44,7 @@ For example, you would type `git status` here at your command line (without the 
 
 ## 3. Getting started with Git
 
-In this section, you will install Git and create your own fork of the NetHack repo, with a public clone hosted on [GitHub](https://github.com/) (a free Git hosting service) and a private clone on your computer.  You will only need to do these steps once.
+In this section, you will install Git and create your own fork of the NetHack repo, with a public clone hosted on [GitHub](https://github.com) (a free Git hosting service) and a private clone on your computer.  You will only need to do these steps once.
 
 If you choose to compile NetHack, you will also have the latest development version of NetHack running on your computer.
 
@@ -337,5 +337,5 @@ This guide merely scratches the surface of how Git can be used.  To learn more, 
 [Pro Git](https://git-scm.com/book/en/v2)
 : The definitive guide to learning about Git.  **Read at least the first two chapters** for a better understanding of what Git is, how it works and how to use it!
 
-[GitHub Help](https://help.github.com/)
+[GitHub Help](https://help.github.com)
 : Comprehensive and concise help for GitHub and Git usage in general.  Useful if you want to know how to do something specific with Git.

@@ -14,7 +14,7 @@ Although NetHack is a single-player game, it can still be played online.  By con
 
 ## Online NetHack Servers
 
-NetHack servers exist in various geographical locations, so choosing one close to you will reduce lag.  Different servers may also host different versions of NetHack, and sometimes even NetHack variants, so look around.  Examples of NetHack servers are [nethack.alt.org](http://alt.org/nethack/) (commonly known as *NAO*) and [nethack.xd.cm](https://nethack.xd.cm/).
+NetHack servers exist in various geographical locations, so choosing one close to you will reduce lag.  Different servers may also host different versions of NetHack, and sometimes even NetHack variants, so look around.  Examples of NetHack servers are [nethack.alt.org](http://alt.org/nethack/) (commonly known as *NAO*) and [nethack.xd.cm](https://nethack.xd.cm).
 
 [List of NetHack servers on the NetHack Wiki.](http://nethackwiki.com/wiki/Public_server)
 
@@ -77,7 +77,7 @@ A few caveats:
 
 ## Join the IRC channel of the server
 
-Connecting to a server via telnet or SSH will let you play and spectate games, but to see live announcements of deaths, ascensions and in-game accomplishments you will need to connect to the server's IRC channel using an **IRC client** such as [HexChat](https://hexchat.github.io/) or [ChatZilla](http://chatzilla.hacksrus.com/).
+Connecting to a server via telnet or SSH will let you play and spectate games, but to see live announcements of deaths, ascensions and in-game accomplishments you will need to connect to the server's IRC channel using an **IRC client** such as [HexChat](https://hexchat.github.io) or [ChatZilla](http://chatzilla.hacksrus.com).
 
 The IRC channel for **nethack.alt.org** is `#nethack` on the freenode IRC server.  If your IRC client doesn't already list freenode amongst its servers, connect it to `chat.freenode.net`.  Once connected, type `/join #nethack` to enter the `#nethack` channel.
 
