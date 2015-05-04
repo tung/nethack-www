@@ -9,6 +9,10 @@
     {% if page.url == include.url %}
         <b>{{ nav-li-title }}</b>
     {% else %}
-        <a href="{{ site.baseurl }}{{ include.url | replace: "index.html" }}">{{ nav-li-title }}</a>
+        {% if include.url contains 'http://' or include.url contains 'https://' %}
+            <a href="{{ include.url }}">{{ nav-li-title }}</a>
+        {% else %}
+            <a href="{{ site.baseurl }}{{ include.url | replace: "index.html" }}">{{ nav-li-title }}</a>
+        {% endif %}
     {% endif %}
 </li>

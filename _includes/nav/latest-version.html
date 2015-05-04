@@ -3,7 +3,11 @@
     <h2>Latest Version: {{ latest_version.version }}</h2>
     <ul>
         {% for version_page in latest_version.sub_nav %}
-            {% assign version_page_url = "/" | append: latest_version.path | append: "/" | append: version_page %}
+            {% if version_page contains "http://" or version_page contains "https://" %}
+                {% assign version_page_url = version_page %}
+            {% else %}
+                {% assign version_page_url = "/" | append: latest_version.path | append: "/" | append: version_page %}
+            {% endif %}
             {% if site.data.nav[version_page_url] %}
                 {% assign version_page_title = site.data.nav[version_page_url] | prepend: " " | prepend: latest_version.version %}
             {% else %}

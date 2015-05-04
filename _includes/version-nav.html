@@ -1,7 +1,10 @@
 <ul id="sub-nav">
     <li>{{ site.title }} {{ include.version.version }}:</li>
     {% for sub_nav_item in include.version.sub_nav %}
-        {% assign sub_nav_url = "/" | append: include.version.path | append: "/" | append: sub_nav_item %}
+        {% assign sub_nav_url = sub_nav_item %}
+        {% unless sub_nav_item contains "http://" or sub_nav_item contains "https://" %}
+            {% assign sub_nav_url = "/" | append: include.version.path | append: "/" | append: sub_nav_url %}
+        {% endunless %}
         {% include nav-li.html url=sub_nav_url %}
     {% endfor %}
 </ul>
