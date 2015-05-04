@@ -16,7 +16,6 @@ repo:
   site_url: "#TODO" # e.g. https://github.com/nethack-devteam/nethack
   clone_url: https://github.com/nethack-devteam/nethack.git
 public_bug_tracker_url: "#TODO"
-legacy_bug_search_url: "#TODO"
 forums_url: "#TODO"
 
 # Generate the site from a fixed timezone.

@@ -7,7 +7,7 @@ To contact the NetHack DevTeam, send an email to **<devteam@nethack.org>**.  Ple
 
 ## Reporting a bug in NetHack
 
-Before sending us an email, check our <a href="{{ site.public_bug_tracker_url }}">public bug tracker</a> and <a href="{{ site.legacy_bug_search_url }}">legacy bug search system</a> -- a work-around may already be available.
+Before sending us an email, check our <a href="{{ site.public_bug_tracker_url }}">public bug tracker</a> and the known bugs page of the version of NetHack that you are playing -- a work-around may already be available.
 
 If the bug doesn't seem to exist yet, consider submitting it to the bug tracker instead of emailing it.  This will let you follow changes to your bug's status and discussion, and let others know that the bug exists and follow along too.
 
