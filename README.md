@@ -184,3 +184,20 @@ If these `#TODO` links are left alone, they will appear as *red* links on the we
 To build the website, run `bundle exec jekyll build`.
 The final files will appear in the `_site` directory; copy the files there to any web root to deploy the website.
 That's it!
+
+
+## Omissions and limitations
+
+Almost everything in the current website has been included in this new website.
+However, a couple of things are not present:
+
+* CGI contact form -- The Contact Us page includes only the email address to contact the DevTeam and not the CGI mailing form. since everybody has a web email account and those who don't already know what they're doing; neither group needs a web form.
+* CGI bug search -- This has always been a stop-gap measure for a real public-facing bug tracker for NetHack, and maintaining this system going forward will just cause the setting up a *real* bug tracker to be pushed back further than it already has been.
+
+Limitations of this website:
+
+* Lack of blog comments -- This is a static website, so blog posts will not have a comment box for readers to reply to.
+  This can be compensated for with a JavaScript-based comment system such as Disqus.
+* Site generation is rather slow -- The entire website outputs around 150 static pages overall, which takes about 14 seconds on my aging laptop.
+  This is *much* faster than any copy-and-paste website maintenance, but makes the watch feature of `bundle exec jekyll serve` a bit awkward to use.
+  50 output pages come from the `_posts` and `_tags` directories, so temporarily moving those directories into a dummy directory that Jekyll ignores such as `_zzz` can speed up the edit-preview cycle a bit.
