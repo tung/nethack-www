@@ -15,8 +15,8 @@ url: https://tung.github.io
 repo:
   site_url: "#TODO" # e.g. https://github.com/nethack-devteam/nethack
   clone_url: https://github.com/nethack-devteam/nethack.git
-public_bug_tracker_url: "#TODO"
-forums_url: "#TODO"
+public_bug_tracker_url: "#TODO" # e.g. https://github.com/nethack-devteam/nethack/issues
+forums_url: "#TODO" # e.g. https://forums.nethack.org
 
 # Generate the site from a fixed timezone.
 timezone: UTC
