@@ -25,7 +25,7 @@ timezone: UTC
 paginate: 10
 paginate_path: "/blog/page:num"
 
-exclude: [Gemfile, Gemfile.lock]
+exclude: [Gemfile, Gemfile.lock, README.md]
 
 gems:
   - jekyll-redirect-from
