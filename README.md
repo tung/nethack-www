@@ -173,6 +173,8 @@ If this website is to be hosted at <http://www.nethack.org>, some changes need t
 * Delete or comment out the `baseurl` line; **DO NOT** set it to `/`, since proper usage of `site.baseurl` depends on it NOT having a trailing slash.
 * Change the `url` to `http://www.nethack.org` (again, no trailing slash), which will ensure links in the blog's RSS feed point back to their respective pages on the website.
 
+To remove the demo website disclaimer in the website header, edit `_includes/header.html`.
+
 There are also some settings in `_config.yml` noted `#TODO`.  These are things that I strongly recommend that the DevTeam consider setting up and linking to once up:
 
 * `repo.site_url` -- Browser-viewable GitHub project page for NetHack or equivalent.
