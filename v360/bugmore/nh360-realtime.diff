@@ -1,0 +1,175 @@
+Dec 15, 2015
+Patch for 3.6.0 source tree to correct realtime value.
+
+*** NetHack-3.6.0/include/you.h	Tue Dec 15 21:32:34 2015
+--- include/you.h	Tue Dec 15 21:35:33 2015
+***************
+*** 68,77 ****
+  };
+  
+  struct u_realtime {
+!     long
+!         realtime; /* actual playing time up until the last restore, seconds */
+!     time_t restored; /* time the game was started or restored */
+!     time_t endtime;
+  };
+  
+  /* KMH, conduct --
+--- 68,78 ----
+  };
+  
+  struct u_realtime {
+!     long   realtime;     /* accumulated playing time in seconds */
+!     time_t start_timing; /* time game was started or restored or 'realtime'
+!                             was last updated (savegamestate for checkpoint) */
+!     time_t finish_time;  /* end of 'realtime' interval: time of save or
+!                             end of game; used for topten/logfile/xlogfile */
+  };
+  
+  /* KMH, conduct --
+*** NetHack-3.6.0/src/allmain.c	Tue Dec 15 21:32:34 2015
+--- src/allmain.c	Tue Dec 15 21:35:33 2015
+***************
+*** 587,603 ****
+          com_pager(1);
+      }
+  
+  #ifdef INSURANCE
+      save_currentstate();
+  #endif
+      program_state.something_worth_saving++; /* useful data now exists */
+- 
+-     urealtime.realtime = 0L;
+- #if defined(BSD) && !defined(POSIX_TYPES)
+-     (void) time((long *) &urealtime.restored);
+- #else
+-     (void) time(&urealtime.restored);
+- #endif
+  
+      /* Success! */
+      welcome(TRUE);
+--- 587,598 ----
+          com_pager(1);
+      }
+  
++     urealtime.realtime = 0L;
++     urealtime.start_timing = getnow();
+  #ifdef INSURANCE
+      save_currentstate();
+  #endif
+      program_state.something_worth_saving++; /* useful data now exists */
+  
+      /* Success! */
+      welcome(TRUE);
+*** NetHack-3.6.0/src/end.c	Tue Dec 15 21:32:34 2015
+--- src/end.c	Tue Dec 15 21:35:33 2015
+***************
+*** 951,958 ****
+      /* remember time of death here instead of having bones, rip, and
+         topten figure it out separately and possibly getting different
+         time or even day if player is slow responding to --More-- */
+!     endtime = getnow();
+!     urealtime.realtime += (long) (endtime - urealtime.restored);
+  
+      /* Sometimes you die on the first move.  Life's not fair.
+       * On those rare occasions you get hosed immediately, go out
+--- 951,958 ----
+      /* remember time of death here instead of having bones, rip, and
+         topten figure it out separately and possibly getting different
+         time or even day if player is slow responding to --More-- */
+!     urealtime.finish_time = endtime = getnow();
+!     urealtime.realtime += (long) (endtime - urealtime.start_timing);
+  
+      /* Sometimes you die on the first move.  Life's not fair.
+       * On those rare occasions you get hosed immediately, go out
+*** NetHack-3.6.0/src/restore.c	Tue Dec 15 21:32:35 2015
+--- src/restore.c	Tue Dec 15 21:35:33 2015
+***************
+*** 568,580 ****
+      foo = time_from_yyyymmddhhmmss(timebuf);
+  
+      ReadTimebuf(ubirthday);
+!     mread(fd, &urealtime.realtime, sizeof(urealtime.realtime));
+!     ReadTimebuf(urealtime.restored);
+! #if defined(BSD) && !defined(POSIX_TYPES)
+!     (void) time((long *) &urealtime.restored);
+! #else
+!     (void) time(&urealtime.restored);
+! #endif
+  
+      set_uasmon();
+  #ifdef CLIPPING
+--- 568,577 ----
+      foo = time_from_yyyymmddhhmmss(timebuf);
+  
+      ReadTimebuf(ubirthday);
+!     mread(fd, &urealtime.realtime, sizeof urealtime.realtime);
+!     ReadTimebuf(urealtime.start_timing); /** [not used] **/
+!     /* current time is the time to use for next urealtime.realtime update */
+!     urealtime.start_timing = getnow();
+  
+      set_uasmon();
+  #ifdef CLIPPING
+*** NetHack-3.6.0/src/save.c	Tue Dec 15 21:32:35 2015
+--- src/save.c	Tue Dec 15 21:35:34 2015
+***************
+*** 289,300 ****
+  #ifdef SYSFLAGS
+      bwrite(fd, (genericptr_t) &sysflags, sizeof(struct sysflag));
+  #endif
+!     urealtime.realtime += (long) (getnow() - urealtime.restored);
+      bwrite(fd, (genericptr_t) &u, sizeof(struct you));
+      bwrite(fd, yyyymmddhhmmss(ubirthday), 14);
+!     bwrite(fd, (genericptr_t) &urealtime.realtime,
+!            sizeof(urealtime.realtime));
+!     bwrite(fd, yyyymmddhhmmss(urealtime.restored), 14);
+      save_killers(fd, mode);
+  
+      /* must come before migrating_objs and migrating_mons are freed */
+--- 289,303 ----
+  #ifdef SYSFLAGS
+      bwrite(fd, (genericptr_t) &sysflags, sizeof(struct sysflag));
+  #endif
+!     urealtime.finish_time = getnow();
+!     urealtime.realtime += (long) (urealtime.finish_time
+!                                   - urealtime.start_timing);
+      bwrite(fd, (genericptr_t) &u, sizeof(struct you));
+      bwrite(fd, yyyymmddhhmmss(ubirthday), 14);
+!     bwrite(fd, (genericptr_t) &urealtime.realtime, sizeof urealtime.realtime);
+!     bwrite(fd, yyyymmddhhmmss(urealtime.start_timing), 14);  /** Why? **/
+!     /* this is the value to use for the next update of urealtime.realtime */
+!     urealtime.start_timing = urealtime.finish_time;
+      save_killers(fd, mode);
+  
+      /* must come before migrating_objs and migrating_mons are freed */
+*** NetHack-3.6.0/src/topten.c	Tue Dec 15 21:32:35 2015
+--- src/topten.c	Tue Dec 15 21:35:34 2015
+***************
+*** 330,337 ****
+      Fprintf(rfile, "%cconduct=0x%lx%cturns=%ld%cachieve=0x%lx", XLOG_SEP,
+              encodeconduct(), XLOG_SEP, moves, XLOG_SEP, encodeachieve());
+      Fprintf(rfile, "%crealtime=%ld%cstarttime=%ld%cendtime=%ld", XLOG_SEP,
+!             (long) urealtime.realtime, XLOG_SEP, (long) ubirthday, XLOG_SEP,
+!             (long) urealtime.endtime);
+      Fprintf(rfile, "%cgender0=%s%calign0=%s", XLOG_SEP,
+              genders[flags.initgend].filecode, XLOG_SEP,
+              aligns[1 - u.ualignbase[A_ORIGINAL]].filecode);
+--- 330,337 ----
+      Fprintf(rfile, "%cconduct=0x%lx%cturns=%ld%cachieve=0x%lx", XLOG_SEP,
+              encodeconduct(), XLOG_SEP, moves, XLOG_SEP, encodeachieve());
+      Fprintf(rfile, "%crealtime=%ld%cstarttime=%ld%cendtime=%ld", XLOG_SEP,
+!             (long) urealtime.realtime, XLOG_SEP,
+!             (long) ubirthday, XLOG_SEP, (long) urealtime.finish_time);
+      Fprintf(rfile, "%cgender0=%s%calign0=%s", XLOG_SEP,
+              genders[flags.initgend].filecode, XLOG_SEP,
+              aligns[1 - u.ualignbase[A_ORIGINAL]].filecode);
+***************
+*** 516,522 ****
+      t0->birthdate = yyyymmdd(ubirthday);
+      t0->deathdate = yyyymmdd(when);
+      t0->tt_next = 0;
+-     urealtime.endtime = when;
+  #ifdef UPDATE_RECORD_IN_PLACE
+      t0->fpos = -1L;
+  #endif
+--- 516,521 ----
