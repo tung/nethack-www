@@ -6,7 +6,8 @@
 
 {% assign full_path = include.file | prepend: "/images/screenshots/full/" %}
 {% assign screenshot_meta_path = screenshot_base | append: ".md" | prepend: "_screenshots/" %}
-{% assign screenshot_meta = site.collections.screenshots.docs | where: "relative_path", screenshot_meta_path | first %}
+{% assign screenshots = site.collections | where: "label", "screenshots" | first %}
+{% assign screenshot_meta = screenshots.docs | where: "relative_path", screenshot_meta_path | first %}
 
 {% assign preview_path = screenshot_base | append: ".jpg" | prepend: "/images/screenshots/preview/" %}
 {% assign preview = site.static_files | where: "path", preview_path | first %}

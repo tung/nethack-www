@@ -2,7 +2,8 @@
 title: Posts by Tag
 ---
 <ul>
-    {% for tag in site.collections.tags.docs %}
+    {% assign tags = site.collections | where: "label", "tags" | first %}
+    {% for tag in tags.docs %}
         {% assign tag_posts = site.tags[tag.name] %}
         <li>
             <a href="{{ site.baseurl }}{{ tag.url }}">{{ tag.name }}</a>

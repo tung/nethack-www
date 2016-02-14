@@ -2,7 +2,8 @@
 title: Posts by Author
 ---
 <ul>
-    {% for author in site.collections.authors.docs %}
+    {% assign authors = site.collections | where: "label", "authors" | first %}
+    {% for author in authors.docs %}
         {% assign author_posts = site.posts | where: "author", author.name %}
         <li>
             <a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
