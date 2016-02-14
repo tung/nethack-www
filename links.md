@@ -7,7 +7,7 @@ If you find a broken or out-of-date link, [let us know]({{ site.baseurl }}/conta
 ## Community
 
 * [Official NetHack Forums]({{ site.forums_url }})
-* [rec.games.roguelike.nethack Usenet newsgroup](http://bilious.alt.org/rgrn/)
+* [rec.games.roguelike.nethack Usenet newsgroup](https://bilious.alt.org/rgrn/)
 
 {::comment}
 Work-around for kramdown formatting quirk.
@@ -22,22 +22,22 @@ Work-around for kramdown formatting quirk.
 {:/}
 
 * [Dudley's (New, Improved) Dungeon](http://alt.org/nethack/dudley/), a user-submitted web comic.  ([Archive of old comics.](http://www.nicolaas.net/dudley/))
-* [@Play](http://rodneylives.blogspot.com), a roguelike column by John Harris that often covers NetHack.  ([Archive of articles](http://www.gamesetwatch.com/column_at_play/), [article list](http://nethackwiki.com/wiki/@Play).)
+* [@Play](http://rodneylives.blogspot.com), a roguelike column by John Harris that often covers NetHack.  ([Archive of articles](http://www.gamesetwatch.com/column_at_play/), [article list](https://nethackwiki.com/wiki/@Play).)
 * [NetHack: The Greatest Game You Will Ever Play](http://www.thegreatestgameyouwilleverplay.com)
 
 ## Information and Spoilers
 
-* [NetHackWiki](http://nethackwiki.com), a NetHack Wiki
-  * [More NetHack-related links on the NetHack Wiki](http://nethackwiki.com/wiki/Websites)
+* [NetHackWiki](https://nethackwiki.com), a NetHack Wiki
+  * [More NetHack-related links on the NetHack Wiki](https://nethackwiki.com/wiki/Websites)
 * [Absolute Beginner's Guide for NetHack 3.4.1](http://www.melankolia.net/nethack/nethack.guide.html)
-* [NetHack reference cards](http://nethackwiki.com/wiki/Reference_card)
+* [NetHack reference cards](https://nethackwiki.com/wiki/Reference_card)
 * [Ali's NetHack Page](http://www.juiblex.co.uk/nethack.html)
 * Kate Nepveu's [Yet Another NetHack Site](http://www.steelypips.org/nethack/)
 
 ## Unofficial NetHack Extras
 
 * [Hearse](http://hearse.krollmark.com), a program that lets you share bones files with other Hearse users online.
-* [NetHack Patch Database](http://bilious.alt.org)
+* [NetHack Patch Database](https://bilious.alt.org)
 * [Leon "L" Arnott's NetHack Patches](http://l.j-factor.com/nethack/)
 * [Big X11 NetHack Font](http://hea-www.harvard.edu/~fine/Fun/nethack.html)
 
@@ -45,7 +45,7 @@ Work-around for kramdown formatting quirk.
 
 * [NetHack3D](http://www.sbrain.org/nethack3d/), a first-person view port of NetHack for OS X.
 * [Vulture](http://www.darkarts.co.za/vulture-for-nethack), NetHack with a unique isometric view
-* [noeGNUd](https://bitbucket.org/clivecrous/noegnud), alternate UI system for NetHack ([more info](http://nethackwiki.com/wiki/Noegnud)).
+* [noeGNUd](https://bitbucket.org/clivecrous/noegnud), alternate UI system for NetHack ([more info](https://nethackwiki.com/wiki/Noegnud)).
 * [NetHack for the gtk2 window system](http://gtk2hack.sourceforge.net)
 
 {::comment}

@@ -1,7 +1,7 @@
 ---
 title: How to Play Online
 ---
-Although NetHack is a single-player game, it can still be played online.  By connecting to a NetHack server, you can track and live-report your deaths, ascensions and in-game accomplishments, as well as spectate other players' games and let them spectate yours.  You can even find each other's bones files!  Playing online also allows you to participate in community-driven NetHack tournaments such as [Junethack](http://nethackwiki.com/wiki/Junethack) and [/dev/null](http://nethackwiki.com/wiki//dev/null/nethack_tournament).
+Although NetHack is a single-player game, it can still be played online.  By connecting to a NetHack server, you can track and live-report your deaths, ascensions and in-game accomplishments, as well as spectate other players' games and let them spectate yours.  You can even find each other's bones files!  Playing online also allows you to participate in community-driven NetHack tournaments such as [Junethack](https://nethackwiki.com/wiki/Junethack) and [/dev/null](https://nethackwiki.com/wiki//dev/null/nethack_tournament).
 
 * table of contents
 {:toc}
@@ -16,7 +16,7 @@ Although NetHack is a single-player game, it can still be played online.  By con
 
 NetHack servers exist in various geographical locations, so choosing one close to you will reduce lag.  Different servers may also host different versions of NetHack, and sometimes even NetHack variants, so look around.  Examples of NetHack servers are [nethack.alt.org](http://alt.org/nethack/) (commonly known as *NAO*) and [nethack.xd.cm](https://nethack.xd.cm).
 
-[List of NetHack servers on the NetHack Wiki.](http://nethackwiki.com/wiki/Public_server)
+[List of NetHack servers on the NetHack Wiki.](https://nethackwiki.com/wiki/Public_server)
 
 **nethack.alt.org** will be used for the examples on this page.
 
@@ -81,12 +81,12 @@ Connecting to a server via telnet or SSH will let you play and spectate games, b
 
 The IRC channel for **nethack.alt.org** is `#nethack` on the freenode IRC server.  If your IRC client doesn't already list freenode amongst its servers, connect it to `chat.freenode.net`.  Once connected, type `/join #nethack` to enter the `#nethack` channel.
 
-To learn the IRC channels of other NetHack servers, visit their respective websites or check out [the list of IRC channels on the NetHack Wiki](http://nethackwiki.com/wiki/Freenode).
+To learn the IRC channels of other NetHack servers, visit their respective websites or check out [the list of IRC channels on the NetHack Wiki](https://nethackwiki.com/wiki/Freenode).
 
 ---
 
 ## Remember to check the website of the server
 
-Most NetHack servers have an associated website, e.g. **nethack.alt.org** can be found at <http://alt.org/nethack/>.  This website will tell you how to connect to watch or play online, whether telnet and/or SSH is supported, as well as grant access to player dump logs, configuration files and past game recordings in the form of [ttyrecs](http://nethackwiki.com/wiki/Ttyrec).
+Most NetHack servers have an associated website, e.g. **nethack.alt.org** can be found at <http://alt.org/nethack/>.  This website will tell you how to connect to watch or play online, whether telnet and/or SSH is supported, as well as grant access to player dump logs, configuration files and past game recordings in the form of [ttyrecs](https://nethackwiki.com/wiki/Ttyrec).
 
 **nethack.alt.org** allows you to view your game statistics and compare your scores to other players.  For other servers, check out the [online NetHack scoreboard](https://voyager.lupomesky.cz/nh/).

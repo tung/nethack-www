@@ -105,7 +105,7 @@ If you only want to tweak some docs you can skip this step.  For anything else, 
 
 The steps to compile NetHack are highly platform-specific and beyond the scope of this guide, but here are two helpful resources:
 
-* <http://nethackwiki.com/wiki/Compiling>
+* <https://nethackwiki.com/wiki/Compiling>
 * Read the platform-specific build notes under the `sys` directory, e.g. `sys\winnt\Install.nt` for Windows.
 
 If all goes well, you should be able to run NetHack; go ahead and press `v` (version command) in-game to confirm the build date.
@@ -161,7 +161,7 @@ Now that you're on a branch, you can break out a text editor and start making ch
 
 At this point, make sure that you can at least still [compile NetHack](#compile-nethack) successfully.  *You should do this even for small changes; even one-liners can contain typos!*
 
-Once you've confirmed that the game still compiles, you want to go into the game itself and test that your change works as you expect it to; it may be helpful to enter [Wizard Mode](http://nethackwiki.com/wiki/Wizard_mode), which was made for this purpose.
+Once you've confirmed that the game still compiles, you want to go into the game itself and test that your change works as you expect it to; it may be helpful to enter [Wizard Mode](https://nethackwiki.com/wiki/Wizard_mode), which was made for this purpose.
 
 ### 4.5. Stage and commit your changes to your branch
 

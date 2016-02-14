@@ -113,7 +113,7 @@ If you want to share bones with complete strangers, check out [Hearse](http://he
 
 ### My game crashed and I've got all these files ending in a number lying around.  Can I get my game back?
 
-Maybe.  See the documentation for your version and look for either a `recover` program or a recover option to ***NetHack***.  You can also learn [how to use the recover utility](http://nethackwiki.com/wiki/Recover) on the NetHack Wiki.
+Maybe.  See the documentation for your version and look for either a `recover` program or a recover option to ***NetHack***.  You can also learn [how to use the recover utility](https://nethackwiki.com/wiki/Recover) on the NetHack Wiki.
 
 ### Why is it called NetHack if it's a single player game that doesn't use the net?
 
@@ -157,7 +157,7 @@ TODO:
 
 (Sigh.)  Yes, at least a couple hundred people.  We think you can't do that in a playable way without compromising the basic idea of being able to think as long as you want about what you're doing, but many people have made many different suggestions as to the one obvious way to handle things.
 
-However, there was one variant of NetHack that tried to make it happen anyway: [AceHack](http://nethackwiki.com/wiki/AceHack).  Specifically, AceHack implemented a mode where multiple players could venture through the same dungeon at the same time, playing independently when on different dungeon levels and alternating moves when on the same dungeon level.  This multiplayer mode was highly experimental and somewhat unstable, but it was hosted on the (now defunct) acehack.eu server for a time; a record of the very first multiplayer ascension can be found [on the NetHack Wiki](http://nethackwiki.com/wiki/Notable_ascensions#Other).
+However, there was one variant of NetHack that tried to make it happen anyway: [AceHack](https://nethackwiki.com/wiki/AceHack).  Specifically, AceHack implemented a mode where multiple players could venture through the same dungeon at the same time, playing independently when on different dungeon levels and alternating moves when on the same dungeon level.  This multiplayer mode was highly experimental and somewhat unstable, but it was hosted on the (now defunct) acehack.eu server for a time; a record of the very first multiplayer ascension can be found [on the NetHack Wiki](https://nethackwiki.com/wiki/Notable_ascensions#Other).
 
 AceHack is no longer under development.
 
