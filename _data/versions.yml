@@ -6,9 +6,19 @@
 # the latest version and latest bugfix release.
 #
 -
+  version: 3.6.0
+  release_date: 2015-12-08 00:00:00 +0000
+  current: true
+  path: v360
+  sub_nav:
+    - release.html
+    - downloads.html
+    - guidebook-360.html
+    - bugs.html
+    - spoiler.html
+-
   version: 3.4.3
   release_date: 2003-12-08 00:00:00 +0000
-  current: true
   path: v343
   sub_nav:
     - release.html

@@ -1,0 +1,714 @@
+---
+layout: legacy
+title: Known Bugs
+legacy:
+  style: legacy-bugs.css
+  back_link:
+    text: NetHack 3.6.0 Release Notes
+    url: release.html
+---
+<dl>
+<dt><a href="#C">Core Bugs (common to all systems)</a>
+<dt><a href="#W">Windows-only bugs</a>
+<dt><a href="#X">X11-only bugs</a>
+<dt><a href="#M">Macintosh-only bugs</a>
+<dt><a href="#T">tty-only bugs</a>
+<dt><a href="#S">Build-from-source issues (all platforms)</a>
+<dt><a href="spoiler.html">Spoiler bugs</a>
+<dd>
+(These are bugs that merely reading about may spoil your enjoyment of the
+game or give away answers to puzzles that should be solved.  They are on
+a different page to keep you from seeing them by accident in the main lists.)
+</dl>
+<hr>
+<h2>Bugs lists for previous versions</h2>
+<ul>
+<li><a href="../v330/bugs.html">3.3.0 bugs list</a>       
+<li><a href="../v330/spoiler.html">3.3.0 spoiler bugs list</a>
+<li><a href="../v331/bugs.html">3.3.1 bugs list</a>       
+<li><a href="../v331/spoiler.html">3.3.1 spoiler bugs list</a>
+<li><a href="../v340/bugs.html">3.4.0 bugs list</a>       
+<li><a href="../v340/spoiler.html">3.4.0 spoiler bugs list</a>
+<li><a href="../v341/bugs.html">3.4.1 bugs list</a>       
+<li><a href="../v341/spoiler.html">3.4.1 spoiler bugs list</a>
+<li><a href="../v342/bugs.html">3.4.2 bugs list</a>       
+<li><a href="../v342/spoiler.html">3.4.2 spoiler bugs list</a>
+<li><a href="../v343/bugs.html">3.4.3 bugs list</a>       
+<li><a href="../v343/spoiler.html">3.4.3 spoiler bugs list</a>
+</ul>
+<hr>
+<h3><a name="C">Core Bugs (common to all systems)</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 17 -->
+<tr>
+<td><nobr>C342-31</nobr>
+<td><a href="#state_O">Open</a>
+<td>You can get a message telling you a monster wields a weapon it already was
+wielding.
+
+<td>
+</tr>
+<!-- line 33 -->
+<tr>
+<td><nobr>C343-20</nobr>
+<td><a href="#state_f">fixed</a>
+<td>When dying immediately on entering a level, the map may show you dying on
+the previous level.
+
+<td>This doesn't matter - mostly.
+
+</tr>
+<!-- line 40 -->
+<tr>
+<td><nobr>C343-21</nobr>
+<td><a href="#state_O">Open</a>
+<td>Pets can be pulled through closed doors with a leash.
+
+<td>
+</tr>
+<!-- line 44 -->
+<tr>
+<td><nobr>C343-23</nobr>
+<td><a href="#state_O">Open</a>
+<td>Dungeon collapses after vault guard fails to lead you out.
+
+<td>
+</tr>
+<!-- line 49 -->
+<tr>
+<td><nobr>C343-38</nobr>
+<td><a href="#state_O">Open</a>
+<td>Dismounting and kicking a monster that jumps may result in landing on
+the wrong side of a wall.
+
+<td>
+</tr>
+<!-- line 75 -->
+<tr>
+<td><nobr>C343-331</nobr>
+<td><a href="#state_O">Open</a>
+<td>Sleeping monster reacts to a mirror.
+
+<td>
+</tr>
+<!-- line 89 -->
+<tr>
+<td><nobr>C343-370</nobr>
+<td><a href="#state_O">Open</a>
+<td>Travel (_) command can get stuck trying to plot a path past an interesting
+dungeon feature, for example, a trap or fountain.
+
+<td>
+</tr>
+<!-- line 98 -->
+<tr>
+<td><nobr>C360-4</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Backtick command causes errors in some ports (and not in others).
+
+<td>
+</tr>
+<!-- line 115 -->
+<tr>
+<td><nobr>C360-5</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Cursed scroll of genocide can behave inconsistently.
+
+<td>
+</tr>
+<!-- line 120 -->
+<tr>
+<td><nobr>C360-6</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Plural grammar error in message for undead turning.
+
+<td>
+</tr>
+<!-- line 125 -->
+<tr>
+<td><nobr>C360-7</nobr>
+<td><a href="#state_N">Not a bug</a>
+<td>Dark grey objects on black can't be displayed by some terminals (we know this
+applies to Mac OS X's Terminal) so they seem like they are not there.
+
+<td>Workaround: set OPTIONS=!use_darkgray to use dark blue instead.
+
+</tr>
+<!-- line 133 -->
+<tr>
+<td><nobr>C360-8</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Setting "NAME:player" in nethackrc (or equivalent) causes a crash at startup.
+
+<td>
+</tr>
+<!-- line 138 -->
+<tr>
+<td><nobr>C360-9</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Eyes of the Overworld messages may contain unintended information.
+
+<td>
+</tr>
+<!-- line 161 -->
+<tr>
+<td><nobr>C360-10</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Shape-shifted vampires interact incorrectly with genocide.
+
+<td>
+</tr>
+<!-- line 166 -->
+<tr>
+<td><nobr>C360-11</nobr>
+<td><a href="#state_O">Open</a>
+<td>If the user's config file cannot be read, the system config file is read for a
+second time resulting in warning messages before the game starts.
+
+<td>
+</tr>
+<!-- line 172 -->
+<tr>
+<td><nobr>C360-12</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Uncursed scroll of enchant armor fails to uncurse the armor being enchanted.
+
+<td>
+</tr>
+<!-- line 177 -->
+<tr>
+<td><nobr>C360-13</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Plural of "slice of cake" is wrong.
+
+<td>
+</tr>
+<!-- line 182 -->
+<tr>
+<td><nobr>C360-14</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Named scroll's name not always used when it should be.
+
+<td>
+</tr>
+<!-- line 186 -->
+<tr>
+<td><nobr>C360-15</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Reading a dull spellbook can make a sleep resistant hero fall asleep.
+
+<td>
+</tr>
+<!-- line 191 -->
+<tr>
+<td><nobr>C360-16</nobr>
+<td><a href="#state_f">fixed</a>
+<td>There are typos in passage 1 of the tribute for "The Colour of Magic."
+
+<td>
+</tr>
+<!-- line 196 -->
+<tr>
+<td><nobr>C360-17</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Eating ring of protection doesn't always work properly.
+
+<td>
+</tr>
+<!-- line 201 -->
+<tr>
+<td><nobr>C360-18</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Wand explosion does not handle deafness correctly.
+
+<td>
+</tr>
+<!-- line 206 -->
+<tr>
+<td><nobr>C360-19</nobr>
+<td><a href="#state_f">fixed</a>
+<td>xlog's realtime field is not accurate.
+
+<td><a href="bugmore/nh360-realtime.diff">Source patch</a>
+
+</tr>
+<!-- line 213 -->
+<tr>
+<td><nobr>C360-20</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Player can hear pets while deaf.
+
+<td>
+</tr>
+<!-- line 218 -->
+<tr>
+<td><nobr>C360-21</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Discovering an invisible corpse with a stethoscope may not make the corpse
+known.
+
+<td>
+</tr>
+<!-- line 222 -->
+<tr>
+<td><nobr>C360-22</nobr>
+<td><a href="#state_O">Open</a>
+<td>If a stethoscope finds an unseen monster on a square with an
+object-detected object while blind, after killing the monster, the
+object isn't remembered.
+
+<td>
+</tr>
+<!-- line 234 -->
+<tr>
+<td><nobr>C360-24</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Sceptre of Might database entry is inaccurate.
+
+<td>
+</tr>
+<!-- line 239 -->
+<tr>
+<td><nobr>C360-25</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Dying while helpless (which can be any of several different things) with a
+high enough score to be added to the record file corrupts the record file.
+
+<td>The logfile is not affected by this bug, but the logfile is not created
+automatically.
+
+</tr>
+<!-- line 248 -->
+<tr>
+<td><nobr>C360-26</nobr>
+<td><a href="#state_f">fixed</a>
+<td>You can cheat shopkeepers.
+
+<td>
+</tr>
+<!-- line 253 -->
+<tr>
+<td><nobr>C360-27</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Limits on potion mixing don't work quite right.
+
+<td>
+</tr>
+<!-- line 257 -->
+<tr>
+<td><nobr>C360-28</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Poor usage "spellbook of novel" can appear in messages.
+
+<td>
+</tr>
+<!-- line 261 -->
+<tr>
+<td><nobr>C360-29</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Error message about an invalid movement keystroke using a meta-character
+produces display errors.
+
+<td>
+</tr>
+<!-- line 283 -->
+<tr>
+<td><nobr>C360-30</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Some menus do not accept space to scroll to the next page.
+
+<td>
+</tr>
+<!-- line 288 -->
+<tr>
+<td><nobr>C360-31</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Death due to an unseen gas spore results in "killed by a died."
+
+<td>
+</tr>
+<!-- line 293 -->
+<tr>
+<td><nobr>C360-32</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Misleading use of the word "unlockable" when referring to a chest that
+cannot be unlocked.
+
+<td>
+</tr>
+<!-- line 304 -->
+<tr>
+<td><nobr>C360-33</nobr>
+<td><a href="#state_f">fixed</a>
+<td>#terrain command crashes some window ports (and not others)
+
+<td>
+</tr>
+<!-- line 309 -->
+<tr>
+<td><nobr>C360-34</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Sinks and blindness interact incorrectly.
+
+<td>
+</tr>
+<!-- line 314 -->
+<tr>
+<td><nobr>C360-35</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Naming a monster you are restricted from naming produces a poor message.
+
+<td>
+</tr>
+<!-- line 319 -->
+<tr>
+<td><nobr>C360-36</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Enlightenment doesn't show level-drain resistance in all cases it should.
+
+<td>
+</tr>
+<!-- line 324 -->
+<tr>
+<td><nobr>C360-37</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Typo: "then is passes" instead of "then it passes."
+
+<td>
+</tr>
+<!-- line 328 -->
+<tr>
+<td><nobr>C360-38</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Error messages related to config files that contain an error on the same
+line as a carriage return may be displayed incorrectly.
+
+<td>
+</tr>
+<!-- line 343 -->
+<tr>
+<td><nobr>C360-39</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Death reason "Killed by kicking something weird" appears at wrong time.
+
+<td>
+</tr>
+<!-- line 348 -->
+<tr>
+<td><nobr>C360-40</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Line of sight is blocked by a known mimic.
+
+<td>
+</tr>
+<!-- line 353 -->
+<tr>
+<td><nobr>C360-41</nobr>
+<td><a href="#state_f">fixed</a>
+<td>lit_corridor option doesn't work in secret corridors.
+
+<td>
+</tr>
+<!-- line 356 -->
+<tr>
+<td><nobr>C360-42</nobr>
+<td><a href="#state_f">fixed</a>
+<td>#terrain with dark_room option shows some inconsistencies.
+
+<td>
+</tr>
+<!-- line 361 -->
+<tr>
+<td><nobr>C360-43</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Fleeing monsters may not actually flee.
+
+<td>
+</tr>
+<!-- line 369 -->
+<tr>
+<td><nobr>C360-44</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Death reasons never mention globs.
+
+<td>
+</tr>
+<!-- line 374 -->
+<tr>
+<td><nobr>C360-45</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Globs are known to be uncursed when they should not be.
+
+<td>
+</tr>
+<!-- line 384 -->
+<tr>
+<td><nobr>C360-46</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Bad message "The ice is bridged with ice."
+
+<td>
+</tr>
+<!-- line 389 -->
+<tr>
+<td><nobr>C360-47</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Destruction of a potion may leave the display showing the wrong symbol.
+
+<td>
+</tr>
+<!-- line 393 -->
+<tr>
+<td><nobr>C360-48</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Hero knows too much about rolling boulder traps that are out of sight.
+
+<td>
+</tr>
+<!-- line 398 -->
+<tr>
+<td><nobr>C360-49</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Colon command interacts unexpectedly with MSGTYPE=norep.
+
+<td>
+</tr>
+<!-- line 403 -->
+<tr>
+<td><nobr>C360-50</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Chameleons shapeshifted into Vampires behave incorrectly.
+
+<td>
+</tr>
+<!-- line 408 -->
+<tr>
+<td><nobr>C360-51</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Sometimes ice boxes work too well.
+
+<td>
+</tr>
+<!-- line 413 -->
+<tr>
+<td><nobr>C360-52</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Messages for going up and down stairs are inconsistent under option !verbose.
+
+<td>
+</tr>
+<!-- line 418 -->
+<tr>
+<td><nobr>C360-53</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Body armor can be removed without removing covering armor first.
+
+<td>
+</tr>
+<!-- line 423 -->
+<tr>
+<td><nobr>C360-54</nobr>
+<td><a href="#state_f">fixed</a>
+<td>When the game burns up globs of green slime, odd messages and/or
+memory corruption may occur.
+
+<td>
+</tr>
+<!-- line 429 -->
+<tr>
+<td><nobr>C360-55</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Monsters fleeing up from level 1 end up in the wrong place.
+
+<td>
+</tr>
+<!-- line 434 -->
+<tr>
+<td><nobr>C360-56</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Physical damage from mind flayer attack is inflicted twice.
+
+<td>
+</tr>
+<!-- line 444 -->
+<tr>
+<td><nobr>C360-57</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Jumping while punished may behave oddly.
+
+<td>
+</tr>
+<!-- line 449 -->
+<tr>
+<td><nobr>C360-58</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Fire damage is applied inconsistently depending on the type of attacker and defender.
+
+<td>
+</tr>
+<!-- line 453 -->
+<tr>
+<td><nobr>C360-59</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Glob weights are not tracked correctly.
+
+<td>
+</tr>
+<tr>
+<td>
+<td>
+<td><a href="spoiler.html#C">(related spoiler bugs)</a>
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="W">Windows-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 103 -->
+<tr>
+<td><nobr>W360-1</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Help->About crashes the game.  (So don't do that.)
+
+<td><a href="bugmore/winfix02.diff">Source patch</a>
+
+</tr>
+<!-- line 148 -->
+<tr>
+<td><nobr>W360-2</nobr>
+<td><a href="#state_f">fixed</a>
+<td>When quitting the game, at the "Hit <Enter> to end."  prompt, closing the
+window rather than pressing Enter causes a crash.
+
+<td>Annoying, but does not affect the game.
+
+</tr>
+<!-- line 156 -->
+<tr>
+<td><nobr>W360-3</nobr>
+<td><a href="#state_f">fixed</a>
+<td>"nethack -s" leads to "-s is not supported for the Graphical Interface"
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="X">X11-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 338 -->
+<tr>
+<td><nobr>X360-1</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Some menus do not have scrollbars when needed.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="M">Macintosh-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 266 -->
+<tr>
+<td><nobr>M360-1</nobr>
+<td><a href="#state_f">fixed</a>
+<td>The "symbols" file is not accessible in some installations.  This affects
+e.g. DECgraphics.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="T">tty-only bugs</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 272 -->
+<tr>
+<td><nobr>T360-1</nobr>
+<td><a href="#state_f">fixed</a>
+<td>The game may unnecessarily ask "Is this ok?" at startup if race, role, gender
+and alignment have already been specified.
+
+<td>
+</tr>
+</table>
+<hr>
+<h3><a name="S">Build-from-source issues (all platforms)</a></h3>
+<table border>
+<tr>
+<th>ID
+<th>Status
+<th>Description
+<th>Additional Info
+</tr>
+<!-- line 109 -->
+<tr>
+<td><nobr>S360-1</nobr>
+<td><a href="#state_f">fixed</a>
+<td>Typo: Makefile.top uses pilemark.xpm as 
+a dependency but this file is really called pilemark.xbm. (X11 only)
+
+<td>
+</tr>
+<!-- line 278 -->
+<tr>
+<td><nobr>S360-2</nobr>
+<td><a href="#state_f">fixed</a>
+<td>The file qt_xpms.h is corrupt.
+
+<td>
+</tr>
+<!-- line 299 -->
+<tr>
+<td><nobr>S360-3</nobr>
+<td><a href="#state_f">fixed</a>
+<td>64-bit longs cause tile2bin to write an invalid bmp file
+
+<td>
+</tr>
+</table>
+<br><hr>
+<h3>Bug Status Key</h3>
+<table border>
+<tr><th>State<th>Meaning</tr>
+<tr><td><a name="state_O">Open</a><td>The bug is unresolved, but we know what we need to about it.</tr>
+<tr><td><a name="state_N">Not a bug</a><td>Sometimes people think this is a bug, but they're wrong.</tr>
+<tr><td><a name="state_f">fixed</a><td>The bug will be fixed in the next bug-fix release.</tr>
+<tr><td><a name="state_F">Fixed</a><td>The bug will be fixed in a future release.</tr>
+<tr><td><a name="state_H">Help</a><td>We don't know what is causing this - if you see it, please send a detailed bug report.  Thanks!</tr>
+<tr><td><a name="state_S">Superseded</a><td>See another entry for information on this bug.</tr>
+</table>
+<!--
+NetHack is Copyright 1985-2016 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="/common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2016 by Kenneth Lorber, Kensington, Maryland.
+-->

@@ -1,0 +1,90 @@
+---
+layout: legacy
+title: Source Code Downloads
+legacy:
+  back_link:
+    text: NetHack 3.6.0 Downloads
+    url: downloads.html
+---
+NetHack source is also available from our <a href="#TODO">git repository</a>.
+<p>
+To download a tarball of the NetHack code as of the 3.6.0 release:
+<ul>
+<li><h3>Step 1: download.</h3>
+<p>
+Click on the
+<NOSCRIPT>
+link
+</NOSCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+document.write("button");
+// -->
+</SCRIPT>
+below to start the download system.
+Depending on your browser you may need to
+right-click so that the file is saved to disk and not displayed.
+<NOSCRIPT>
+When the download is complete, return to this page and continue below.
+</NOSCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+document.write("When the download is complete, close the download window and continue with the instructions on this page.");
+// -->
+</SCRIPT>
+<strike>Problems?  Check our list of
+<a href="../common/links.html#mirror">
+additional mirrors
+</a>.</strike>
+<p>
+<big>nethack-360-src.tgz</big>&nbsp;&nbsp;&nbsp;(about 4.2M)&nbsp;&nbsp;&nbsp(MD5 sum: d42147b26e5fb4746fb72536ce145984)
+<br>
+
+NetHack 3.6.0 source release.
+<br><table>
+<tr><td><NOSCRIPT><a href="http://prdownloads.sourceforge.net/nethack/nethack-360-src.tgz?download">Start download system</a></NOSCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+document.write('<form><input type="button" value="Start download system" onClick="window.open(\'http://prdownloads.sourceforge.net/nethack/nethack-360-src.tgz?download\');"><\/form>');
+// -->
+</SCRIPT>
+</table>
+<br>&nbsp;<br>
+
+
+&nbsp;<br>
+<li><h3>Step 2: unpack.</h3>
+<br>
+NetHack is shipped in a single archive created with tar and then
+shrunk with gzip.  To unpack under Unix, the following commands
+should be executed in an empty directory:
+<pre>
+        gzcat nethack-360-src.tgz &gt; nethack-360-src.tar
+        tar xf nethack-360-src.tar
+</pre>
+Some versions of Linux do not have a gzcat command.  Use the following
+commands instead:
+<pre>
+        gzip -dc nethack-360-src.tgz > nethack-360-src.tar
+        tar xf nethack-360-src.tar
+</pre>
+<!--
+<p>
+If you intend to compile the NetHack sources for
+a Windows CE target, then you also need to 
+unzip nethack-360-ce-proj.zip into the sys/wince folder.
+-->
+<p>
+The gzip package (containing gzip, gunzip, and gzcat) may be obtained from the
+<a href="https://www.fsf.org">Free Software Foundation</a>.  A version
+of tar is also available from the same site.
+<li><h3>Step 3: build.</h3>
+See the file README in the top level directory unpacked in Step 2 for
+build instructions for the various operating systems.
+</ul>
+<!--
+NetHack is Copyright 1985-2016 by Stichting Mathematisch Centrum
+and M. Stephenson.  See
+<a href="/common/license.html">our license</a> for details.<br>
+This site is Copyright 1999-2016 by Kenneth Lorber, Kensington, Maryland.
+-->

@@ -30,6 +30,13 @@
 # Community
 /links.html: Other Links
 
+# NetHack 3.6.0
+/v360/release.html: Release Notes
+/v360/downloads.html: Downloads
+/v360/guidebook-360.html: Guidebook
+/v360/bugs.html: Known Bugs
+/v360/spoiler.html: Spoiler Bugs
+
 # NetHack 3.4.3
 /v343/release.html: Release Notes
 /v343/downloads.html: Downloads
