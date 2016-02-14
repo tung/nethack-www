@@ -1,0 +1,71 @@
+winfix02.diff December 9, 2015
+This patch corrects a game-crashing bug in the nethackw.exe
+binary for windows. This patch does not alter game play.
+
+If you are building your copy of windows NetHack yourself 
+from the NetHack-3.6.0 source, you should apply this patch
+before you do.
+
+*** NetHack-3.6.0/win/win32/mhsplash.c	Wed Dec 09 06:44:59 2015
+--- win/win32/mhsplash.c	Wed Dec 09 06:35:20 2015
+***************
+*** 94,104 ****
+      if (show_ver) {
+          /* Show complete version information */
+          dlb *f;
+! 
+!         getversionstring(buf + strsize);
+!         strcat(buf, "\r\n\r\n");
+          strsize = strlen(buf);
+! 
+          /* Add compile options */
+          f = dlb_fopen(OPTIONS_USED, RDTMODE);
+          if (f) {
+--- 94,117 ----
+      if (show_ver) {
+          /* Show complete version information */
+          dlb *f;
+!         char verbuf[BUFSZ];
+!         int verstrsize = 0;
+!  
+!         getversionstring(verbuf);
+!         verstrsize = strlen(verbuf);
+!         if (verstrsize + strlen("\r\n\r\n") + 1  <  BUFSZ - 1)
+!             strcat(verbuf, "\r\n\r\n");
+!         verstrsize = strlen(verbuf);
+! 
+!         if (strsize + verstrsize + 1 > bufsize) {
+!             bufsize += BUFSZ;
+!             buf = realloc(buf, bufsize);
+!             if (buf == NULL)
+!                 panic("out of memory");
+!         }
+!         strcat(buf, verbuf);
+          strsize = strlen(buf);
+!             
+          /* Add compile options */
+          f = dlb_fopen(OPTIONS_USED, RDTMODE);
+          if (f) {
+*** NetHack-3.6.0/win/win32/mswproc.c	Wed Dec 09 06:44:59 2015
+--- win/win32/mswproc.c	Wed Dec 09 06:35:20 2015
+***************
+*** 12,17 ****
+--- 12,18 ----
+  #include "func_tab.h" /* for extended commands */
+  #include "winMS.h"
+  #include <assert.h>
++ #include <mmsystem.h>
+  #include "mhmap.h"
+  #include "mhstatus.h"
+  #include "mhtext.h"
+***************
+*** 1640,1645 ****
+--- 1641,1648 ----
+                      if (len > 0)
+                          len--;
+                      input[len] = '\0';
++                 } else if (len>=(BUFSZ-1)) {
++                     PlaySound((LPCSTR)SND_ALIAS_SYSTEMEXCLAMATION, NULL, SND_ALIAS_ID|SND_ASYNC);
+                  } else {
+                      input[len++] = c;
+                      input[len] = '\0';
